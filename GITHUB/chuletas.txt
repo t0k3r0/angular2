@@ -1,0 +1,537 @@
+Chuleta de JavaScript
+Variables
+
+javascript
+
+var nombre = 'John'; // Scope global
+let edad = 30; // Scope de bloque
+const PI = 3.1416; // Constante
+
+Tipos de Datos
+
+javascript
+
+let num = 100; // Number
+let str = "Hola"; // String
+let bool = true; // Boolean
+let arr = [1, 2, 3]; // Array
+let obj = { nombre: 'John', edad: 30 }; // Object
+let func = function() { return "Hola"; }; // Function
+
+Funciones
+
+javascript
+
+// Declaración de función
+function sumar(a, b) {
+  return a + b;
+}
+
+// Expresión de función
+const restar = function(a, b) {
+  return a - b;
+}
+
+// Función flecha
+const multiplicar = (a, b) => a + b;
+
+Control de Flujo
+
+javascript
+
+if (edad > 18) {
+  console.log("Mayor de edad");
+} else {
+  console.log("Menor de edad");
+}
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+while (edad < 30) {
+  edad++;
+}
+
+switch(dia) {
+  case 'Lunes':
+    console.log("Es lunes");
+    break;
+  case 'Martes':
+    console.log("Es martes");
+    break;
+  default:
+    console.log("Es otro día");
+}
+
+Manipulación del DOM
+
+javascript
+
+document.getElementById('miElemento').innerHTML = 'Hola';
+document.querySelector('.miClase').style.color = 'red';
+
+Eventos
+
+javascript
+
+document.getElementById('miBoton').addEventListener('click', function() {
+  alert('Botón clickeado');
+});
+
+Chuleta de TypeScript
+Tipos Básicos
+
+typescript
+
+let nombre: string = 'John';
+let edad: number = 30;
+let esActivo: boolean = true;
+let numeros: number[] = [1, 2, 3];
+let tupla: [string, number] = ['Hola', 10];
+
+Funciones
+
+typescript
+
+function sumar(a: number, b: number): number {
+  return a + b;
+}
+
+const restar = (a: number, b: number): number => a - b;
+
+Interfaces
+
+typescript
+
+interface Persona {
+  nombre: string;
+  edad: number;
+}
+
+let persona: Persona = { nombre: 'John', edad: 30 };
+
+Clases
+
+typescript
+
+class Animal {
+  nombre: string;
+
+  constructor(nombre: string) {
+    this.nombre = nombre;
+  }
+
+  hacerSonido(): void {
+    console.log('Sonido');
+  }
+}
+
+let perro = new Animal('Perro');
+perro.hacerSonido();
+
+Enum
+
+typescript
+
+enum Color {
+  Rojo,
+  Verde,
+  Azul
+}
+
+let color: Color = Color.Verde;
+
+Chuleta de Angular
+Estructura Básica de un Componente
+
+typescript
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-mi-componente',
+  templateUrl: './mi-componente.component.html',
+  styleUrls: ['./mi-componente.component.css']
+})
+export class MiComponente {
+  titulo: string = 'Hola Angular';
+
+  cambiarTitulo(nuevoTitulo: string) {
+    this.titulo = nuevoTitulo;
+  }
+}
+
+Decoradores Comunes
+
+typescript
+
+// @Component: Define un componente
+// @NgModule: Define un módulo
+// @Injectable: Define un servicio
+
+Directivas
+
+html
+
+<!-- *ngIf: Condicional -->
+<div *ngIf="esVisible">Visible</div>
+
+<!-- *ngFor: Bucle -->
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+Binding
+
+html
+
+<!-- Interpolación -->
+<p>{{ titulo }}</p>
+
+<!-- Property Binding -->
+<input [value]="titulo">
+
+<!-- Event Binding -->
+<button (click)="cambiarTitulo('Nuevo Título')">Cambiar Título</button>
+
+<!-- Two-way Binding -->
+<input [(ngModel)]="titulo">
+
+Servicios
+
+typescript
+
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class MiServicio {
+  obtenerDatos() {
+    return [1, 2, 3];
+  }
+}
+
+HttpClient (para peticiones HTTP)
+
+typescript
+
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DatosService {
+  constructor(private http: HttpClient) {}
+
+  obtenerDatos() {
+    return this.http.get('https://api.example.com/datos');
+  }
+}
+
+Resumen
+JavaScript
+
+    Variables: var, let, const
+    Tipos: Number, String, Boolean, Array, Object
+    Funciones: Declaradas, Expresión, Flecha
+    Control de Flujo: if, for, while, switch
+    DOM y Eventos
+
+TypeScript
+
+    Tipos: Tipado estático (string, number, boolean, array, tuple)
+    Funciones: Tipado de parámetros y retorno
+    Interfaces y Clases
+    Enum
+
+Angular
+
+    Componentes: Decorador @Component, template, estilos
+    Directivas: *ngIf, *ngFor
+    Binding: Interpolación, Property Binding, Event Binding, Two-way Binding
+    Servicios y HttpClient
+
+Estas chuletas te ayudarán a recordar los conceptos clave y sintaxis necesarios para trabajar con JavaScript, TypeScript y Angular durante tu examen. ¡Buena suerte!
+amplia la informacion de manipulacion del dom, lectura de json mediante api y angular no standalone
+ChatGPT
+Chuleta Ampliada
+Manipulación del DOM en JavaScript
+
+Manipular el DOM (Document Object Model) es una de las tareas más comunes en JavaScript. Aquí tienes una ampliación sobre cómo interactuar con los elementos del DOM:
+Selección de Elementos
+
+javascript
+
+// Selecciona un elemento por su ID
+let elementoPorId = document.getElementById('miElemento');
+
+// Selecciona elementos por su clase (devuelve una lista de nodos)
+let elementosPorClase = document.getElementsByClassName('miClase');
+
+// Selecciona elementos por su etiqueta (devuelve una lista de nodos)
+let elementosPorEtiqueta = document.getElementsByTagName('div');
+
+// Selecciona el primer elemento que coincide con el selector CSS
+let primerElemento = document.querySelector('.miClase');
+
+// Selecciona todos los elementos que coinciden con el selector CSS (devuelve una NodeList)
+let todosLosElementos = document.querySelectorAll('.miClase');
+
+Manipulación de Contenidos
+
+javascript
+
+// Cambiar el contenido de texto
+elementoPorId.innerText = 'Nuevo texto';
+
+// Cambiar el contenido HTML
+elementoPorId.innerHTML = '<b>Nuevo contenido HTML</b>';
+
+Manipulación de Atributos
+
+javascript
+
+// Establecer un atributo
+elementoPorId.setAttribute('data-mi-atributo', 'valor');
+
+// Obtener un atributo
+let atributo = elementoPorId.getAttribute('data-mi-atributo');
+
+// Remover un atributo
+elementoPorId.removeAttribute('data-mi-atributo');
+
+Manipulación de Estilos
+
+javascript
+
+// Cambiar estilo directamente
+elementoPorId.style.color = 'red';
+
+// Añadir una clase CSS
+elementoPorId.classList.add('nuevaClase');
+
+// Remover una clase CSS
+elementoPorId.classList.remove('miClase');
+
+// Alternar una clase CSS
+elementoPorId.classList.toggle('miClase');
+
+Eventos
+
+javascript
+
+// Añadir un evento de click
+elementoPorId.addEventListener('click', function() {
+  alert('Elemento clickeado');
+});
+
+// Remover un evento de click
+elementoPorId.removeEventListener('click', miFuncion);
+
+Lectura de JSON mediante API en JavaScript
+
+Obtener y manipular datos JSON desde una API es esencial. Aquí tienes un ejemplo de cómo hacerlo usando fetch:
+Usando Fetch API
+
+javascript
+
+// Hacer una solicitud GET
+fetch('https://api.example.com/datos')
+  .then(response => response.json()) // Parsear la respuesta JSON
+  .then(data => {
+    console.log(data); // Trabajar con los datos
+  })
+  .catch(error => {
+    console.error('Error:', error); // Manejar errores
+  });
+
+Usando Async/Await
+
+javascript
+
+// Función asíncrona para obtener datos
+async function obtenerDatos() {
+  try {
+    let response = await fetch('https://api.example.com/datos');
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+// Llamar a la función
+obtenerDatos();
+
+Angular No Standalone
+
+Angular no standalone se refiere a los componentes que no están definidos como "standalone" y dependen de módulos. Aquí tienes un resumen de cómo trabajar con este tipo de configuración:
+Definición de Módulo
+
+En Angular, los componentes se agrupan en módulos. Un módulo Angular es una clase decorada con @NgModule. Define un contexto para un conjunto de componentes dedicados a una aplicación.
+
+typescript
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { MiComponente } from './mi-componente/mi-componente.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MiComponente // Declaración de componentes
+  ],
+  imports: [
+    BrowserModule // Importación de otros módulos
+  ],
+  providers: [],
+  bootstrap: [AppComponent] // Componente raíz
+})
+export class AppModule { }
+
+Definición de Componentes
+
+Un componente Angular se define con el decorador @Component.
+
+typescript
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-mi-componente',
+  templateUrl: './mi-componente.component.html',
+  styleUrls: ['./mi-componente.component.css']
+})
+export class MiComponente {
+  titulo: string = 'Hola Angular';
+}
+
+Servicios en Angular
+
+Los servicios en Angular proporcionan una forma de compartir datos y lógica entre diferentes partes de la aplicación. Se definen con el decorador @Injectable.
+
+typescript
+
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DatosService {
+  constructor(private http: HttpClient) {}
+
+  obtenerDatos(): Observable<any> {
+    return this.http.get('https://api.example.com/datos');
+  }
+}
+
+Inyección de Dependencias
+
+Los servicios se inyectan en los componentes a través del constructor.
+
+typescript
+
+import { Component, OnInit } from '@angular/core';
+import { DatosService } from './datos.service';
+
+@Component({
+  selector: 'app-mi-componente',
+  templateUrl: './mi-componente.component.html',
+  styleUrls: ['./mi-componente.component.css']
+})
+export class MiComponente implements OnInit {
+  datos: any;
+
+  constructor(private datosService: DatosService) {}
+
+  ngOnInit() {
+    this.datosService.obtenerDatos().subscribe(data => {
+      this.datos = data;
+    });
+  }
+}
+
+Ejemplo de Proyecto Angular
+Crear un Proyecto Angular
+
+sh
+
+ng new mi-proyecto
+cd mi-proyecto
+ng serve
+
+Añadir un Componente
+
+sh
+
+ng generate component mi-componente
+
+Añadir un Servicio
+
+sh
+
+ng generate service datos
+
+Estructura del Proyecto
+
+css
+
+mi-proyecto/
+├── src/
+│   ├── app/
+│   │   ├── mi-componente/
+│   │   │   ├── mi-componente.component.ts
+│   │   │   ├── mi-componente.component.html
+│   │   │   ├── mi-componente.component.css
+│   │   ├── datos.service.ts
+│   │   ├── app.module.ts
+│   │   ├── app.component.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.css
+│   ├── index.html
+│   ├── main.ts
+
+Navegación y Ruteo
+
+Configura las rutas para navegar entre los componentes:
+
+typescript
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { JsonDataComponent } from './json-data/json-data.component';
+import { MyComponent } from './my-component/my-component.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'json-data', component: JsonDataComponent },
+  { path: 'my-component', component: MyComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+En tu app.component.html, añade un menú de navegación:
+
+html
+
+<nav>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/json-data">JSON Data</a></li>
+    <li><a routerLink="/my-component">MyComponent</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+
+Estas chuletas te proporcionarán una referencia rápida y efectiva durante tu examen para trabajar con JavaScript, TypeScript y Angular. ¡Buena suerte!
