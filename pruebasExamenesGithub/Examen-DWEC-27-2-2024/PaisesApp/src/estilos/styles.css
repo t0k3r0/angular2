@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 30px;
+}
+p{
+    margin: 0;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 2vh;
+  }
+  
+button:hover {
+    background-color: #ffffff;
+    color: #3498db;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+}
+input:focus {
+    outline: none;
+    border-color: #ff7f50;
+}
+.buscadorPaises{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta{
+    border: 3px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1vh;
+    padding: 1vh;
+}
+.tarjeta h3{
+    background-color: #3498db;
+    padding: 3vh;
+    border-radius: 50px;
+}
+.listaPaises{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img{
+    width: 150px;
+}
+.mensaje-vacio{
+    font-size: xx-large;
+}

@@ -1,0 +1,60 @@
+<div>
+  <input type="text" [(ngModel)]="inputText" placeholder="Escribe algo...">
+  <button (click)="updateParagraph()">Actualizar</button>
+  <p>{{ paragraphContent }}</p>
+</div>
+<input [(ngModel)]="username" placeholder="Enter your name">
+<p>Your name is: {{ username }}</p>
+<ul>
+  <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+</ul>
+<p *ngIf="isLoggedIn">Welcome back, user!</p>
+<button *ngIf="!isLoggedIn" (click)="login()">Login</button>
+
+<!-- ngClass: Descripción: Se utiliza para añadir o quitar clases CSS basándose en condiciones. -->
+<div [ngClass]="{'highlight': isHighlighted}">Highlight me!</div>
+
+<div [ngStyle]="{'color': textColor, 'font-size': fontSize + 'px'}">Styled text</div>
+
+<!-- ngSwitch: Descripción: Se utiliza para mostrar o esconder elementos basados en una expresión, similar al switch en otros lenguajes de programación. -->
+<div [ngSwitch]="day">
+  <p *ngSwitchCase="'Monday'">Today is Monday</p>
+  <p *ngSwitchCase="'Tuesday'">Today is Tuesday</p>
+  <p *ngSwitchDefault>Today is another day</p>
+</div>
+
+
+<!-- ngTemplateOutlet: Descripción: Se utiliza para renderizar contenido de un template en otro lugar del DOM. -->
+<ng-template #greetingTemplate>
+  <p>Hello, {{name}}!</p>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="greetingTemplate; context: {name: 'World'}"></ng-container>
+
+<!-- ngContainer: Descripción: Se utiliza como un contenedor no renderizado en el DOM. Es útil cuando se quiere aplicar una directiva sin agregar un elemento extra al DOM. -->
+<ng-container *ngIf="isAdmin">
+  <button>Admin Settings</button>
+</ng-container>
+
+
+<!-- ngContent: Descripción: Se utiliza en componentes para proyectar contenido hijo en una plantilla. -->
+<!-- Parent Component -->
+<app-card>
+  <p>Content projected into the card.</p>
+</app-card>
+
+<!-- Child Component Template -->
+<div class="card">
+  <ng-content></ng-content>
+</div>
+
+<!-- async: Descripción: Se utiliza para trabajar con observables y promesas en plantillas. -->
+<!-- <p>{{ user$ | async | json }}</p> -->
+
+
+<div>
+  <input type="text" [(ngModel)]="inputText" placeholder="Escribe algo...">
+  <button (click)="updateParagraph()">Actualizar</button>
+  <button (click)="obtenerNombreAleatorio()">Obtener Nombre Aleatorio</button>
+  <p>{{ paragraphContent }}</p>
+</div>

@@ -1,0 +1,2874 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0097)https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/singlepage_index.html -->
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>DWEC04.- Programación AJAX en JavaScript.</title>
+	<link rel="shortcut icon"
+		href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/favicon.ico"
+		type="image/x-icon">
+	<meta http-equiv="content-language" content="es">
+	<meta name="generator" content="eXeLearning 2.2 - exelearning.net">
+	<link rel="stylesheet" type="text/css" href="./DWEC04.- Programación AJAX en JavaScript._files/base.css">
+	<link rel="stylesheet" type="text/css" href="./DWEC04.- Programación AJAX en JavaScript._files/content.css">
+	<script type="text/javascript"
+		src="./DWEC04.- Programación AJAX en JavaScript._files/exe_jquery.js.descarga"></script>
+	<script
+		src="./DWEC04.- Programación AJAX en JavaScript._files/common_i18n.js+common.js.pagespeed.jc.5zzbCj1CLe.js.descarga"></script>
+	<script>eval(mod_pagespeed_x_qXtxZaNA);</script>
+	<script>eval(mod_pagespeed_RM$RNPKHbU);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+		type="text/javascript">var path = "my_js.js"; if (document.domain == "ikastaroak.ulhi.net" || document.domain == "ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI22/my_js.js"; document.write(unescape("%3Cscript src=\'" + path + "\'type=\'text/javascript\'%3E%3C/script%3E"));</script>
+	<script src="./DWEC04.- Programación AJAX en JavaScript._files/my_js.js.descarga" type="text/javascript"></script>
+	<script type="text/javascript"
+		src="./DWEC04.- Programación AJAX en JavaScript._files/webReader.js.descarga"></script>
+	<link id="rsmod_Styles" type="text/css" rel="stylesheet"
+		href="./DWEC04.- Programación AJAX en JavaScript._files/ReadSpeaker.Styles-Button.css">
+	<script type="text/javascript">window.rsConf = { general: { usePost: true } };</script>
+
+	<script
+		type="text/javascript">window.onload = function () { var player = document.createElement("div"); player.id = "readspeaker_button1"; player.className = "rs_skip rsbtn rs_preserve"; player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' + 'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' + '<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' + '</a>'; var accordions = document.getElementsByClassName("fx-accordion-title"); for (i = 0; i < accordions.length; i++) { accordions[i].className += " rs_preserve"; } var paginations = document.getElementsByClassName("fx-pagination"); for (i = 0; i < paginations.length; i++) { paginations[i].className += " rs_preserve rs_skip"; } var main = document.getElementById("main"); main.insertBefore(player, main.firstChild); ReadSpeaker.init(); ReadSpeaker.q(function () { rspkr.ui.addClickEvents(); }); };</script>
+	<style>
+		#main .rsbtn ul li {
+			list-style-image: none
+		}
+	</style>
+</head>
+
+<body class="exe-single-page js" data-rsevent-id="rs_234076">
+	<script type="text/javascript">document.body.className += " js"</script>
+	<div id="content">
+		<div id="header" role="banner">
+			<!-- <div id="headerContent">
+				<h1>DWEC04.- Programación AJAX en JavaScript.</h1>
+			</div> -->
+		</div>
+		<div id="main" role="main">
+			<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve mega_toggle"><button type="button"
+					class="rsbtn_tooltoggle" data-rsshortcut="menu" data-rslang="title/arialabel:menu"
+					title="Menú de webReader" aria-label="Menú de webReader" aria-expanded="false" data-rs-tooltip="."
+					data-rs-direction="u" data-rs-container="readspeaker_button1" data-rsevent-id="rs_39065"
+					style="display: none;"><span class="rsicn rsicn-arrow-down" aria-hidden="true"></span></button><a
+					class="rsbtn_play" title="Escuchar esta página utilizando ReadSpeaker"
+					href="https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url="
+					role="button" aria-label="ReadSpeaker webReader: Escuchar con webReader" data-rs-tooltip="."
+					data-rs-direction="u" aria-haspopup="menu" aria-expanded="false" data-rsshortcut="play"
+					data-rs-lang="es_es"><span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"
+							aria-hidden="true"><span>Escuchar</span></span></span><span
+						class="rsbtn_right rsimg rsplay rspart"></span></a></div>
+			<div class="node level-1-node" id="exe-node-0">
+				<div class="nodeDecoration">
+					<h1 id="exenode_0_DWEC04ProgramacinAJAXenJavaScript" class="nodeTitle">DWEC04.- Programación AJAX en
+						JavaScript.</h1>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-1">
+				<div class="nodeDecoration">
+					<h1 id="exenode_1_1IntroduccinaAJAX" class="nodeTitle">1.- Introducción a AJAX.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id3-1">
+					<div class="iDevice emphasis0">
+						<div id="ta3_73" class="block iDevice_content">
+							<p>El término AJAX (JavaScript Asíncrono y XML) es una técnica de desarrollo web, que
+								permite comunicar el navegador del usuario con el servidor, en un segundo plano. De esta
+								forma, se podrían realizar peticiones al servidor sin tener que recargar la página, y
+								podríamos gestionar esas respuestas, que nos permitirían actualizar los contenidos de
+								nuestra página, sin tener que realizar recargas.</p>
+							<p>El término AJAX se presentó por primera vez en el artículo "<span lang="en">A New
+									Approach to Web Applications</span>", publicado por <span lang="en">Jesse James
+									Carrett</span> el 18 de febrero de 2005.</p>
+							<p>AJAX no es una tecnología nueva. Son realmente muchas tecnologías, cada una destacando
+								por su propio mérito, pero que se unen con los siguientes objetivos:</p>
+							<ul class="lista_verificacion">
+								<li>Conseguir una presentación basada en estándares, usando <abbr
+										title="Lenguaje de Marcado de Hipertexto Extensible.">XHTML</abbr>, <abbr
+										title="Hojas de Estilo en Cascada.">CSS</abbr> y un uso amplio de técnicas del
+									<acronym title="Modelo de Objetos del Documento.">DOM</acronym>, para poder mostrar
+									la información de forma dinámica e interactiva.</li>
+								<li>Intercambio y manipulación de datos a través de ficheros JSON</li>
+								<li>Uso de JavaScript, para unir todos los componentes.</li>
+							</ul>
+							<p>Las tecnologías que forman AJAX son:</p>
+							<ul class="lista_verificacion">
+								<li>XHTML y CSS, para la presentación basada en estándares.</li>
+								<li>DOM, para la interacción y manipulación dinámica de la presentación.</li>
+								<li>XML, XSLT y <acronym title="JavaScript Object Notation.">JSON</acronym>, para el
+									intercambio y manipulación de información.</li>
+								<li><code>XMLHTTPRequest</code>, para el intercambio asíncrono de información.</li>
+								<li>JavaScript, para unir todos los componentes anteriores.</li>
+							</ul>
+							<p>El <strong>modelo clásico de aplicaciones Web (desuso)</strong> funciona de la siguiente
+								forma:</p>
+							<ul>
+								<li>la mayoría de las acciones del usuario se producen en la interfaz, disparando
+									solicitudes <acronym
+										title="Protocolo de Transferencia de Hipertexto.">HTTP</acronym> al servidor
+									web. El servidor efectúa un proceso (recopila información, realiza las acciones
+									oportunas), y devuelve los datos solicitados por el cliente en formato HTML.</li>
+								<li>Este es un modelo adaptado del uso original de la Web como medio hipertextual, pero
+									a nivel de aplicaciones de software, este tipo de modelo <strong>no es
+										necesariamente el más recomendable</strong>. Y en la actualidad, como veremos
+									más adelante, estas operaciones ya no se realizan de esta manera.</li>
+								<li>Cada vez que se realiza una petición al servidor, el usuario lo único que puede
+									hacer es esperar, ya que muchas veces la página cambia a otra diferente, y hasta que
+									no reciba todos los datos del servidor, no se mostrará el resultado, con lo que el
+									usuario no podrá interactuar de ninguna manera con el navegador.</li>
+							</ul>
+							<p>AJAX es la tecnología que consiguió solucionar estas limitaciones. A grosso modo, lo que
+								se intenta evitar, son esencialmente esas esperas. El cliente podrá hacer solicitudes al
+								servidor, mientras el navegador sigue mostrando la misma página web, y cuando el
+								navegador reciba una respuesta del servidor, la mostrará al cliente y todo ello sin
+								recargar o cambiar de página.</p>
+							<p>AJAX es utilizado por muchas empresas y productos hoy en día. Por ejemplo, <span
+									lang="en">Google</span> utiliza AJAX en aplicaciones como <span lang="en">Gmail,
+									Google Suggest, Google Maps</span>.., así como <span lang="en">Flickr</span>,
+								Amazon, etc.</p>
+							<p>Son muchas las razones para usar AJAX:</p>
+							<ul class="lista_verificacion">
+								<li>Está basado en estándares abiertos.</li>
+								<li>Su usabilidad.</li>
+								<li>Válido en cualquier plataforma y navegador.</li>
+								<li>Beneficios que aporta a las aplicaciones web.</li>
+								<li>Compatible con Flash.</li>
+								<li>Es la base de la web 2.0.</li>
+								<li>Es independiente del tipo de tecnología de servidor utilizada.</li>
+								<li>Mejora la estética de la web.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-4">
+				<div class="nodeDecoration">
+					<h1 id="exenode_4_11Requerimientosprevios" class="nodeTitle">1.1.- Requerimientos previos.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id4-4">
+					<div class="iDevice emphasis0">
+						<div id="ta4_73" class="block iDevice_content">
+							<p>A la hora de trabajar con AJAX debemos tener en cuenta una serie de requisitos previos,
+								necesarios para la programación con esta metodología.</p>
+							<p>Hasta este momento, nuestras aplicaciones de JavaScript no necesitaban de un servidor web
+								para funcionar, salvo en el caso de querer enviar los datos de un formulario y
+								almacenarlos en una base de datos. Es más, todas las aplicaciones de JavaScript que has
+								realizado, las has probado directamente abriéndolas con el navegador o haciendo doble
+								click sobre el fichero .HTML.</p>
+							<p>Para la programación con AJAX vamos a necesitar de un servidor web, ya que las peticiones
+								AJAX que hagamos, las haremos a un servidor. Los componentes que necesitamos son:</p>
+							<ul class="lista_verificacion">
+								<li>Servidor web (apache, ligHTTPd, <acronym
+										title="Internet Information Server.">IIS</acronym>, etc).</li>
+								<li>Servidor de bases de datos (MySQL, Postgresql, etc).</li>
+								<li>Lenguaje de servidor (<acronym title="PHP Hypertext Pre-processor.">PHP</acronym>,
+									<acronym title="Active Server Pages.">ASP</acronym>, etc).</li>
+							</ul>
+							<p>Podríamos instalar cada uno de esos componentes por separado, pero muchas veces lo más
+								cómodo es instalar alguna aplicación que los agrupe a todos sin instalarlos de forma
+								individual. Hay varios tipos de aplicaciones de ese tipo, que se pueden categorizar en
+								dos, diferenciadas por el tipo de sistema operativo sobre el que funcionan:</p>
+							<ul class="lista_verificacion">
+								<li>servidor <acronym title="Linux, Apache, MySQL, PHP.">LAMP</acronym> (Linux, Apache,
+									MySQL y PHP).</li>
+								<li>servidor <acronym title="Windows, Apache, MySQL, PHP.">WAMP</acronym> (<span
+										lang="en">Windows</span>, Apache, MySQL y PHP).</li>
+							</ul>
+							<p>Una aplicación de este tipo, muy utilizada, puede ser XAMPP (tanto para <span
+									lang="en">Windows</span>, como para Linux). Esta aplicación podrás instalarla
+								incluso en una memoria <acronym title="Bus Serie Universal.">USB</acronym> y ejecutarla
+								en cualquier ordenador, con lo que tendrás siempre disponible un servidor web, para
+								programar tus aplicaciones AJAX.</p>
+							<p class="enlace_centrado"><a href="http://www.apachefriends.org/es/xampp.html"
+									title="Acceder a la página de descarga de XAMPP para diferentes sistemas.">Servidor
+									XAMPP (Apache, MySQL, PHP).</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id75-4">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta75_151" class="block iDevice_content">
+								<p><span>En cuanto a este módulo, como hemos venido haciendo hasta ahora, nos
+										centraremos en el lado del cliente, y como siempre, siguiendo la arquitectura
+										cliente-servidor (Front y Backend).</span></p>
+								<p><span>Por lo que para nuestras consultas, en principio, usaremos siempre servicios de
+										terceros a través de <strong>APIs</strong></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-26">
+				<div class="nodeDecoration">
+					<h1 id="exenode_26_111VentajasydesventajasdeAJAX" class="nodeTitle">1.1.1.- Ventajas y desventajas
+						de AJAX</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id60-26">
+					<div class="iDevice emphasis0">
+						<div id="ta60_154" class="block iDevice_content">
+							<p>AJAX aporta importantes ventajas al campo de la creación de las aplicaciones web. Entre
+								ellas:</p>
+							<ul>
+								<li><strong>Carga de contenido remoto en segundo plano</strong>.</li>
+								<li>Aporta una <strong>gran facilidad para aplicar paradigmas de interfaces de usuarios
+										novedosas</strong>, como páginas con scroll infinito o aplicaciones web de
+									página única.</li>
+								<li><strong>Facilidad y versatilidad</strong> para comunicar con APIs de terceros para
+									integrar sus servicios en nuestras aplicaciones.</li>
+								<li><strong>Resolución de problemas reales</strong> de manera sencilla.</li>
+								<li><strong>Validación de formularios eficaz</strong> al facilitar la detección de
+									errores de manera temprana.</li>
+								<li><strong>Mejor uso del ancho de banda del usuario</strong>.</li>
+								<li>En la programación <strong>back-end</strong>, saber que un servicio puede ser
+									destino de peticiones AJAX, hace que <strong>los servicios se programen de forma más
+										eficiente e independiente</strong>, animando a la creación de
+									<strong>APIs</strong>, que son la base de la programación basada en servicios. Este
+									tipo de paradigma (conocido como <strong>SaaS</strong>) ha impulsado un mayor
+									desarrollo y eficiencia de las aplicaciones web.</li>
+								<li>Facilita la <strong>compatibilidad con servicores back-end de todo tipo de
+										tecnologías</strong>. El único requisito es que acepte peticiones
+									<strong>http</strong> y que envíe los datos en formatos estándar como son
+									<strong>XML o JSON</strong>.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id61-26">
+					<div class="iDevice emphasis0">
+						<div id="ta61_154" class="block iDevice_content">
+							<p>Es importante saber también que AJAX tiene sus desventajas. Las principales son:</p>
+							<ul>
+								<li>Dificultad, en bastantes casos, para que los buscadores indexen todos los contenidos
+									que integramos en nuestras aplicaciones procedentes de peticiones AJAX.</li>
+								<li>Aunque los conceptos en el uso de AJAX no son difíciles, la implementación sí tiene
+									sus dificultades porque requiere un manejo avanzado de JavaScript en aspectos como
+									funciones callback, promesas, programación asíncrona, programación basada en
+									eventos, etc.</li>
+								<li>Las peticiones de AJAX siguen siendo visibles para los usuarios, por lo que son
+									sensibles a ataques malintencionados.</li>
+								<li>La barra de navegación no permite ir al estado anterior en la página. Las peticiones
+									AJAX no se reflejan en la navegación.</li>
+								<li>Puede incrementar el tráfico hacia los servidores de Internet. El hecho de que
+									podamos realizar peticiones http a servicios de Internet, puede facilitar la
+									creación de aplicaciones que hagan peticiones http constantemente. Ante esto, muchos
+									servidores usan protección anti <strong>CORS</strong>.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-27">
+				<div class="nodeDecoration">
+					<h1 id="exenode_27_112CORS" class="nodeTitle">1.1.2.- CORS</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id62-27">
+					<div class="iDevice emphasis0">
+						<div id="ta62_154" class="block iDevice_content">
+							<p>CORS es el acrónimo de Cross-Origin Resource Sharing, Intercambio de Recursos de Origen
+								cruzado. Las peticiones AJAX son fáciles de automatizar, lo que permitiría realizar
+								cientos o miles de peticiones con unas pocas líneas de código, lo que podrá provocar el
+								colapso del servidor. Para que los servicios de internet se protejan y solo resuelvan
+								peticiones procedentes de dominios validados, se ideó una norma que ahora es parte del
+								protocolo http. Los datos sobre CORS se colocan en la cabecera de los paquetes http y
+								permiten una vía de comunicación entre el navegador y el servidor web que asegura que se
+								cumplen las normas establecidas.</p>
+							<p>Una política CORS habitual es que solo se resuelvan peticiones procedentes del dominio en
+								el que está el servicio. Pero hay políticas más sofisticadas. Software de servidor web
+								como <strong>Apache</strong> o <strong>nginx</strong> tienen capacidad para modificar
+								esas políticas.</p>
+							<p>La cabecera http que protege a los servidores de vulnerabilidades causadas por CORS es
+								<strong>Access-Control-Allow-Origin</strong>. Si a esta directiva se le asigna el valor
+								* (asterisco), entonces admite cualquier origen para las peticiones. Se pueden
+								especificar, en su lugar, dominios concretos y así solo se admiten peticiones de estos
+								dominios&nbsp; (serán dominios confiables). Hay otras cabeceras que permiten matizar aún
+								más estas políticas.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-5">
+				<div class="nodeDecoration">
+					<h1 id="exenode_5_12Comunicacinasncrona" class="nodeTitle">1.2.- Comunicación asíncrona.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id5-5">
+					<div class="iDevice emphasis0">
+						<div id="ta5_73" class="block iDevice_content">
+							<p>
+								<script data-pagespeed-no-defer="" type="text/javascript">//<![CDATA[
+										(function () { for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) { if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters."); b != Array.prototype && b != Object.prototype && (b[c] = a.value) }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) { var m = k[l]; m in h || (h[m] = {}); h = h[m] } var n = k[k.length - 1], p = h[n], q = p ? p : function (b) { var c; if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined"); c = this + ""; if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value"); b |= 0; for (var a = ""; b;)if (b & 1 && (a += c), b >>>= 1) c += c; return a }; q != p && null != q && g(h, n, { configurable: !0, writable: !0, value: q }); var t = this; function u(b, c) { var a = b.split("."), d = t; a[0] in d || !d.execScript || d.execScript("var " + a[0]); for (var e; a.length && (e = a.shift());)a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c }; function v(b) { var c = b.length; if (0 < c) { for (var a = Array(c), d = 0; d < c; d++)a[d] = b[d]; return a } return [] }; function w(b) { var c = window; if (c.addEventListener) c.addEventListener("load", b, !1); else if (c.attachEvent) c.attachEvent("onload", b); else { var a = c.onload; c.onload = function () { b.call(this); a && a.call(this) } } }; var x; function y(b, c, a, d, e) { this.h = b; this.j = c; this.l = a; this.f = e; this.g = { height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight, width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth }; this.i = d; this.b = {}; this.a = []; this.c = {} } function z(b, c) { var a, d, e = c.getAttribute("data-pagespeed-url-hash"); if (a = e && !(e in b.c)) if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1; else { d = c.getBoundingClientRect(); var f = document.body; a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop); d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft); f = a.toString() + "," + d; b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width) } a && (b.a.push(e), b.c[e] = !0) } y.prototype.checkImageForCriticality = function (b) { b.getBoundingClientRect && z(this, b) }; u("pagespeed.CriticalImages.checkImageForCriticality", function (b) { x.checkImageForCriticality(b) }); u("pagespeed.CriticalImages.checkCriticalImages", function () { A(x) }); function A(b) { b.b = {}; for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d)a = a.concat(v(document.getElementsByTagName(c[d]))); if (a.length && a[0].getBoundingClientRect) { for (d = 0; c = a[d]; ++d)z(b, c); a = "oh=" + b.l; b.f && (a += "&n=" + b.f); if (c = !!b.a.length) for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) { var e = "," + encodeURIComponent(b.a[d]); 131072 >= a.length + e.length && (a += e) } b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0); C = a; if (c) { d = b.h; b = b.j; var f; if (window.XMLHttpRequest) f = new XMLHttpRequest; else if (window.ActiveXObject) try { f = new ActiveXObject("Msxml2.XMLHTTP") } catch (r) { try { f = new ActiveXObject("Microsoft.XMLHTTP") } catch (D) { } } f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a)) } } } function B() { var b = {}, c; c = document.getElementsByTagName("IMG"); if (!c.length) return {}; var a = c[0]; if (!("naturalWidth" in a && "naturalHeight" in a)) return {}; for (var d = 0; a = c[d]; ++d) { var e = a.getAttribute("data-pagespeed-url-hash"); e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = { rw: a.width, rh: a.height, ow: a.naturalWidth, oh: a.naturalHeight }) } return b } var C = ""; u("pagespeed.CriticalImages.getBeaconData", function () { return C }); u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) { var r = new y(b, c, a, e, f); x = r; d && w(function () { window.setTimeout(function () { A(r) }, 0) }) }); })(); pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'http://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/singlepage_index.html', 'nXzXivl0t7', true, false, 'CoKEu1GBpTo');
+									//]]></script><img alt="Imagen con un hombre y una estatua sentados en un banco en la misma postura."
+									class="elemento_derecha" height="104"
+									src="./DWEC04.- Programación AJAX en JavaScript._files/xDWEC07_CONT_R03_Sincronia.jpg.pagespeed.ic.9v-Da5WdVP.webp"
+									style="width: 200px; height: 104px;" title="Posturas sincronizadas." width="200"
+									data-pagespeed-url-hash="4257559068"
+									onload="pagespeed.CriticalImages.checkImageForCriticality(this);">Como ya te
+								comentábamos en la introducción a AJAX, la mayoría de las aplicaciones web funcionan de
+								la siguiente forma:
+							</p>
+							<ol>
+								<li>El usuario solicita algo al servidor.</li>
+								<li>El servidor ejecuta los procesos solicitados (consulta a una base de datos,&nbsp;
+									procesado de la información, etc.).</li>
+								<li>Cuando el servidor termina, devuelve los resultados al cliente.</li>
+							</ol>
+							<p>En el paso 2, mientras se ejecutan los procesos en el servidor, el cliente lo único que
+								puede hacer es esperar, ya que el navegador está bloqueado en espera de recibir la
+								información con los resultados del servidor.</p>
+							<p>Una aplicación AJAX, cambia la metodología de funcionamiento de una aplicación web, en el
+								sentido de que, elimina las esperas y los bloqueos que se producen en el cliente. Es
+								decir, el usuario podrá seguir interactuando con la página web, mientras se realiza la
+								petición al servidor. En el momento de tener una respuesta confirmada del servidor, ésta
+								será mostrada al cliente, o bien se ejecutarán las acciones que el programador de la
+								página web haya definido.</p>
+							<p>Mira el siguiente gráfico, en el que se comparan los dos modelos de aplicaciones web:</p>
+							<div class="elemento_centrado">
+								<div class="elemento_centrado"><a
+										href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/DWEC07_CONT_R04_Modelos.jpg"
+										title="Ampliar imagen."><img
+											alt="Imagen en la que se muestra una comparativa entre el modelo web clásico y el modelo Ajax."
+											class="imagen_ampliable" height="164"
+											src="./DWEC04.- Programación AJAX en JavaScript._files/xDWEC07_CONT_R04_Modelos_miniatura.jpg.pagespeed.ic.2V2tXK9YeA.webp"
+											style="width: 160px; height: 164px;" title="Modelos de aplicaciones web."
+											width="160" data-pagespeed-url-hash="2739767519"
+											onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+							</div>
+							<p></p>
+							<p><strong>¿Cómo se consigue realizar la petición al servidor sin bloquear el
+									navegador?</strong></p>
+							<p>Para poder realizar las peticiones al servidor sin que el navegador se quede bloqueado,
+								tendremos que hacer uso del motor AJAX (programado en JavaScript y que generalmente se
+								encuentra en un <span lang="en">frame</span> oculto). Este motor se encarga de gestionar
+								las peticiones AJAX del usuario, y de comunicarse con el servidor. Es justamente este
+								motor, el que permite que la interacción suceda de forma asíncrona (independientemente
+								de la comunicación con el servidor). Así, de esta forma, el usuario no tendrá que estar
+								pendiente del icono de indicador de carga del navegador, o viendo una pantalla en
+								blanco.</p>
+							<div class="elemento_centrado">
+								<div class="elemento_centrado"><a
+										href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/DWEC07_CONT_R05_Asincronia.jpg"
+										title="Ampliar imagen."><img
+											alt="Imagen comparativa de peticiones síncronas y asíncronas."
+											class="imagen_ampliable" height="200"
+											src="./DWEC04.- Programación AJAX en JavaScript._files/xDWEC07_CONT_R05_Asincronia_miniatura.jpg.pagespeed.ic.P4Ugi6FTDT.webp"
+											style="width: 152px; height: 200px;"
+											title="Peticiones síncronas y asíncronas." width="152"
+											data-pagespeed-url-hash="1568533074"
+											onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+							</div>
+							<p></p>
+							<p>Cada acción del usuario, que normalmente generaría una petición HTTP al servidor, se va a
+								convertir en una petición AJAX con esa solicitud, y será este motor, el que se encargará
+								de todo el proceso de comunicación y obtención de datos de forma asíncrona con el
+								servidor, y todo ello sin frenar la interacción del usuario con la aplicación.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-33">
+				<div class="nodeDecoration">
+					<h1 id="exenode_33_2API" class="nodeTitle">2.- API</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id79-33">
+					<div class="iDevice emphasis0">
+						<div id="ta79_154" class="block iDevice_content">
+							<p>Esta serie de protocolos son una parte fundamental en el funcionamiento de las
+								aplicaciones y webs actuales. Seguramente has oído hablar más de una vez sobre ellas,
+								cuando determinado servicio popular&nbsp;pone límites en su API&nbsp;o&nbsp;crean
+								nuevas&nbsp;para extender su uso en otras aplicaciones.</p>
+							<p>Vamos a empezar explicándote de la forma más sencilla que podamos qué es exactamente una
+								API y&nbsp;<span>cuáles son sus principales usos</span>. Luego, terminaremos con algunos
+								ejemplos con los que vas a poder hacerte una idea de para qué sirven y cómo son
+								utilizadas en la práctica.</p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id81-33">
+					<div class="iDevice emphasis0">
+						<div id="ta81_154" class="block iDevice_content">
+							<h3>Qué es una API</h3>
+							<p>El término <a
+									href="https://es.wikipedia.org/wiki/Interfaz_de_programaci%C3%B3n_de_aplicaciones">API
+								</a>es una abreviatura de<em>&nbsp;Application&nbsp;Programming&nbsp;Interfaces</em>,
+								que en español significa&nbsp;<em>interfaz de programación de aplicaciones</em>. Se
+								trata de un conjunto de definiciones y protocolos que se utiliza para desarrollar e
+								integrar el software de las aplicaciones,&nbsp;<span>permitiendo la comunicación entre
+									dos aplicaciones</span>&nbsp;de software a través de un conjunto de reglas.</p>
+							<p>Así pues, podemos hablar de una API como una especificación formal
+								que&nbsp;<span>establece cómo un módulo de un software se comunica o interactúa con
+									otro</span>&nbsp;para cumplir una o muchas funciones. Todo dependiendo de las
+								aplicaciones que las vayan a utilizar, y de los permisos que les dé el propietario de la
+								API a los desarrolladores de terceros.</p>
+							<p><strong>En otras palabras:&nbsp;Describe la manera apropiada para que un desarrollador de
+									software componga un programa en un servidor que se comunica con varias aplicaciones
+									cliente.</strong></p>
+							<p></p>
+							<h2></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-34">
+				<div class="nodeDecoration">
+					<h1 id="exenode_34_21APIRest" class="nodeTitle">2.1.- API Rest</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id83-34">
+					<div class="iDevice emphasis0">
+						<div id="ta83_154" class="block iDevice_content">
+							<h3>¿Qué es la API REST?</h3>
+							<p>«REST»:&nbsp;<em>REpresentational&nbsp;State&nbsp;T</em><em>ransfer</em>, es un tipo
+								de&nbsp;arquitectura de desarrollo web&nbsp;que se apoya totalmente en el
+								estándar&nbsp;HTTP. Fue definida en el 2000 por Roy Fielding, uno de los padres de la
+								especificación HTTP y un referente en la arquitectura de redes.&nbsp;Fielding definió
+								REST como un estilo arquitectónico y una metodología de uso frecuente en el desarrollo
+								de servicios de Internet, como los sistemas hipermedia distribuidos:</p>
+							<p><em>La forma completa de REST API es la interfaz de programación de aplicaciones de
+									transferencia de estado representacional, más comúnmente conocida como servicio web
+									REST API. Significa que cuando se llama a una API RESTful, el
+									servidor&nbsp;transferir&nbsp;a&nbsp;representación&nbsp;de los recursos
+									solicitados&nbsp;estado&nbsp;al sistema del cliente.</em></p>
+							<p></p>
+							<p><img src="./DWEC04.- Programación AJAX en JavaScript._files/Captura.PNG" width="755"
+									height="424" style="display: block; margin-left: auto; margin-right: auto;"
+									data-pagespeed-url-hash="200611708"
+									onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></p>
+							<p></p>
+							<p><em>&nbsp;</em></p>
+							<p style="text-align: justify;"><strong>Por ejemplo</strong>, cuando un desarrollador
+								realiza una solicitud a la API de Twitter para recuperar la información de la pagina
+								principal de este, la API devolverá el estado de ese usuario, su nombre, seguidores y
+								publicaciones compartidas en Twitter.</p>
+							<p style="text-align: justify;">Es decir,<strong>&nbsp;la API es una capa de abstracción que
+									ejerce intermediario entre el cliente y el servidor,&nbsp;</strong>a la que los
+								desarrolladores realizan consultas y esta devuelve los datos que se le han solicitado, o
+								realiza los procesos que se le han pedido.</p>
+							<p style="text-align: justify;">Hoy por hoy, la mayoría de las aplicaciones que se
+								desarrollan para servicios profesionales disponen de una&nbsp;API REST para el
+								intercambio de información entre el front y el back. Lo que la hace tan potente es
+								precisamente el aislamiento que proporciona entre la lógica del back-end y cualquier
+								cliente consumidor de éste. Esto le permite ser usada por cualquier tipo de cliente:
+								web, móvil, etc. Así, cualquier dispositivo/cliente que entienda de HTTP puede hacer uso
+								de su propia&nbsp;API REST&nbsp;de manera muy simple. Esto ha hecho que en los últimos
+								años este tipo de arquitectura haya ganado peso frente a otras más complejas
+								como&nbsp;SOAP, para el intercambio y manipulación de datos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-35">
+				<div class="nodeDecoration">
+					<h1 id="exenode_35_211UsosdelaespecificacinHTTP" class="nodeTitle">2.1.1 - Usos de la especificación
+						HTTP</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id85-35">
+					<div class="iDevice emphasis0">
+						<div id="ta85_154" class="block iDevice_content">
+							<h3><strong><span id="Uso_de_la_especificacion_HTTP">Para el&nbsp;<span
+											style="font-size: 13.12px;">desarrollo de una API REST</span><span
+											style="font-size: 13.12px;">&nbsp;es necesario un conocimiento profundo de
+											la especificación HTTP, sobre todo en lo referente a métodos permitidos,
+											códigos de estado y aceptación de tipos de contenido.</span></span></strong>
+							</h3>
+							<p><span style="font-size: 13.12px;">En este ap</span><span
+									style="font-size: 13.12px;">artado vamos a explorar los principales métodos que
+									tiene una API Rest y que nosotros utilizaremos cómo desarrolladores, y los códigos
+									que nos puede devolver esta en función de la consulta que realicemos.</span></p>
+							<p>Los métodos son usados para manipular los diferentes recursos que conforman la
+								API.&nbsp;Los principales métodos soportados&nbsp;por HTTP y por ello usados por
+								una&nbsp;API REST&nbsp;son:</p>
+							<ul>
+								<li><span><span>POST</span>: crear un recurso nuevo.</span></li>
+								<li><span><span>PUT</span>: modificar un recurso existente.</span></li>
+								<li><span><span>GET</span>: consultar información de un recurso.</span></li>
+								<li><span><span>DELETE</span>: eliminar un recurso determinado.</span></li>
+								<li><span><span>PATCH</span>: modificar solamente un atributo de un recurso.</span></li>
+							</ul>
+							<p><span>Estos métodos junto con la URI, nos proporciona<span>&nbsp;una interfaz
+										uniforme</span>&nbsp;que nos permite la transferencia de datos en el sistema
+									REST aplicando operaciones concretas sobre un recurso determinado. Aunque la mayoría
+									de las operaciones que componen una&nbsp;<span>API REST</span>&nbsp;podrían llevarse
+									a cabo mediante métodos GET y POST, el abuso de ellos para operaciones que nada
+									tienen que ver con el propósito con el que se concibieron, puede provocar un mal uso
+									del protocolo alejado del estándar o la construcción de URIs con nomenclatura
+									errónea mediante el uso de verbos.</span></p>
+							<p>Cuando se realiza una petición determinada, es de vital importancia conocer si dicha
+								operación se ha llevado a cabo de manera satisfactoria o por el contrario se ha
+								producido algún tipo de error. Para ello, HTTP dispone de un amplio número de <a
+									href="https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP">códigos
+								</a>de error/éxito que cubren todas las posibles respuestas que el usuario puede recibir
+								cuando trata de manipular un recurso mediante el<span>&nbsp;uso de una API REST</span>.
+							</p>
+							<p><span>Las más comunes son:</span></p>
+							<ul>
+								<li><span>200 OK.&nbsp;</span><span>Respuesta estándar para peticiones correctas.</span>
+								</li>
+								<li><span>201 Created.&nbsp;</span><span>La petición ha sido completada y ha resultado
+										en la creación de un nuevo recurso.</span></li>
+								<li><span>202 Accepted.&nbsp;</span><span>La petición ha sido aceptada para
+										procesamiento, pero este no ha sido completado.</span></li>
+								<li><span>400 Bad Request.&nbsp;</span><span>La solicitud contiene sintaxis
+										errónea.</span></li>
+								<li><span>403 Forbidden.&nbsp;</span><span>La solicitud fue legal, pero el servidor
+										rehúsa responder dado que el cliente no tiene los privilegios para
+										hacerla.</span></li>
+								<li><span>404 Not Found.&nbsp;</span><span>Recurso no encontrado. Se utiliza cuando el
+										servidor web no encuentra la página o recurso solicitado.</span></li>
+								<li><span>500 Internal Server Error.&nbsp;</span><span>Es un código comúnmente emitido
+										por aplicaciones empotradas en servidores web, cuando se encuentran con
+										situaciones de error ajenas a la naturaleza del servidor web.</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-36">
+				<div class="nodeDecoration">
+					<h1 id="exenode_36_22RealizacindeconsultasaAPIs" class="nodeTitle">2.2. - Realización de consultas a
+						APIs</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id86-36">
+					<div class="iDevice emphasis0">
+						<div id="ta86_154" class="block iDevice_content">
+							<p>Como hemos comentado anteriormente, el concepto de API Rest se empezó a emplear en el año
+								2000, por lo que a lo largo de la evolución de este concepto y más en la ultima década,
+								con el auge de las tecnologías multiplataforma y los servicios web, ha cambiado mucho la
+								forma en la que se utilizan este tipo de recursos.</p>
+							<p>Vamos a explorar las diferentes tecnologías que se han usado a lo largo de los últimos
+								años para utilizar las APIs:</p>
+							<ul>
+								<li>HttpRequest</li>
+								<li>Fetch</li>
+								<li>JQuery</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-6">
+				<div class="nodeDecoration">
+					<h1 id="exenode_6_221LaAPIXMLHttpRequest" class="nodeTitle">2.2.1.- La API XMLHttpRequest.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id8-6">
+					<div class="iDevice emphasis0">
+						<div id="ta8_73" class="block iDevice_content">
+							<div class="elemento_derecha">
+								<div class="elemento_centrado"><a
+										href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/DWEC07_CONT_R06_NubeTags.jpg"
+										title="Ampliar imagen."><img
+											alt="Imagen que contiene una nube de etiquetas referentes al mundo web."
+											class="imagen_ampliable" height="160"
+											src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R06_NubeTags_miniatura.jpg"
+											style="width: 176px; height: 160px;" title="Nube de Tags." width="176"
+											data-pagespeed-url-hash="1511522099"
+											onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+							</div>
+							<p></p>
+							<p>Aunque actualmente el uso de&nbsp;<code>XMLHTTPRequest</code>&nbsp;<strong>esté cada vez
+									más en desuso</strong>, es importante tener una pincelada de los orígenes de la
+								tecnología, para entender qué es lo que se usa actualmente y porque.</p>
+							<p>El corazón de AJAX es una <acronym
+									title="Interfaz de Programación de Aplicaciones.">API</acronym> denominada
+								<code>XMLHTTPRequest</code> (<acronym
+									title="Objeto del tipo XMLHttpRequest.">XHR</acronym>), disponible en los lenguajes
+								de scripting en el lado del cliente, tales como JavaScript. Se utiliza para realizar
+								peticiones, HTTP o HTTPS, directamente al servidor web, y para cargar las respuestas
+								directamente en la página del cliente. Los datos que recibamos desde el servidor se
+								podrán recibir en forma de texto plano o texto XML. Estos datos, podrán ser utilizados
+								para modificar el DOM del documento actual, sin tener que recargar la página, o también
+								podrán ser evaluados con JavaScript, si son recibidos en formato JSON.</p>
+							<p><code>XMLHTTPRequest</code> juega un papel muy importante en la técnica AJAX, ya que sin
+								este objeto, no sería posible realizar las peticiones asíncronas al servidor.</p>
+							<p>El concepto que está detrás del objeto <code>XMLHTTPRequest</code>, surgió gracias a los
+								desarrolladores de <span lang="en">Outlook Web Access</span> (de <span
+									lang="en">Microsoft</span>), en su desarrollo de <span lang="en">Microsoft Exchange
+									Server</span> 2000. La interfaz <code>IXMLHTTPRequest</code>, se desarrolló e
+								implementó en la segunda versión de la librería <acronym
+									title="Microsoft Extensible Markup Language.">MSXML</acronym>, empleando este
+								concepto. Con el navegador <span lang="en">Internet Explorer</span> 5.0 en Marzo de
+								1999, se permitió el acceso a dicha interfaz a través de ActiveX.</p>
+							<p>Posteriormente la fundación <span lang="en">Mozilla</span>, desarrolló e implementó una
+								interfaz llamada <code>nslXMLHTTPRequest</code>, dentro de su motor Gecko. Esa interfaz,
+								se desarrolló adaptándose lo más posible a la interfaz implementada por <span
+									lang="en">Microsoft</span>. <span lang="en">Mozilla</span> creó un envoltorio para
+								usar esa interfaz, a través de un objeto JavaScript, el cuál denominó
+								<code>XMLHTTPRequest</code>. El objeto <code>XMLHTTPRequest</code> fue accesible en la
+								versión 0.6 de Gecko, en diciembre de 2000, pero no fue completamente funcional, hasta
+								Junio de 2002 con la versión 1.0 de Gecko. El objeto <code>XMLHTTPRequest</code>, se
+								convirtió de hecho en un estándar entre múltiples navegadores, como Safari 1.2,
+								Konqueror, Opera 8.0 e iCab 3.0b352 en el año 2005.</p>
+							<p>El <acronym title="Consorcio World Wide Web.">W3C</acronym> publicó una
+								especificación-borrador para el objeto <code>XMLHTTPRequest</code>, el 5 de Abril de
+								2006. Su objetivo era crear un documento con las especificaciones mínimas de
+								interoperabilidad, basadas en las diferentes implementaciones que había hasta ese
+								momento. La última revisión de este objeto, se realizó en Noviembre de 2009.</p>
+							<p>Microsoft añadió el objeto <code>XMLHTTPRequest</code> a su lenguaje de script, con la
+								versión de Internet Explorer 7.0 en Octubre de 2006.</p>
+							<p>Con la llegada de las librerías <b>cross-browser</b> como <span lang="en">jQuery</span>,
+								<span lang="en">Prototype</span>, etc, los programadores pueden utilizar toda la
+								funcionalidad de <code>XMLHTTPRequest</code>, sin codificar directamente sobre la
+								<acronym title="Interfaz de Programación de Aplicaciones.">API</acronym>, con lo que se
+								acelera muchísimo el desarrollo de aplicaciones AJAX.</p>
+							<p>En febrero de 2008, la W3C publicó otro borrador denominado "<code>XMLHTTPRequest</code>
+								Nivel 2". Este nivel consiste en extender la funcionalidad del objeto
+								<code>XMLHTTPRequest</code>, incluyendo, pero no limitando, el soporte para peticiones
+								<b>cross-site</b>, gestión de <b>byte streams</b>, progreso de eventos, etc. Esta última
+								revisión de la especificación, sigue estando en estado "<span lang="en">working
+									draft</span>" (borrador), a septiembre de 2010.</p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id9-6">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta9_70" class="block iDevice_content">
+								Una de las limitaciones de <code>XMLHTTPRequest</code> es que, por seguridad, sólo nos
+								deja realizar peticiones AJAX, a las páginas que se encuentren hospedadas en el mismo
+								DOMinio, desde el cuál se está realizando la petición AJAX.
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-7">
+				<div class="nodeDecoration">
+					<h1 id="exenode_7_2211CreacindelobjetoXMLHttpRequest" class="nodeTitle">2.2.1.1.- Creación del
+						objeto XMLHttpRequest.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id11-7">
+					<div class="iDevice emphasis0">
+						<div id="ta11_73" class="block iDevice_content">
+							<p>Para poder programar con AJAX, necesitamos crear un objeto del tipo
+								<code>XMLHTTPRequest</code>, que va a ser el que nos permitirá realizar las peticiones
+								en segundo plano al servidor web.</p>
+							<p>Una vez más, nos vamos a encontrar con el problema de Internet Explorer, que, dependiendo
+								de la versión que utilicemos, tendremos que crear el objeto de una manera o de otra.
+								Aquí tienes un ejemplo de una función <span lang="en">cross-browser</span>, que devuelve
+								un objeto del tipo XHR (<code>XMLHTTPRequest</code>):</p>
+							<p></p>
+							<div class="codigo elemento_centrado" style="width: 55.5em;">
+								<div class="texto_izquierda">
+									<pre><code>/////////////////////////////////////////////////////////</code>
+</pre>
+									<pre><code>// Función cross-browser para crear objeto XMLHTTPRequest</code>
+</pre>
+									<pre><code>/////////////////////////////////////////////////////////</code>
+</pre>
+									<pre><code>function objetoXHR()</code>
+</pre>
+									<pre><code>{</code>
+</pre>
+									<pre><code>     if (window.XMLHTTPRequest)</code>
+</pre>
+									<pre><code>     {</code>
+</pre>
+									<pre><code>          // El navegador implementa la interfaz XHR de forma nativa</code>
+</pre>
+									<pre><code>          return new XMLHTTPRequest();</code>
+</pre>
+									<pre><code>     } </code>
+</pre>
+									<pre><code>     else if (window.ActiveXObject)</code>
+</pre>
+									<pre><code>     {</code>
+</pre>
+									<pre><code>          var versionesIE = new Array('MsXML2.XMLHTTP.5.0', 'MsXML2.XMLHTTP.4.0',</code>
+</pre>
+									<pre><code>          'MsXML2.XMLHTTP.3.0', 'MsXML2.XMLHTTP', 'Microsoft.XMLHTTP'); </code>
+</pre>
+									<pre><code>           </code>
+</pre>
+									<pre><code>          for (var i = 0; i &lt; versionesIE.length; i++) </code>
+</pre>
+									<pre><code>          { </code>
+</pre>
+									<pre><code>               try  </code>
+</pre>
+									<pre><code>               { /* Se intenta crear el objeto en Internet Explorer comenzando</code>
+</pre>
+									<pre><code>               en la versión más moderna del objeto hasta la primera versión. </code>
+</pre>
+									<pre><code>               En el momento que se consiga crear el objeto, saldrá del bucle</code>
+</pre>
+									<pre><code>               devolviendo el nuevo objeto creado. */</code>
+</pre>
+									<pre><code>               return new ActiveXObject(versionesIE[i]); </code>
+</pre>
+									<pre><code>               }  </code>
+</pre>
+									<pre><code>               catch (errorControlado) {}//Capturamos el error,</code>
+</pre>
+									<pre><code>          } </code>
+</pre>
+									<pre><code>     } </code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>     /* Si llegamos aquí es porque el navegador no posee ninguna forma de crear el objeto.</code>
+</pre>
+									<pre><code>     Emitimos un mensaje de error usando el objeto Error. </code>
+</pre>
+									<pre><code>     </code>
+</pre>
+									<pre><code>     Más información sobre gestión de errores en:</code>
+</pre>
+									<pre><code>     HTTP://www.javascriptkit.com/javatutors/trycatch2.sHTML */ </code>
+</pre>
+									<pre><code>     </code>
+</pre>
+									<pre><code>     throw new Error("No se pudo crear el objeto XMLHTTPRequest"); </code>
+</pre>
+									<pre><code>}</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>// para crear un objeto XHR lo podremos hacer con la siguiente llamada.</code>
+</pre>
+									<pre><code>var objetoAJAX = new objetoXHR();</code>
+</pre>
+									<pre><code><br>
+<br>
+</code>
+</pre>
+								</div>
+							</div>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id12-7">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta12_70" class="block iDevice_content">
+								Una opción muy interesante, consiste en hacer una librería llamada, por ejemplo,
+								funciones.js, que contenga el código de tus funciones más interesantes como,
+								<code>crearEvento()</code> , <code>objetoXHR()</code> , etc. De esta manera, irás
+								creando tus propios recursos, con el código de JavaScript que más uses en tus
+								aplicaciones.
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-8">
+				<div class="nodeDecoration">
+					<h1 id="exenode_8_2212MtodosdelobjetoXMLHttpRequest" class="nodeTitle">2.2.1.2.- Métodos del objeto
+						XMLHttpRequest.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id14-8">
+					<div class="iDevice emphasis0">
+						<div id="ta14_73" class="block iDevice_content">
+							<p>El objeto <code>XMLHTTPRequest</code> dispone de los siguientes métodos, que nos
+								permitirán realizar peticiones asíncronas al servidor:</p>
+							<div class="elemento_centrado">
+								<div class="elemento_centrado"></div>
+							</div>
+							<table class="tabla"
+								summary=" Esta tabla muestra los métodos y la descripción utilizados por el objeto XMLHttpRequest.">
+								<caption>Métodos del objeto XMLHttpRequest.</caption>
+								<thead>
+									<tr>
+										<th scope="col">Metodo</th>
+										<th scope="col">Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><code>abort()</code></td>
+										<td>Cancela la solicitud actual.</td>
+									</tr>
+									<tr>
+										<td><code>getAllResponseHeaders()</code></td>
+										<td>Devuelve la información completa de la cabecera.</td>
+									</tr>
+									<tr>
+										<td><code>getResponseHeader()</code></td>
+										<td>Devuelve la información específica de la cabecera.</td>
+									</tr>
+									<tr>
+										<td><code>open(metodo, url, async, usuario, password)</code></td>
+										<td>
+											<p>Especifica el tipo de solicitud, la <acronym
+													title="Uniform resource locator .">URL</acronym>, si la solicitud se
+												debe gestionar de forma asíncrona o no, y otros atributos opcionales de
+												la solicitud.</p>
+											<ul class="lista_verificacion">
+												<li>método: indicamos el tipo de solicitud: <code>GET</code> o
+													<code>POST</code>.</li>
+												<li><code>url</code>: la dirección del fichero al que le enviamos las
+													peticiones en el servidor.</li>
+												<li><code>async</code>: <span lang="en">true</span> (asíncrona) o <span
+														lang="en">false</span> (síncrona).</li>
+												<li>usuario y <span lang="en">password</span>: si fuese necesaria la
+													autenticación en el</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td><code>send (datos)</code></td>
+										<td>
+											<ul class="lista_verificacion">
+												<li><code>send(string)</code> Envía la solicitud al servidor.</li>
+												<li>datos: Se usa en el caso de que estemos utilizando el método
+													<code>POST</code>, como método de envío. Si usamos <code>GET</code>,
+													datos será <code>null</code>.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td><code>setRequestHeader()</code></td>
+										<td>Añade el par etiqueta/valor a la cabecera de datos que se enviará al
+											servidor.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id15-8">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta15_70" class="block iDevice_content">
+								<p>Para probar el siguiente código, que incluye una petición AJAX, tienes que hacerlo a
+									través del servidor web. Para ello debes extraer el ejemplo, dentro de la raíz del
+									servidor web, arrancar el servidor web e ir a la dirección
+									<code>HTTP://localhost/web/dwec07132 </code></p>
+								<p>Puedes utilizar <span lang="en">Firebug</span>, para comprobar como se realiza la
+									petición AJAX.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id16-8">
+					<div class="iDevice emphasis0">
+						<div id="ta16_73" class="block iDevice_content">
+							<div class="enlace_centrado"><a class="paquete"
+									href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/DWEC07_132.zip"
+									title="Descargar fichero .zip con el código fuente, del ejemplo dwec07132 [zip - 0.01 MB]">Descarga
+									el código fuente del ejemplo dwec07132.</a> <span class="tamano"> (0.01 MB) </span>
+							</div>
+							<div class="codigo elemento_centrado" style="width: 50.55em;">
+								<div class="texto_izquierda">
+									<pre><code>function cargarSync(objeto, url) </code>
+</pre>
+									<pre><code>{ </code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>     if (miXHR) </code>
+</pre>
+									<pre><code>     {          </code>
+</pre>
+									<pre><code>          alert("Comenzamos la petición AJAX");</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>          //Si existe el objeto  miXHR</code>
+</pre>
+									<pre><code>          miXHR.open('GET', url, false); //Abrimos la url, false=SINCRONA </code>
+</pre>
+									<pre><code>          </code>
+</pre>
+									<pre><code>          // Hacemos la petición al servidor. Como parámetro del método send:</code>
+</pre>
+									<pre><code>          // null -&gt; cuando usamos GET.</code>
+</pre>
+									<pre><code>          // cadena con los datos -&gt; cuando usamos POST</code>
+</pre>
+									<pre><code>          miXHR.send(null);</code>
+</pre>
+									<pre><code>          </code>
+</pre>
+									<pre><code>          //Escribimos la respuesta recibida de la petición AJAX en el objeto DIV</code>
+</pre>
+									<pre><code>          textoDIV(objeto, miXHR.responseText);</code>
+</pre>
+									<pre><code>          </code>
+</pre>
+									<pre><code>          alert("Terminó la petición AJAX");</code>
+</pre>
+									<pre><code>     }</code>
+</pre>
+									<pre><code>}</code>
+</pre>
+								</div>
+							</div>
+							<p></p>
+							<p>En esta función se realiza una petición AJAX, pero de forma síncrona (comportamiento
+								normal del navegador). En dicha petición se realiza la carga del fichero indicado en la
+								url (debe ser un fichero perteneciente al mismo DOMinio del servidor). La respuesta
+								(<code>responseText</code>), que obtenemos en esa petición, se coloca en un DIV, con la
+								función personalizada textoDIV (su código fuente está en el fichero funciones.js).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-9">
+				<div class="nodeDecoration">
+					<h1 id="exenode_9_2213PropiedadesdelobjetoXMLHttpRequest" class="nodeTitle">2.2.1.3.- Propiedades
+						del objeto XMLHttpRequest.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id17-9">
+					<div class="iDevice emphasis0">
+						<div id="ta17_73" class="block iDevice_content">
+							<p>
+								El objeto <code>XMLHTTPRequest</code>, dispone de las siguientes propiedades, que nos
+								facilitan información sobre el estado de la petición al servidor, y donde recibiremos
+								los datos de la respuesta devuelta en la petición AJAX:
+							</p>
+							<table class="tabla"
+								summary="Esta tabla muestra las propiedades y sus descripciones, del objeto XMLHttpRequest.">
+								<caption>Propiedades del objeto XMLHttpRequest.</caption>
+								<thead>
+									<tr>
+										<th scope="col">Propiedad</th>
+										<th scope="col">Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><code>onreadystatechange</code></td>
+										<td>Almacena una función (o el nombre de una función), que será llamada
+											automáticamente, cada vez que se produzca un cambio en la propiedad
+											<code>readyState</code>.</td>
+									</tr>
+									<tr>
+										<td><code>readyState</code></td>
+										<td>Almacena el estado de la petición <code>XMLHTTPRequest</code>. Posibles
+											estados, del 0 al 4:
+											<ul class="lista_verificacion">
+												<li>0: solicitud no inicializada.</li>
+												<li>1: conexión establecida con el servidor.</li>
+												<li>2: solicitud recibida.</li>
+												<li>3: procesando solicitud.</li>
+												<li>4: solicitud ya terminada y la respuesta está disponible.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td><code>responseText</code></td>
+										<td>Contiene los datos de respuesta, como una cadena de texto.</td>
+									</tr>
+									<tr>
+										<td><code>response</code>XML</td>
+										<td>Contiene los datos de respuesta, en formato XML.</td>
+									</tr>
+									<tr>
+										<td><code>status</code></td>
+										<td>Contiene el estado numérico, devuelto en la petición al servidor (por
+											ejemplo: "404" para "No encontrado" o "200" para "<code>OK</code>").</td>
+									</tr>
+									<tr>
+										<td><code>statusText</code></td>
+										<td>Contiene el estado en formato texto, devuelto en la petición al servidor
+											(por ejemplo: "<code>Not Found</code>" o "<code>OK</code>").</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id18-9">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta18_70" class="block iDevice_content">
+								<p>Para probar el siguiente código, que incluye una petición AJAX, tienes que hacerlo a
+									través del servidor web. Para ello debes extraer el ejemplo dentro de la raíz del
+									servidor web, arrancar el servidor web e ir a la dirección
+									<code> HTTP://localhost/web/dwec07133 </code></p>
+								<p>Puedes utilizar <span lang="en">Firebug</span>, para comprobar como se está
+									realizando la petición AJAX.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id20-9">
+					<div class="iDevice emphasis0">
+						<div id="ta20_73" class="block iDevice_content">
+							<div class="enlace_centrado"><a class="paquete"
+									href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/DWEC07_133.zip"
+									title="Descargar fichero .zip con todo el código fuente del ejemplo dwec07133 [zip - 0.01 MB]">Descarga
+									el código fuente del ejemplo dwec07133.</a> <span class="tamano"> (0.01 MB) </span>
+							</div>
+							<div class="codigo elemento_centrado" style="width: 50.55em;">
+								<div class="texto_izquierda">
+									<pre><code>function cargarAsync(objeto, url) </code>
+</pre>
+									<pre><code>{ </code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>     if (miXHR) </code>
+</pre>
+									<pre><code>     {     </code>
+</pre>
+									<pre><code>          alert("Comenzamos la petición AJAX");</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>          //Si existe el objeto  miXHR</code>
+</pre>
+									<pre><code>          miXHR.open('GET', url, true); //Abrimos la url, true=ASINCRONA </code>
+</pre>
+									<pre><code>          </code>
+</pre>
+									<pre><code>          // Hacemos la petición al servidor. Como parámetro:</code>
+</pre>
+									<pre><code>          // null -&gt; cuando usamos GET.</code>
+</pre>
+									<pre><code>          // cadena con los datos -&gt; cuando usamos POST</code>
+</pre>
+									<pre><code>          miXHR.send(null);</code>
+</pre>
+									<pre><code>          </code>
+</pre>
+									<pre><code>          //Escribimos la respuesta recibida de la petición AJAX en el objeto DIV</code>
+</pre>
+									<pre><code>          textoDIV(objeto, miXHR.responseText);</code>
+</pre>
+									<pre><code>          </code>
+</pre>
+									<pre><code>          alert("Terminó la petición AJAX");</code>
+</pre>
+									<pre><code>     }</code>
+</pre>
+									<pre><code>}</code>
+</pre>
+									<pre><code><br>
+<br>
+</code>
+</pre>
+								</div>
+							</div>
+							<p></p>
+							<p>En esta función se realiza una petición AJAX, pero de forma asíncrona. En dicha petición
+								se realiza la carga del fichero indicado en la url (debe ser un fichero perteneciente al
+								mismo DOMinio del servidor). La respuesta (<code>responseText</code>), que obtenemos en
+								esa petición, se coloca en un DIV, con la función personalizada textoDIV (su código
+								fuente está en el fichero funciones.js). Si ejecutas el ejemplo anterior, verás que no
+								se muestra nada, ya que no hemos gestionado correctamente la respuesta recibida de forma
+								asíncrona. En el siguiente apartado 2, de esta unidad, veremos como corregir ese fallo y
+								realizar correctamente esa operación.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-28">
+				<div class="nodeDecoration">
+					<h1 id="exenode_28_222RealizarpeticionesmediantelaAPIFetch" class="nodeTitle">2.2.2.- Realizar
+						peticiones mediante la API Fetch</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id63-28">
+					<div class="iDevice emphasis0">
+						<div id="ta63_154" class="block iDevice_content">
+							<p>Desde hace unos años, para realizar este tipo de consultas desde JavaScript nativo, se
+								emplea una API llamada Fetch, que es compatible con el uso de promesas, lo que la
+								permite aprovechar las nuevas capacidades de JavaScript a la par que adapta el uso de
+								AJAX a los servicios actuales e implementa un modelo de trabajo más sencillo y
+								mantenible.</p>
+							<p>La interfaz de Fetch proporciona un método global que se llama
+								precisamente&nbsp;<strong>fetch</strong>. Este método requiere, al menos, indicar la URL
+								del destino de la petición. El resultado de fetch es una promesa, que se considera
+								resuelta cuando se reciben resultados sin error del destino.</p>
+							<p></p>
+							<p></p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id64-28">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta64_151" class="block iDevice_content">
+								<p><strong>fetch</strong>(direccionServicio)</p>
+								<p>&nbsp; &nbsp;<strong>.then</strong>( función que recibe el objeto respuesta si la
+									petición finaliza bien)</p>
+								<p>&nbsp; &nbsp;<strong>.catch</strong>( función que recibe el error producido durante
+									la petición)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id65-28">
+					<div class="iDevice emphasis0">
+						<div id="ta65_154" class="block iDevice_content">
+							<p>Ejemplo:</p>
+							<p><span style="background-color: #003300; color: #ffffff;">fetch(
+									"https://alumno.net/servicios/nifaleatorio-php")</span></p>
+							<p><span style="background-color: #003300; color: #ffffff;">.then (response=&gt; {</span>
+							</p>
+							<p><span style="background-color: #003300; color: #ffffff;">&nbsp; &nbsp; &nbsp;console.log
+									(response.status);</span></p>
+							<p><span style="background-color: #003300; color: #ffffff;">})</span></p>
+							<p><span style="background-color: #003300; color: #ffffff;">.catch (error=&gt; {</span></p>
+							<p><span style="background-color: #003300; color: #ffffff;">&nbsp; &nbsp; &nbsp;console.log
+									("Error: " + error);</span></p>
+							<p><span style="background-color: #003300; color: #ffffff;">});</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id67-28">
+					<div class="iDevice emphasis0">
+						<div id="ta67_154" class="block iDevice_content">
+							<p><span style="color: #000000;">Este código realiza una petición <strong>http</strong> de
+									tipo GET a la dirección indicada, la cual proporciona un servicio que devuelve
+									números NIF calculados de forma aleatoria y que se pueden usar para hacer pruebas en
+									bases de datos y otras aplicaciones.</span></p>
+							<p><span style="color: #000000;">Como <strong>fetch</strong> retorna una promesa, el método
+									<strong>then</strong> permite procesar el resultado. El resultado de la promesa es
+									un objeto de respuesta que se conoce como <strong>response</strong> que representa
+									el paquete http que proporcionan los datos requeridos. En este caso, la propiedad
+									status del objeto response devolvería 200, código http que significa
+									<strong>OK</strong> y ese será el mensaje que veríamos en la consola.</span></p>
+							<p><span style="color: #000000;">El método catch recoge el error ocurrido si la petición no
+									concluye bien. Observemos este código:</span></p>
+							<p><span style="color: #ffffff; background-color: #000000;">fetch (
+									"http://noexiste.com")</span></p>
+							<p><span style="color: #ffffff; background-color: #000000;">.then ( response=&gt; {</span>
+							</p>
+							<p><span style="color: #ffffff; background-color: #000000;">&nbsp; &nbsp; &nbsp;console.log
+									(response.status);</span></p>
+							<p><span style="color: #ffffff; background-color: #000000;">})</span></p>
+							<p><span style="color: #ffffff; background-color: #000000;">.catch ( error=&gt; {</span></p>
+							<p><span style="color: #ffffff; background-color: #000000;">&nbsp; &nbsp; &nbsp;console.log
+									( "Error: " +error);</span></p>
+							<p><span style="color: #ffffff; background-color: #000000;">});</span></p>
+							<p><span style="color: #000000;">Este código retornará un código de error porque la petición
+									no se puede resolver. Concretamente el texto que aparecería por consola
+									sería:</span></p>
+							<p><span style="color: #ffffff; background-color: #000000;">Error: TypeError: Failed to
+									fetch</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper RecomendacionfpdIdevice em_iDevice" id="id77-28">
+					<div class="iDevice emphasis_recomendacionfpd">
+						<div class="iDevice_header">
+							<h2 class="iDeviceTitle">Recomendación</h2>
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta77_131" class="block iDevice_content">
+									<p>Cabe destacar, que debido a las facilidades que nos proporciona hoy en día la
+										librería JQuery, cada vez se tiende a realizar más este tipo de consultas a
+										través de esta, aunque está perfectamente realizada una consulta usando promesas
+										desde JavaScript nativo.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-29">
+				<div class="nodeDecoration">
+					<h1 id="exenode_29_2221ManipularlarespuestaObjetoResponse" class="nodeTitle">2.2.2.1.- Manipular la
+						respuesta. Objeto Response</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id68-29">
+					<div class="iDevice emphasis0">
+						<div id="ta68_154" class="block iDevice_content">
+							<p>Como hemos visto en el apartado anterior, cuando una petición http realizada con fetch
+								finaliza correctamente, el método then recibe un objeto conocido como objeto de
+								respuesta o response.</p>
+							<p>En la siguiente tabla, enumeraremos las propiedades y métodos de este objeto:</p>
+							<table border="0" style="width: 100%;" class="tabla">
+								<caption></caption>
+								<tbody>
+									<tr>
+										<td style="text-align: center;"><strong>Propiedad o método</strong></td>
+										<td style="text-align: center;"><strong>USO</strong></td>
+									</tr>
+									<tr>
+										<td><strong>headers</strong></td>
+										<td>Obtiene un objeto que contiene las cabeceras http del paquete de respuesta
+										</td>
+									</tr>
+									<tr>
+										<td><strong>body</strong></td>
+										<td>Cuerpo de la respuesta http.</td>
+									</tr>
+									<tr>
+										<td><strong>status</strong></td>
+										<td>Devuelve el código de respuesta de la petición http.</td>
+									</tr>
+									<tr>
+										<td><strong>statusText</strong></td>
+										<td>Devuelve un texto descriptivo del código de respuesta de la petición.</td>
+									</tr>
+									<tr>
+										<td><strong>ok</strong></td>
+										<td>Con valor true, indica que la petición se resolvió sin problemas.</td>
+									</tr>
+									<tr>
+										<td><strong>redirected</strong></td>
+										<td>Con valor true, indica que la respuesta es el resultado de una redirección.
+										</td>
+									</tr>
+									<tr>
+										<td><strong>url</strong></td>
+										<td>Devuelve la URL de la que procede la respuesta.</td>
+									</tr>
+									<tr>
+										<td><strong>type</strong></td>
+										<td>
+											<p>Indica el tipo de respuesta de la petición. Posibles valores:</p>
+											<ul>
+												<li>basic: Respuesta coherente con la petición original. Muestra todas
+													las cabeceras salvo las relacionadas con cookies.</li>
+												<li>cors: Indica que la respuesta procede de un origen CORS admitido.
+													Hay cabeceras que no se pueden ver.</li>
+												<li>error: Hay error de red.</li>
+												<li>opaque: Respuesta para una petición marcada como no-cors; es decir,
+													sin usar CORS.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>redirect(URL)</strong></td>
+										<td>Método que redirige la respuesta a otra URL.</td>
+									</tr>
+									<tr>
+										<td><strong>clone()</strong></td>
+										<td>Clona la respuesta en otro objeto.</td>
+									</tr>
+									<tr>
+										<td><strong>error()</strong></td>
+										<td>Clona la respuesta generando un error de red.</td>
+									</tr>
+									<tr>
+										<td><strong>text()</strong></td>
+										<td>
+											<p>Método que sirve para obtener un flujo de texto de la respuesta.</p>
+											<p>Devuelve una promesa que, cumplida, resuelve obteniendo los datos de la
+												respuesta en formato texto.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>json()</strong></td>
+										<td>
+											<p>Método similar al anterior, pero que trata de convertir la respuesta en
+												un objeto de tipo JSON.</p>
+											<p>Para ello crea una nueva promesa donde, si finaliza de forma correcta, la
+												resolución es dicho objeto JSON.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>blob()</strong></td>
+										<td>Genera una promesa que es resuelta como un objeto binario en el caso de que
+											finalice correctamente.</td>
+									</tr>
+								</tbody>
+							</table>
+							<p></p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-30">
+				<div class="nodeDecoration">
+					<h1 id="exenode_30_2222PersonalizarlapeticinObjetoRequest" class="nodeTitle">2.2.2.2.- Personalizar
+						la petición. Objeto Request</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id69-30">
+					<div class="iDevice emphasis0">
+						<div id="ta69_154" class="block iDevice_content">
+							<p>Cuando se realizan peticiones mediante el método fetch, además de la URL, podemos pasar
+								como parámetro un objeto de tipo Request. Este objeto permite modificar el paquete http
+								que se envía con la petición para que recoja aspectos que nos interesen y que la
+								petición sea lo más ajustada posible a nuestros intereses.</p>
+							<p>Las propiedades de las que disponemos en los objetos request son:</p>
+							<table border="0" class="tabla" style="width: 919px; height: 716px;">
+								<caption></caption>
+								<tbody>
+									<tr>
+										<td><strong>PROPIEDAD</strong></td>
+										<td style="text-align: center;"><strong>USO</strong></td>
+									</tr>
+									<tr>
+										<td><strong>url</strong></td>
+										<td>Propiedad obligatoria que contien la URL destino de la petición</td>
+									</tr>
+									<tr>
+										<td><strong>method</strong></td>
+										<td>Método http que se usará en la petición. Normalmente se usa
+											<strong>GET</strong> o <span
+												style="background-color: #ffffff; color: #000000;"><strong>POST</strong></span>,
+											pero es válido cualquier comando http:</td>
+									</tr>
+									<tr>
+										<td><strong>headers</strong></td>
+										<td>Permite indicar un objeto de tipo Headers que permite modificar las
+											cabeceras http de la petición.</td>
+									</tr>
+									<tr>
+										<td><strong>mode</strong></td>
+										<td>
+											<p>Indica si se usa CORS en la petición. Posibilidades:</p>
+											<ul>
+												<li><strong>same-origin</strong>. Solo se acepta respuesta del mismo
+													dominio en el que se ha realizado la petición.</li>
+												<li><strong>cors</strong>. Se permiten respuestas de dominios cruzados.
+												</li>
+												<li><strong>no-cors</strong>. Solo se admiten métodos GET, <span
+														style="color: #000000;">POST</span> o PUT.</li>
+												<li><strong>navigate</strong>. Indica que la petición se usa como URL
+													del navegador y no para ser usada como parte de una petición AJAX
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>cache</strong></td>
+										<td>
+											<p>Indica el modo de caché de la respuesta. Los navegadores cachean las
+												respuestas a peticiones previas para acelerar la navegación.</p>
+											<p>Esta propiedad permite calibrar cómo deseamos el cacheado. Posibilidades:
+											</p>
+											<ul>
+												<li><strong>default</strong>. Valor habitual.</li>
+												<li><strong>no-store</strong>. Obliga siempre a traer la respuesta del
+													servidor.</li>
+												<li><strong>reload</strong>.&nbsp;<span>Obliga a traer la respuesta del
+														servidor y no la de la caché, pero la respuesta se
+														guarda.</span></li>
+												<li><span><strong>no-cache</strong>.</span></li>
+												<li><span><strong>force-cache</strong>. Fuerza a usar la caché</span>
+												</li>
+												<li><span><strong>only-if-cached</strong>. Solo se admiten los datos si
+														proceden de la caché.</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>redirect</strong></td>
+										<td>
+											<p>Indica cómo se deben de procesar las respuestas en el caso de que
+												procedan de redirecciones. Posibilidades:</p>
+											<ul>
+												<li><strong>follow</strong>. Se siguen las redirecciones sin problemas.
+												</li>
+												<li><strong>error</strong>. Si hay redirecciones, se retorna un error.
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>credentials</strong></td>
+										<td>
+											<p>Permite especificar si se admiten cookies en la petición. Posibilidades:
+											</p>
+											<ul>
+												<li><strong>omit</strong>. Nunca se envían ni reciben cookies.</li>
+												<li><strong>same-origin</strong>. Es el valor por defecto.</li>
+												<li><strong>include</strong>. Siempre se admiten cookies.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>integrity</strong></td>
+										<td>
+											<p>Almacena una cadena de integridad creada con un algoritmo hash de
+												criptografía (se admite sha256, sha384 y sha512),</p>
+											<p>para validar la integridad de la petición.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p></p>
+							<p>Ejemplo de petición usando objeto de tipo request:</p>
+							<p><span style="background-color: #000000; color: #ffffff;">fetch (
+									"http://direccionnovalida.com/" , {</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;method:
+									"POST",</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;mode;
+									"cors",</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;cache:
+									"no-cache"</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">})...</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-31">
+				<div class="nodeDecoration">
+					<h1 id="exenode_31_2223Enviardatosconlapeticin" class="nodeTitle">2.2.2.3.- Enviar datos con la
+						petición</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id70-31">
+					<div class="iDevice emphasis0">
+						<div id="ta70_154" class="block iDevice_content">
+							<p>En muchas ocasiones, los servidores de Internet que otorgan servicios, requieren o
+								permiten enviar datos para determinar de una forma más ajustada los datos que debe
+								devolver. De forma clásica, esos datos son pares nombre/valor, listas parámetros con
+								valores concretos. Pero actualmente se admite enviar datos incluso en formato de texto
+								JSON.</p>
+							<p>Los documentos HTML siempre han permitido el envío de este tipo de datos a servidores
+								externos a través de los formularios. De manera clásica, los datos se envían usando los
+								comandos http GET o POST. El método GET envía los datos en la URL y POST lo hace en el
+								cuerpo del mensaje http. Esa diferencia puede hacer pensar que POST es más seguro al
+								ocultar más los datos que envía, pero realmente no lo es. Los datos viajan de forma
+								plana y solo si lo ciframos estarán realmente protegidos.</p>
+							<p>Actualmente, los comandos http se asocian a verbos que requieren un tipo concreto de
+								acción. Así <strong>GET</strong> se asocia a una petición de datos y
+								<strong>POST</strong> a un envío de datos a un servidor. Otros comandos http son:
+								<strong>PUT</strong> (modificación de datos), <strong>DELETE</strong> (borrado de
+								datos), <strong>PATCH</strong> (modificación parcial de datos) o <strong>HEAD</strong>
+								(petición de cabecera).</p>
+							<p>Evidentemente hay que conocer la API del servicio final para saber qué método usar, cómo
+								enviar los datos y cómo debemos recibirlos, dependiendo de lo que el servicio es capaz
+								de aceptar.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-32">
+				<div class="nodeDecoration">
+					<h1 id="exenode_32_2224Usodeawaitasyncconfetch" class="nodeTitle">2.2.2.4.- Uso de await/async con
+						fetch</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id71-32">
+					<div class="iDevice emphasis0">
+						<div id="ta71_154" class="block iDevice_content">
+							<p>Puesto que la API Fetch es compatible con promesas, es posible manejarla mediante la
+								notación await/async del estándar ES2017. Esta notación, para muchos desarrolladores, es
+								más legible y facilita mucho el mantenimiento del código. El ejemplo visto en el
+								apartado anterior para enviar datos de un supuesto POST al servicio de pruebas
+								tripicode, sería, en esta notación, de esta forma:</p>
+							<p></p>
+							<p><span style="background-color: #000000; color: #ffffff;">let data={</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp;title: "Mi
+									mensaje",</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp;body:
+									"Mensaje de prueba",</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;
+									&nbsp;userId:5</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">}</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">async function peticion()
+									{</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;try {</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp;const
+									resp=await</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp; &nbsp;
+									&nbsp; fetch (`https://jsonplaceholder.typicode.com/posts`, {</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp; &nbsp;
+									&nbsp; method: `POST`,</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp; &nbsp;
+									&nbsp; body: JSON.stringify(data) ,</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp; &nbsp;
+									&nbsp; headers: {</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp; &nbsp;
+									&nbsp; &nbsp; &nbsp; &nbsp;"Content-type": "application/json; charset=UTF-8"</span>
+							</p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp; &nbsp;
+									&nbsp; }</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp; &nbsp;
+									&nbsp;});</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp; &nbsp;const
+									json=await resp.json();</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;
+									&nbsp;console.log(json);</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;}</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;catch(err) {</span>
+							</p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;
+									&nbsp;console.log(err);</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">&nbsp; &nbsp;}</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">}</span></p>
+							<p><span style="background-color: #000000; color: #ffffff;">peticion();</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-3">
+				<div class="nodeDecoration">
+					<h1 id="exenode_3_223PeticionesusandoJQuery" class="nodeTitle">2.2.3.- Peticiones usando JQuery</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id34-3">
+					<div class="iDevice emphasis0">
+						<div id="ta34_73" class="block iDevice_content">
+							<p>
+								La programación con AJAX, es uno de los pilares de lo que se conoce como web 2.0,
+								término que incluye a las aplicaciones web que facilitan el compartir información, la
+								interoperabilidad, el diseño centrado en el usuario y la colaboración web. Ejemplos de
+								la web 2.0, pueden ser las comunidades web, los servicios web, aplicaciones web, redes
+								sociales, servicios de alojamiento de vídeos, wikis, blogs, <b>mashup</b>, etc.
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id36-3">
+					<div class="iDevice emphasis0">
+						<div id="ta36_73" class="block iDevice_content">
+							<div class="elemento_derecha">
+								<div class="elemento_centrado">
+									<a href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/DWEC07_CONT_R20_MashupCamp.jpg"
+										title="Ampliar imagen."><img
+											alt="Anuncio de un campus en el que se estudiará como realizar mashups."
+											class="imagen_ampliable" height="52"
+											src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R20_MashupCamp_miniatura.jpg"
+											style="width: 200px; height: 52px" title="Mashup Camp." width="200"
+											data-pagespeed-url-hash="3635322261"
+											onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+								</div>
+							</div>
+							<p>
+								Gracias a las aplicaciones web 2.0, se han desarrollado gran cantidad de
+								utilidades/herramientas/<span lang="en">frameworks</span> para el desarrollo web con
+								JavaScript, <acronym title="Dynamic HyperText Markup Language.">DHTML</acronym> (HTML
+								dinámico) y AJAX. La gran ventaja de usar alguna librería o <span
+									lang="en">framework</span> para AJAX, es la del ahorro de tiempo y código, en
+								nuestras aplicaciones. Veremos que con algunas librerías vamos a realizar peticiones
+								AJAX, con una simple instrucción de código sin tener que preocuparnos de crear el objeto
+								XHR, ni gestionar el código de respuesta del servidor, los estados de la solicitud, etc.
+							</p>
+							<p>
+								Otra de las ventajas que nos aportan este tipo de librerías, es la de la compatibilidad
+								entre navegadores (<span lang="en">cross-browser</span>). De esta forma tenemos un
+								problema menos, ya que la propia librería será capaz de crear la petición AJAX de una
+								forma u otra, dependiendo del navegador que estemos utilizando.
+							</p>
+							<p>
+								A principios del año 2008 Google liberó su <acronym
+									title="Interfaz de Programación de Aplicaciones.">API</acronym> de librerías AJAX,
+								como una red de distribución de contenido y arquitectura de carga, para algunos de los
+								<span lang="en">frameworks</span> más populares. Mediante esta API se eliminan las
+								dificultades a la hora de desarrollar <span lang="en">mashups</span> en JavaScript. Se
+								elimina el problema de alojar las librerías (ya que están centralizadas en <span
+									lang="en">Google</span>), configurar las cabeceras de cache, etc. Esta API ofrece
+								acceso a las siguientes librerías <span lang="en">Open Source</span>, realizadas con
+								JavaScript:
+							</p>
+							<ul class="lista_verificacion">
+								<li>jQuery.</li>
+								<li><span lang="en">prototype</span>.</li>
+								<li><span lang="en">scriptaculous</span>.</li>
+								<li><span lang="en">mooTools</span>.</li>
+								<li><span lang="en">dojo</span>, <span lang="en">swfobject</span>, <span
+										lang="en">chrome-frame</span>, <span lang="en">webfont</span>, etc.</li>
+							</ul>
+							Los scripts de estas librerías están accesibles directamente utilizando la URL de descarga,
+							o a través del método <span lang="en"><em>google.load</em></span> () del cargador de la API
+							AJAX de <span lang="en">Google</span> .
+							<p>
+								Hay muchísimas librerías que se pueden utilizar para programar AJAX, dependiendo del
+								lenguaje que utilicemos.
+							</p>
+							<p class="enlace_centrado">
+								<a href="http://www.ribosomatic.com/articulos/top-librerias-AJAX-dHTML-y-javascript/"
+									title="Acceder a la URL donde se muestra un listado de librerías para usar en JavaScript.">Visita
+									la siguiente URL para ver un listado de librerías para JavaScript.</a>
+							</p>
+							<p>
+								Nosotros nos vamos a centrar en el uso de la librería jQuery, por ser una de las más
+								utilizadas hoy en día por empresas como <span lang="en">Google, DELL, digg, NBC, CBS,
+									NETFLIX, mozilla.org, wordpress</span>, drupal, etc.
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-17">
+				<div class="nodeDecoration">
+					<h1 id="exenode_17_2231IntroduccinajQueryparteI" class="nodeTitle">2.2.3.1.- Introducción a jQuery
+						(parte I).</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextIdevice" id="id37-17">
+					<div class="iDevice emphasis0">
+						<div id="ta37_1" class="block iDevice_content">
+							<p>
+								<img alt="Fotografía de una persona al lado de un cartel que anuncia una conferencia de jQuery."
+									class="elemento_derecha" height="200"
+									src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R21_Conferencia.jpg"
+									style="width: 148px; height: 200px" title="Asistente a conferencia de jQuery."
+									width="148" data-pagespeed-url-hash="2234140459"
+									onload="pagespeed.CriticalImages.checkImageForCriticality(this);">jQuery es un <span
+									lang="en">framework</span> JavaScript, que nos va a simplificar muchísimo la
+								programación. Como bien sabes, cuando usamos JavaScript tenemos que preocuparnos de
+								hacer scripts compatibles con varios navegadores y, para conseguirlo, tenemos que
+								programar código compatible.
+							</p>
+							<p>
+								jQuery nos puede ayudar muchísimo a solucionar todos esos problemas, ya que nos ofrece
+								la infraestructura necesaria para crear aplicaciones complejas en el lado del cliente.
+								Basado en la filosofía de "<em>escribe menos y produce más</em>", entre las ayudas
+								facilitadas por este <span lang="en">framework</span> están: la creación de interfaces
+								de usuario, uso de efectos dinámicos, AJAX, acceso al DOM, eventos, etc. Además esta
+								librería cuenta con infinidad de <span lang="en">plugins</span>, que nos permitirán
+								hacer presentaciones con imágenes, validaciones de formularios, menús dinámicos, <span
+									lang="en">drag-and-drop</span>, etc.
+							</p>
+							<p>
+								Esta librería es gratuita, y dispone de licencia para ser utilizada en cualquier tipo de
+								plataforma, personal o comercial. El fichero tiene un tamaño aproximado de 31 <acronym
+									title="KiloByte.">KB</acronym>, y su carga es realmente rápida. Además, una vez
+								cargada la librería, quedará almacenada en caché del navegador, con lo que el resto de
+								páginas que hagan uso de la librería, no necesitarán cargarla de nuevo desde el
+								servidor.
+							</p>
+							<p class="enlace_centrado">
+								<a href="http://jquery.com/"
+									title="Acceder al enlace a la página oficial de la librería jQuery.">Página Oficial
+									de descarga de la librería jQuery.</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper ParasabermasfpdIdevice em_iDevice" id="id38-17">
+					<div class="iDevice emphasis_parasabermasfpd">
+						<div class="iDevice_header">
+							<h2 class="iDeviceTitle">Para saber más</h2>
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta38_47" class="block iDevice_content">
+									<p class="enlace_centrado">
+										<a href="http://docs.jquery.com/Main_Page"
+											title="Acceder al enlace a la documentación oficial de la librería jQuery.">Documentación
+											oficial de la librería jQuery.</a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id39-17">
+					<div class="iDevice emphasis0">
+						<div id="ta39_73" class="block iDevice_content">
+							<p>
+								Para poder programar con jQuery, lo primero que tenemos que hacer es cargar la librería.
+								Para ello, podemos hacerlo de dos formas:
+							</p>
+							<p>
+								<strong>Cargando la librería directamente desde la propia web de jQuery con la siguiente
+									instrucción:</strong>
+							</p>
+							<div class="codigo elemento_centrado" style="width: 56.6em">
+								<div class="texto_izquierda">
+									<pre><code>&lt;script type="text/javascript" src="HTTP://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt;</code>
+</pre>
+								</div>
+							</div>
+							<p>
+								&nbsp;
+							</p>
+							<code>
+<script src="./DWEC04.- Programación AJAX en JavaScript._files/jquery-latest.js.descarga" type="text/javascript"></script></code>
+							<p>
+								De esta forma, siempre nos estaremos descargando la versión más actualizada de la
+								librería. El único inconveniente, es que necesitamos estar conectados a Internet para
+								que la librería pueda descargarse.
+							</p>
+							<p>
+								<strong>Cargando la librería desde nuestro propio servidor:</strong>
+							</p>
+							<div class="codigo elemento_centrado" style="width: 40.1em">
+								<div class="texto_izquierda">
+									<pre><code>&lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;</code>
+</pre>
+								</div>
+							</div>
+							<p>
+								&nbsp;
+							</p>
+							<code>
+<script src="./DWEC04.- Programación AJAX en JavaScript._files/jquery.js.descarga" type="text/javascript"></script></code>
+							<p>
+								De esta forma, el fichero de la librería estará almacenado como un fichero más de
+								nuestra aplicación, por lo que no necesitaremos tener conexión a Internet (si trabajamos
+								localmente), para poder usar la librería. Para poder usar este método, necesitaremos
+								descargarnos el fichero de la librería desde la página de jQuery (jquery.com).
+								Disponemos de dos versiones de descarga: la <em>versión de producción</em> (comprimida
+								para ocupar menos tamaño), y <em>la versión de desarrollo</em> (descomprimida).
+								Generalmente descargaremos la versión de producción, ya que es la que menos tamaño
+								ocupa. La versión de desarrollo tiene como única ventaja que nos permitirá leer, con más
+								claridad, el código fuente de la librería (si es que estamos interesados en modificar
+								algo de la misma).
+							</p>
+							La clave principal para el uso de jQuery radica en el uso de la función
+							<strong><code>$()</code></strong> , que es un alias de
+							<strong><code>jQuery()</code></strong> . Esta función se podría comparar con el clásico
+							<em><code>document.getElementById()</code></em> , pero con una diferencia muy importante, ya
+							que soporta selectores <acronym title="Cascading Style Sheets.">CSS</acronym> , y puede
+							devolver arrays. Por lo tanto <code>$()</code> es una versión mejorada de
+							<em><code>document.getElementById().</code></em>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id41-17">
+					<div class="iDevice emphasis0">
+						<div id="ta41_73" class="block iDevice_content">
+							<p>
+								Esta función <code>$("selector")</code>, acepta como parámetro una cadena de texto, que
+								será un selector CSS, pero también puede aceptar un segundo parámetro, que será el
+								contexto en el cuál se va a hacer la búsqueda del selector citado. Otro uso de la
+								función, puede ser el de <code>$(function){..});</code> equivalente a la instrucción
+								<code>$(document).ready (function() {...});</code> que nos permitirá detectar cuando el
+								DOM está completamente cargado.
+							</p>
+							<p>
+								Verás un ejemplo de como usar estas instrucciones en apartado siguiente 3.2.
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-18">
+				<div class="nodeDecoration">
+					<h1 id="exenode_18_2232IntroduccinajQueryparteII" class="nodeTitle">2.2.3.2.- Introducción a jQuery
+						(parte II).</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id42-18">
+					<div class="iDevice emphasis0">
+						<div id="ta42_73" class="block iDevice_content">
+							<p>Vamos a ver en este apartado, un ejemplo programado por el método tradicional, y su
+								equivalencia, usando la librería jQuery:</p>
+							<p><strong>Ejemplo usando el método tradicional con JavaScript:</strong></p>
+							<div class="codigo elemento_centrado" style="width: 55.5em;">
+								<div class="texto_izquierda">
+									<pre><code>     … Aquí irán las cabeceras y clase .colorido</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>&lt;script type="text/javascript" src="funciones.js"&gt;&lt;/script&gt;</code>
+</pre>
+									<pre><code>&lt;script type="text/javascript"&gt;</code>
+</pre>
+									<pre><code>////////////////////////////////////////////////////////////////////</code>
+</pre>
+									<pre><code>// Cuando el documento esté cargado completamente llamamos a la función iniciar().</code>
+</pre>
+									<pre><code>////////////////////////////////////////////////////////////////////</code>
+</pre>
+									<pre><code>crearEvento(window,"load",iniciar);</code>
+</pre>
+									<pre><code>/////////////////////////////////////////////////////////</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>function iniciar()</code>
+</pre>
+									<pre><code>{</code>
+</pre>
+									<pre><code>     var tabla=document.getElementById("mitabla"); // Seleccionamos la tabla.</code>
+</pre>
+									<pre><code>     var filas= tabla.getElementsByTagName("tr");  // Seleccionamos las filas de la tabla.</code>
+</pre>
+									<pre><code>     </code>
+</pre>
+									<pre><code>     for (var i=0; i&lt;filas.length; i++)</code>
+</pre>
+									<pre><code>     {</code>
+</pre>
+									<pre><code>          if (i%2==1)     // Es una fila impar</code>
+</pre>
+									<pre><code>          {</code>
+</pre>
+									<pre><code>               // Aplicamos la clase .colorido a esas filas.</code>
+</pre>
+									<pre><code>               filas[i].setAttribute('class','colorido');</code>
+</pre>
+									<pre><code>          }</code>
+</pre>
+									<pre><code>     }</code>
+</pre>
+									<pre><code>}</code>
+</pre>
+									<pre><code>&lt;/script&gt;</code>
+</pre>
+									<pre><code>&lt;/head&gt;</code>
+</pre>
+									<pre><code>&lt;body&gt;</code>
+</pre>
+									<pre><code>     .. Aquí irá la tabla …</code>
+</pre>
+									<pre><code>&lt;/body&gt;</code>
+</pre>
+									<pre><code>&lt;/HTML&gt;</code>
+</pre>
+								</div>
+							</div>
+							<p></p>
+							<p><strong>Ejemplo equivalente al anterior, programado usando la librería jQuery:</strong>
+							</p>
+							<div class="codigo elemento_centrado" style="width: 62.1em;">
+								<div class="texto_izquierda">
+									<pre><code>     … Aquí irán las cabeceras y clase .colorido</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>&lt;script type="text/javascript" src="HTTP://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt;</code>
+</pre>
+									<pre><code>&lt;script type="text/javascript"&gt;</code>
+</pre>
+									<pre><code>// También podríamos poner $(function) {….});</code>
+</pre>
+									<pre><code>$(document).ready(function()     // Cuando el documento esté preparado se ejecuta esta función.</code>
+</pre>
+									<pre><code>{</code>
+</pre>
+									<pre><code>     // Seleccionamos las filas impares contenidas dentro de mitabla y le aplicamos la clase colorido.</code>
+</pre>
+									<pre><code>     $("#mitabla tr:nth-child(even)").addClass("colorido");</code>
+</pre>
+									<pre><code>});</code>
+</pre>
+									<pre><code>&lt;/script&gt;</code>
+</pre>
+									<pre><code>&lt;/head&gt;</code>
+</pre>
+									<pre><code>&lt;body&gt;</code>
+</pre>
+									<pre><code>     .. Aquí irá la tabla …</code>
+</pre>
+									<pre><code>&lt;/body&gt;</code>
+</pre>
+									<pre><code>&lt;/HTML&gt;</code>
+</pre>
+								</div>
+							</div>
+							<p></p>
+							<p>Como puedes observar, la reducción de código es considerable. Con 2 instrucciones, hemos
+								conseguido lo mismo, que hicimos en el ejemplo anterior con 7 (sin contar el código de
+								<code>crearEvento</code> del fichero funciones.js).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-19">
+				<div class="nodeDecoration">
+					<h1 id="exenode_19_2233FuncinajaxenjQuery" class="nodeTitle">2.2.3.3.- Función $.ajax() en jQuery.
+					</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id43-19">
+					<div class="iDevice emphasis0">
+						<div id="ta43_73" class="block iDevice_content">
+							<p>
+								<img alt="Fotografía de una persona leyendo un libro de Ajax, con un producto de limpieza Ajax al lado."
+									class="elemento_derecha" height="148"
+									src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R23_Ajax.jpg"
+									style="width: 200px; height: 148px" title="Programación Ajax vs limpieza."
+									width="200" data-pagespeed-url-hash="1856684606"
+									onload="pagespeed.CriticalImages.checkImageForCriticality(this);">La principal
+								función para realizar peticiones AJAX en jQuery es <code>$.AJAX()</code> (importante no
+								olvidar el punto entre $ y <code>AJAX()</code> ). Ésta es una función de bajo nivel, lo
+								que quiere decir que disponemos de la posibilidad de configurar, prácticamente todos los
+								parámetros de la petición AJAX, y será, por tanto, equivalente a los métodos clásicos
+								que usamos en la programación tradicional.
+							</p>
+							<p>
+								La sintaxis de uso es: <code>$.AJAX(opciones)</code>
+							</p>
+							<p>
+								En principio, esta instrucción parece muy simple, pero el número de opciones
+								disponibles, es relativamente extenso. Ésta es la estructura básica:
+							</p>
+							<div class="codigo elemento_centrado" style="width: 33.5em">
+								<div class="texto_izquierda">
+									<pre><code>$.AJAX({</code>
+</pre>
+									<pre><code>     url: [URL],</code>
+</pre>
+									<pre><code>     type: [GET/POST],</code>
+</pre>
+									<pre><code>     success: [function callback exito(data)],</code>
+</pre>
+									<pre><code>     error: [function callback error],</code>
+</pre>
+									<pre><code>     complete: [function callback error],</code>
+</pre>
+									<pre><code>     ifModified: [bool comprobar E-Tag],</code>
+</pre>
+									<pre><code>     data: [mapa datos GET/POST],</code>
+</pre>
+									<pre><code>     async: [bool que indica sincronía/asincronia]</code>
+</pre>
+									<pre><code>});</code>
+</pre>
+								</div>
+							</div>
+							<p>
+								<strong>Por ejemplo:</strong>
+							</p>
+							<div class="codigo elemento_centrado" style="width: 35.15em">
+								<div class="texto_izquierda">
+									<pre><code>$.AJAX({</code>
+</pre>
+									<pre><code>     url: '/ruta/pagina.php',</code>
+</pre>
+									<pre><code>     type: 'POST',</code>
+</pre>
+									<pre><code>     async: true,</code>
+</pre>
+									<pre><code>     data: 'parametro1=valor1&amp;parametro2=valor2',</code>
+</pre>
+									<pre><code>     success: function (respuesta)</code>
+</pre>
+									<pre><code>     {</code>
+</pre>
+									<pre><code>          alert(respuesta);</code>
+</pre>
+									<pre><code>     },</code>
+</pre>
+									<pre><code>     error: mostrarError</code>
+</pre>
+									<pre><code>});</code>
+</pre>
+								</div>
+							</div>
+							<br>
+							<p>
+								Veamos algunas propiedades de la función <code>$.AJAX()</code> de jQuery:
+							</p>
+							<table class="tabla"
+								summary="Esta tabla muestra el nombre de las propiedades, tipo y su descripción, para la función $.ajax() de jQuery.">
+								<caption>Propiedades de la función $.ajax() de jQuery.</caption>
+								<thead>
+									<tr>
+										<th scope="col">Nombre</th>
+										<th scope="col">Tipo</th>
+										<th scope="col">Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><code>url</code></td>
+										<td><code>String</code></td>
+										<td>La URL a la que se le hace la petición AJAX.</td>
+									</tr>
+									<tr>
+										<td><code>type</code></td>
+										<td><code>String</code></td>
+										<td>El método HTTP a utilizar para enviar los datos: <code>POST</code> o
+											<code>GET</code>. Si se omite se usa <code>GET</code> por defecto.</td>
+									</tr>
+									<tr>
+										<td><code>data</code></td>
+										<td><code>Object</code></td>
+										<td>Un objeto en el que se especifican parámetros que se enviarán en la
+											solicitud. Si es de tipo <code>GET</code>, los parámetros irán en la URL. Si
+											es <code>POST</code>, los datos se enviarán en las cabeceras. Es muy útil
+											usar la función <code>serialize()</code>, para construir la cadena de datos.
+										</td>
+									</tr>
+									<tr>
+										<td><code>dataType</code></td>
+										<td><code>String</code></td>
+										<td>Indica el tipo de datos que se espera que se devuelvan en la respuesta: XML,
+											HTML, JSON, JSON<code>p, script, text</code> (valor por defecto en el caso
+											de omitir <code>dataType</code>).</td>
+									</tr>
+									<tr>
+										<td><code>success</code></td>
+										<td><code>Function</code></td>
+										<td>Función que será llamada, si la respuesta a la solicitud terminó con éxito.
+										</td>
+									</tr>
+									<tr>
+										<td><code>error</code></td>
+										<td><code>Function</code></td>
+										<td>Función que será llamada, si la respuesta a la solicitud devolvió algún tipo
+											de error.</td>
+									</tr>
+									<tr>
+										<td><code>complete</code></td>
+										<td><code>Function</code></td>
+										<td>Función que será llamada, cuando la solicitud fue completada.</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper ParasabermasfpdIdevice em_iDevice" id="id44-19">
+					<div class="iDevice emphasis_parasabermasfpd">
+						<div class="iDevice_header">
+							<h2 class="iDeviceTitle">Para saber más</h2>
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta44_47" class="block iDevice_content">
+									<p class="enlace_centrado">
+										<a href="http://api.jquery.com/jQuery.AJAX/"
+											title="Acceder al enlace a la página oficial de la librería jQuery, donde se explican todos los parámetros de la función $.AJAX().">Todos
+											los parámetros de uso de la función $.AJAX() de jQuery.</a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-20">
+				<div class="nodeDecoration">
+					<h1 id="exenode_20_2234ElmtodoloadylasfuncionespostgetygetJSONenjQuery" class="nodeTitle">2.2.3.4.-
+						El método .load() y las funciones $.post() , $.get() y $.getJSON() en jQuery.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id45-20">
+					<div class="iDevice emphasis0">
+						<div id="ta45_73" class="block iDevice_content">
+							<p>
+								La función <code>$.AJAX()</code> es una función muy completa, y resulta bastante pesada
+								de usar. Su uso es recomendable, para casos muy concretos, en los que tengamos que
+								llevar un control exhaustivo de la petición AJAX. Para facilitarnos el trabajo, se
+								crearon 3 funciones adicionales de alto nivel, que permiten realizar peticiones y
+								gestionar las respuestas obtenidas del servidor:
+							</p>
+							<p>
+								<strong>El método <code>.load()</code></strong>
+							</p>
+							<p>
+								Este método, es la forma más sencilla de obtener datos desde el servidor, ya que de
+								forma predeterminada, los datos obtenidos son cargados en el objeto al cuál le estamos
+								aplicando el método.
+							</p>
+							<p>
+								Su sintaxis es: <code>.load( url, [datos], [callback] )</code>
+							</p>
+							<p>
+								La función <code>callback</code> es opcional, y es ahí donde pondremos la función de
+								retorno, que será llamada una vez terminada la petición. En esa función realizaremos
+								tareas adicionales, ya que la acción por defecto de cargar en un objeto el contenido
+								devuelto en la petición, la realiza el propio método<em> <code>load().</code></em>
+							</p>
+							<p>
+								Ejemplos:
+							</p>
+							<div class="codigo elemento_centrado" style="width: 49.45em">
+								<div class="texto_izquierda">
+									<pre><code>$("#noticias").load("feeds.HTML");     </code>
+</pre>
+									<pre><code>// carga en el contenedor con id noticias lo que devuelve la página feeds.HTML.</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>$("#objectID").load("test.php", { 'personas[]': ["Juan", "Susana"] } ); </code>
+</pre>
+									<pre><code>// Pasa un array de datos al servidor con el nombre de dos personas.</code>
+</pre>
+								</div>
+							</div>
+							<br>
+							<p>
+								Cuando se envían datos en este método, se usará el método <code>POST</code>. Si no se
+								envían datos en la petición, se usará el método <code>GET</code>.
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice" id="id46-20">
+					<div class="iDevice emphasis_debesconocerfpd">
+						<div class="iDevice_header">
+							<h2 class="iDeviceTitle">Debes conocer</h2>
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta46_48" class="block iDevice_content">
+									<p class="enlace_centrado">
+										<a href="http://api.jquery.com/load/"
+											title="Acceder a la página oficial de la librería jQuery, donde se amplía información y ejemplos sobre el método &lt;code&gt;.load().&lt;/code&gt;">Más
+											información sobre el método .load() en jQuery.</a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id47-20">
+					<div class="iDevice emphasis0">
+						<div id="ta47_73" class="block iDevice_content">
+							<p>
+								<strong>La función<code> $.post()</code></strong>
+							</p>
+							<p>
+								<img alt="Fotografía de un buzón de correos." class="elemento_derecha" height="200"
+									src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R24_POST.jpg"
+									style="width: 108px; height: 200px" title="Post Box." width="108"
+									data-pagespeed-url-hash="4185354421"
+									onload="pagespeed.CriticalImages.checkImageForCriticality(this);">Nos permite
+								realizar peticiones AJAX al servidor, empleando el método POST. Su sintaxis es la
+								siguiente:
+							</p>
+							<code> $.post( url, [datos], [callback], [tipo] ) </code>
+							<p>
+								Ejemplos:
+							</p>
+							<div class="codigo elemento_centrado" style="width: 36.25em">
+								<div class="texto_izquierda">
+									<pre><code>$.post("test.php");</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>$.post("test.php", { nombre: "Juana", hora: "11am" } );</code>
+</pre>
+									<pre><code></code>
+</pre>
+									<pre><code>$.post("test.php", function(resultados) {</code>
+</pre>
+									<pre><code>     alert("Datos Cargados: " + resultados);</code>
+</pre>
+									<pre><code>});</code>
+</pre>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice" id="id48-20">
+					<div class="iDevice emphasis_debesconocerfpd">
+						<div class="iDevice_header">
+							<h2 class="iDeviceTitle">Debes conocer</h2>
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta48_48" class="block iDevice_content">
+									<p class="enlace_centrado">
+										<a href="http://api.jquery.com/jQuery.post/"
+											title="Acceder a la página oficial de la librería jQuery, donde se amplía información y ejemplos sobre el método &lt;code&gt;.post().&lt;/code&gt;">Más
+											información sobre el método .post() en jQuery.</a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id49-20">
+					<div class="iDevice emphasis0">
+						<div id="ta49_73" class="block iDevice_content">
+							<p>
+								<strong>La función <code>$.get()</code> y <code>$.getJSON()</code></strong>
+							</p>
+							<p>
+								Hacen prácticamente lo mismo que <code>POST</code>, y tienen los mismos parámetros, pero
+								usan el método <code>GET</code> para enviar los datos al servidor. Si recibimos los
+								datos en formato JSON, podemos emplear <code>$.get</code>JSON<code>()</code> en su
+								lugar.
+							</p>
+							<code>$.get( url, [datos], [callback], [tipo] )   |   $.get</code> JSON
+							<code>( url, [datos], [callback], [tipo] ) </code>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice" id="id50-20">
+					<div class="iDevice emphasis_debesconocerfpd">
+						<div class="iDevice_header">
+							<h2 class="iDeviceTitle">Debes conocer</h2>
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta50_48" class="block iDevice_content">
+									<p class="enlace_centrado">
+										<a href="http://api.jquery.com/jQuery.get/"
+											title="Acceder a la página oficial de la librería jQuery, donde se amplía información y ejemplos sobre el método &lt;code&gt;.get().&lt;/code&gt;">Más
+											información sobre el método .get() en jQuery.</a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-21">
+				<div class="nodeDecoration">
+					<h1 id="exenode_21_2235HerramientasadicionalesenprogramacinAJAX" class="nodeTitle">2.2.3.5.-
+						Herramientas adicionales en programación AJAX.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextIdevice" id="id51-21">
+					<div class="iDevice emphasis0">
+						<div id="ta51_1" class="block iDevice_content">
+							<div class="elemento_derecha">
+								<div class="elemento_centrado"><a
+										href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC04/es_DAW_DWEC04_Contenidos/DWEC07_CONT_R25_Frameworks.jpg"
+										title="Ampliar imagen."><img
+											alt="Mosaico con un montón de frameworks Ajax para diferentes sistemas de programación."
+											class="imagen_ampliable" height="148"
+											src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R25_Frameworks_miniatura.jpg"
+											style="width: 200px; height: 148px;" title="Frameworks Ajax." width="200"
+											data-pagespeed-url-hash="3318355032"
+											onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></div>
+							</div>
+							<p>Cuando programamos en AJAX, uno de los inconvenientes que nos solemos encontrar, es el de
+								la detección de errores. Estos errores pueden venir provocados por fallos de
+								programación en JavaScript, fallos en la aplicación que se ejecuta en el servidor, etc.
+							</p>
+							<p>Para poder detectar estos errores, necesitamos herramientas que nos ayuden a
+								encontrarlos. En la programación con JavaScript, los errores los podemos detectar con el
+								propio navegador. Por ejemplo, en el navegador <span lang="en">Firefox</span> para abrir
+								la consola de errores, lo podemos hacer desde el menú Herramientas, o bien pulsando las
+								teclas <strong>CTRL+Mayúsc.+J</strong> (en <span lang="en">Windows</span>). En la
+								consola, se nos mostrarán todos los errores que se ha encontrado durante la ejecución de
+								la aplicación. En <span lang="en">Internet Explorer</span> versión 9, podemos abrir la
+								<strong>Herramienta de Desarrollo</strong>, pulsando la tecla F12. Desde esta
+								herramienta se pueden consultar los errores de JavaScript, activar los diferentes modos
+								de compatibilidad entre versiones de este navegador, deshabilitar CSS, JavaScript, etc.
+							</p>
+							<p>Para la detección de errores en AJAX, necesitamos herramientas adicionales o
+								complementos. Para <span lang="en">Firefox</span> disponemos de un complemento
+								denominado <span lang="en">Firebug</span>. Este complemento nos va a permitir hacer
+								infinidad de cosas: detectar errores de JavaScript, depurar código, analizar todo el DOM
+								del documento en detalle, ver y modificar el código CSS, analizar la velocidad de carga
+								de las páginas, etc. Además, también incorpora en su consola, la posibilidad de ver las
+								peticiones AJAX que se están realizando al servidor: se pueden ver los datos enviados,
+								su formato, los datos recibidos, los errores, etc. Si por ejemplo se produce algún tipo
+								de error en la petición al servidor, en la consola podremos verlo y así poder solucionar
+								ese fallo.</p>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-5-node" id="exe-node-22">
+				<div class="nodeDecoration">
+					<h1 id="exenode_22_2236PluginsjQuery" class="nodeTitle">2.2.3.6.- Plugins jQuery.</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextIdevice" id="id53-22">
+					<div class="iDevice emphasis0">
+						<div id="ta53_1" class="block iDevice_content">
+							<p>
+								La librería jQuery, incorpora funciones que nos van a ayudar muchísimo, en la
+								programación de nuestras aplicaciones. Además de todo lo que nos aporta la librería,
+								disponemos de plugins o añadidos que aportan funcionalidades avanzadas.
+							</p>
+							<p>
+								Vamos a encontrar plugins en un montón de categorías: AJAX, animación y efectos, DOM,
+								eventos, formularios, integración, media, navegación, tablas, utilidades, etc.
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper ParasabermasfpdIdevice em_iDevice" id="id54-22">
+					<div class="iDevice emphasis_parasabermasfpd">
+						<div class="iDevice_header">
+							<h2 class="iDeviceTitle">Para saber más</h2>
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta54_47" class="block iDevice_content">
+									<p class="enlace_centrado">
+										<a href="http://api.jquery.com/category/effects/"
+											title="Acceder a la documentación oficial sobre los efectos y animaciones que se pueden realizar con la librería jQuery.">Efectos
+											con jQuery.</a>
+									</p>
+									<p class="enlace_centrado">
+										<a href="http://docs.jquery.com/Main_Page"
+											title="Acceder a la documentación oficial de la librería jQuery.">Documentación
+											oficial de jQuery.</a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id55-22">
+					<div class="iDevice emphasis0">
+						<div id="ta55_73" class="block iDevice_content">
+							<p>Antes de poder usar cualquier plugin de jQuery, será necesario cargar primero la librería
+								de jQuery, y a continuación la librería del plugin que deseemos, por ejemplo:</p>
+							<div class="codigo elemento_centrado" style="width: 56.6em;">
+								<div class="texto_izquierda">
+									<pre><code>&lt;script type="text/javascript" src="HTTP://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt;</code>
+</pre>
+								</div>
+							</div>
+							<p></p>
+							<div class="codigo elemento_centrado" style="width: 43.95em;">
+								<div class="texto_izquierda">
+									<pre><code>&lt;script type="text/javascript" src="ejemploplugin.js"&gt;&lt;/script&gt;</code>
+</pre>
+								</div>
+							</div>
+							<p></p>
+							<p>Todos los <span lang="en">plugins</span> contienen documentación, en la que se explica
+								como usar el <span lang="en">plugin</span>.</p>
+							<p>Desde la web oficial de jquery.com, puedes hojear todos los <span
+									lang="en">plugins</span> disponibles para jQuery: <img
+									alt="Imagen de un enchufe con el texto plugins al lado. " class="elemento_centrado"
+									height="64"
+									src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R26_Plugins.jpg"
+									style="width: 200px; height: 64px;" title="Plugins." width="200"
+									data-pagespeed-url-hash="1645240979"
+									onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></p>
+							<p class="enlace_centrado"><a href="http://plugins.jquery.com/"
+									title="Acceder a los plugins que se pueden encontrar en la página oficial de jQuery."><span
+										lang="en">Plugins</span> para jQuery.</a></p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-24">
+				<div class="nodeDecoration">
+					<h1 id="exenode_24_AnexoLicenciaderecursos" class="nodeTitle">Anexo.- Licencia de recursos</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id58-24">
+					<div class="iDevice emphasis0">
+						<div id="ta58_73" class="block iDevice_content">
+							<table class="tabla"
+								summary="Datos de licencia de todos los recursos utilizados en la unidad">
+								<caption>
+									Licencias de recursos utilizados en la Unidad de Trabajo.
+								</caption>
+								<tbody>
+									<tr>
+										<th scope="col">Recurso (1)</th>
+										<th scope="col">Datos del recurso (1)</th>
+										<th scope="col">Recurso (2)</th>
+										<th scope="col">Datos del recurso (2)</th>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Mosaico hecho con caras de personas, en el que se puede leer WEB 2.0."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R01_Web2.0_anexo.jpg"
+												style="width: 111px; height: 80px" title="Web 2.0." width="111"
+												data-pagespeed-url-hash="1349653550"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Didier Vidal.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/didiervidal/384349474/sizes/m/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Imagen con el texto Ajax perteneciente a un producto de limpieza."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R02_Ajax_anexo.jpg"
+												style="width: 108px; height: 80px" title="Lejia Ajax." width="108"
+												data-pagespeed-url-hash="3562677749"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: metal4rock.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/metal4rock/191427591/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Imagen con un hombre y una estatua sentados en un banco en la misma postura."
+												height="62"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R03_Sincronia_anexo.jpg"
+												style="width: 120px; height: 62px" title="Posturas sincronizadas."
+												width="120" data-pagespeed-url-hash="3824844688"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: My Buffo.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/mybuffo/2151129509/sizes/z/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Imagen en la que se muestra una comparativa entre el modelo web clásico y el modelo Ajax."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R04_Modelos_anexo.jpg"
+												style="width: 78px; height: 80px" title="Modelos de aplicaciones web."
+												width="78" data-pagespeed-url-hash="3024504004"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: raveiga.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/raveiga/5922653869/in/photostream
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Imagen comparativa de peticiones síncronas y asíncronas."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R05_Asincronia_anexo.jpg"
+												style="width: 61px; height: 80px"
+												title="Peticiones síncronas y asíncronas." width="61"
+												data-pagespeed-url-hash="843938631"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: raveiga.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/raveiga/5922654041/in/photostream
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Imagen que contiene una nube de etiquetas referentes al mundo web."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R06_NubeTags_anexo.jpg"
+												style="width: 89px; height: 80px" title="Nube de Tags." width="89"
+												data-pagespeed-url-hash="2761227480"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: ottonassar.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/ottonassar/3224042284/sizes/o/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Imagen de una estantería que contiene libros sobre Ajax."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R07_Libros_anexo.jpg"
+												style="width: 59px; height: 80px" title="Libros de Ajax." width="59"
+												data-pagespeed-url-hash="18914881"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: kawanet.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/u-suke/117109769/sizes/o/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Imagen de una hoja de papel que contiene anotaciones Ajax."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R08_Anotaciones_anexo.jpg"
+												style="width: 107px; height: 80px" title="Anotaciones Ajax." width="107"
+												data-pagespeed-url-hash="1057400213"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Andre Charland.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/doglotion/137266701/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img alt="Imagen de un producto de limpieza Ajax."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R09_Ajax_anexo.jpg"
+												style="width: 59px; height: 80px" title="Ajax." width="59"
+												data-pagespeed-url-hash="951867234"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: candescent.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/candescence/964346271/sizes/z/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Imagen de un producto de quitamanchas Ajax." height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R10_Ajax_anexo.jpg"
+												style="width: 59px; height: 80px" title="Quitamanchas Ajax." width="59"
+												data-pagespeed-url-hash="3920943456"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: kalleboo.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/kalleboo/2214536053/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Imagen de dos boxeadores, dónde uno de ellos se hace llamar Black Ajax."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R11_Metodos_anexo.jpg"
+												style="width: 107px; height: 80px" title="Ajax en el boxeo." width="107"
+												data-pagespeed-url-hash="3670510940"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: adactio.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/adactio/1452245897/sizes/z/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Viñeta en la que se muestra el error 404, de página no encontrada."
+												height="73"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R12_Error404_anexo.jpg"
+												style="width: 120px; height: 73px" title="Error 404." width="120"
+												data-pagespeed-url-hash="3928458914"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: CyborRoZ.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/filicudi/2891898817/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Imagen con el mensaje de 200 OK, devuelto por el servidor web."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R13_MensajeOK_anexo.jpg"
+												style="width: 107px; height: 80px"
+												title="Mensaje 200 OK del servidor web." width="107"
+												data-pagespeed-url-hash="1229563020"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: magerleagues.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/mager/2461825241/sizes/z/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Imagen con tarjetas que muestras GET, POST, PUT, DELETE y códigos de error en otras tarjetas al lado."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R15_GET_POST_anexo.jpg"
+												style="width: 108px; height: 80px" title="GET POST." width="108"
+												data-pagespeed-url-hash="816580104"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: psd.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/psd/4967856349/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Imagen de un buzón de correos y de una agencia de correos."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R16_PostOffice_anexo.jpg"
+												style="width: 64px; height: 80px" title="Post Office." width="64"
+												data-pagespeed-url-hash="4242034178"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Post Box.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/postbox_lover/3140978345/sizes/m/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Imagen de un taxi con un anuncio que dice XML Connects."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R17_XML_anexo.jpg"
+												style="width: 80px; height: 80px" title="XML Connects." width="80"
+												data-pagespeed-url-hash="3298308604"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Gideon Burton.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/wakingtiger/3156791069/sizes/m/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img alt="Fotografía con los 4 Beatles." height="72"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R18_Beatles_anexo.jpg"
+												style="width: 120px; height: 72px" title="Fotografía de los Beatles."
+												width="120" data-pagespeed-url-hash="1578370798"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: ozzy5836.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/ozzy5836/499528156/sizes/z/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Imagen con la estructura de funcionamiento de Google Maps en diferentes niveles."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R19_Mashup_anexo.jpg"
+												style="width: 71px; height: 80px" title="Google Maps Mashup." width="71"
+												data-pagespeed-url-hash="1824705843"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Dion Hinchcliffe.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/dionh/125444103/sizes/o/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Anuncio de un campus en el que se estudiará como realizar mashups."
+												height="32"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R20_MashupCamp_anexo.jpg"
+												style="width: 120px; height: 32px" title="Mashup Camp." width="120"
+												data-pagespeed-url-hash="217178778"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Chris Radcliff.
+											</p>
+											<p>
+												Licencia: CC BY-SA 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/chris_radcliff/87421015/sizes/z/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Fotografía de una persona al lado de un cartel que anuncia una conferencia de jQuery."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R21_Conferencia_anexo.jpg"
+												style="width: 59px; height: 80px"
+												title="Asistente a conferencia de jQuery." width="59"
+												data-pagespeed-url-hash="215445063"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: cloud2013.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/dennisredfield/3930635912/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Fotografía de una mano que sostiene el libro jQuery in Action."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R22_Action_anexo.jpg"
+												style="width: 59px; height: 80px" title="Libro jQuery in Action."
+												width="59" data-pagespeed-url-hash="4123366309"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Lachlan Hardy.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/lachlanhardy/3055154840/sizes/z/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Fotografía de una persona leyendo un libro de Ajax, con un producto de limpieza Ajax al lado."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R23_Ajax_anexo.jpg"
+												style="width: 108px; height: 80px"
+												title="Programación Ajax vs limpieza." width="108"
+												data-pagespeed-url-hash="3027911266"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: daveynin.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/daveynin/1672745911/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img alt="Fotografía de un buzón de correos."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R24_POST_anexo.jpg"
+												style="width: 43px; height: 80px" title="Post Box." width="43"
+												data-pagespeed-url-hash="1146761793"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Tim Green aka atoach.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/atoach/3188087498/sizes/z/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Mosaico con un montón de frameworks Ajax para diferentes sistemas de programación."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R25_Frameworks_anexo.jpg"
+												style="width: 107px; height: 80px" title="Frameworks Ajax." width="107"
+												data-pagespeed-url-hash="3792074093"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: kawanet.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/u-suke/154833137/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="texto_centrado"><img
+												alt="Imagen de un enchufe con el texto plugins al lado." height="38"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R26_Plugins_anexo.jpg"
+												style="width: 120px; height: 38px" title="Plugins." width="120"
+												data-pagespeed-url-hash="3435962735"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: Sean MacEntee.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/smemon/4850586965/sizes/l/in/photostream/
+											</p>
+										</td>
+										<td class="texto_centrado"><img
+												alt="Fotografía de una persona al lado de una pantalla de proyección con el texto “explaining Ajax”."
+												height="80"
+												src="./DWEC04.- Programación AJAX en JavaScript._files/DWEC07_CONT_R28_Videos_anexo.jpg"
+												style="width: 108px; height: 80px" title="Explicando Ajax." width="108"
+												data-pagespeed-url-hash="2491813805"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></td>
+										<td>
+											<p>
+												Autoría: WordRidden.
+											</p>
+											<p>
+												Licencia: CC BY 2.0.
+											</p>
+											<p>
+												Procedencia:
+												http://www.flickr.com/photos/wordridden/256106029/sizes/z/in/photostream/
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<script type="text/javascript"
+		src="./DWEC04.- Programación AJAX en JavaScript._files/venobox.min.js.descarga"></script>
+	<script>$(document).ready(function () { $('.venobox').venobox({ titleattr: 'data-title' }); });</script>
+
+</body>
+
+</html>

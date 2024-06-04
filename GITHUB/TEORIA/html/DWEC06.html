@@ -1,0 +1,831 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0097)https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC06/es_DAW_DWEC06_Contenidos/singlepage_index.html -->
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>DWEC06.- Angular y TypeScript II</title>
+	<link rel="shortcut icon"
+		href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC06/es_DAW_DWEC06_Contenidos/favicon.ico"
+		type="image/x-icon">
+	<meta http-equiv="content-language" content="es">
+	<meta name="generator" content="eXeLearning 2.2 - exelearning.net">
+	<link rel="stylesheet" type="text/css" href="./DWEC06.- Angular y TypeScript II_files/base.css">
+	<link rel="stylesheet" type="text/css" href="./DWEC06.- Angular y TypeScript II_files/content.css">
+	<script type="text/javascript" src="./DWEC06.- Angular y TypeScript II_files/exe_jquery.js.descarga"></script>
+	<script type="text/javascript" src="./DWEC06.- Angular y TypeScript II_files/common_i18n.js.descarga"></script>
+	<script type="text/javascript" src="./DWEC06.- Angular y TypeScript II_files/common.js.descarga"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+		type="text/javascript">var path = "my_js.js"; if (document.domain == "ikastaroak.ulhi.net" || document.domain == "ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI22/my_js.js"; document.write(unescape("%3Cscript src=\'" + path + "\'type=\'text/javascript\'%3E%3C/script%3E"));</script>
+	<script src="./DWEC06.- Angular y TypeScript II_files/my_js.js.descarga" type="text/javascript"></script>
+	<script type="text/javascript" src="./DWEC06.- Angular y TypeScript II_files/webReader.js.descarga"></script>
+	<link id="rsmod_Styles" type="text/css" rel="stylesheet"
+		href="./DWEC06.- Angular y TypeScript II_files/ReadSpeaker.Styles-Button.css">
+	<script type="text/javascript">window.rsConf = { general: { usePost: true } };</script>
+
+	<script
+		type="text/javascript">window.onload = function () { var player = document.createElement("div"); player.id = "readspeaker_button1"; player.className = "rs_skip rsbtn rs_preserve"; player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' + 'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' + '<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' + '</a>'; var accordions = document.getElementsByClassName("fx-accordion-title"); for (i = 0; i < accordions.length; i++) { accordions[i].className += " rs_preserve"; } var paginations = document.getElementsByClassName("fx-pagination"); for (i = 0; i < paginations.length; i++) { paginations[i].className += " rs_preserve rs_skip"; } var main = document.getElementById("main"); main.insertBefore(player, main.firstChild); ReadSpeaker.init(); ReadSpeaker.q(function () { rspkr.ui.addClickEvents(); }); };</script>
+	<style>
+		#main .rsbtn ul li {
+			list-style-image: none
+		}
+	</style>
+</head>
+
+<body class="exe-single-page js" data-rsevent-id="rs_502124">
+	<script type="text/javascript">document.body.className += " js"</script>
+	<div id="content">
+		<div id="header" role="banner">
+			<!-- <div id="headerContent">
+				<h1>DWEC06.- Angular y TypeScript II</h1>
+			</div> -->
+		</div>
+		<div id="main" role="main">
+			<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve mega_toggle"><button type="button"
+					class="rsbtn_tooltoggle" data-rsshortcut="menu" data-rslang="title/arialabel:menu"
+					title="Menú de webReader" aria-label="Menú de webReader" aria-expanded="false" data-rs-tooltip="."
+					data-rs-direction="u" data-rs-container="readspeaker_button1" data-rsevent-id="rs_864848"
+					style="display: none;"><span class="rsicn rsicn-arrow-down" aria-hidden="true"></span></button><a
+					class="rsbtn_play" title="Escuchar esta página utilizando ReadSpeaker"
+					href="https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url="
+					role="button" aria-label="ReadSpeaker webReader: Escuchar con webReader" data-rs-tooltip="."
+					data-rs-direction="u" aria-haspopup="menu" aria-expanded="false" data-rsshortcut="play"
+					data-rs-lang="es_es"><span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"
+							aria-hidden="true"><span>Escuchar</span></span></span><span
+						class="rsbtn_right rsimg rsplay rspart"></span></a></div>
+			<div class="node level-1-node" id="exe-node-0">
+				<div class="nodeDecoration">
+					<h1 id="exenode_0_DWEC06AngularyTypeScriptII" class="nodeTitle">DWEC06.- Angular y TypeScript II
+					</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id52-0">
+					<div class="iDevice emphasis0">
+						<div id="ta52_154" class="block iDevice_content">
+							<p dir="ltr"><span>En esta UD vamos a trabajar la última parte referente al Framework de
+									desarrollo Angular. En ella trabajaremos las funciones necesarias para que podáis
+									desarrollar una aplicación web completa con las funcionalidades básicas que debería
+									tener toda aplicación, haciendo especial hincapié en los servicios para que la web
+									se alimente y pueda gestionar la información de una Base de Datos a través de una
+									APIs y sus correspondientes consultas HTTP.&nbsp;</span></p>
+							<p><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-22">
+				<div class="nodeDecoration">
+					<h1 id="exenode_22_1Routing" class="nodeTitle">1.- Routing</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id53-22">
+					<div class="iDevice emphasis0">
+						<div id="ta53_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id54-22">
+					<div class="iDevice emphasis0">
+						<div id="ta54_154" class="block iDevice_content">
+							<p dir="ltr" style="text-align: justify;"><span>El sistema de routing no es un asunto
+									trivial, ya que envuelve a muchas clases, objetos, componentes y configuraciones. De
+									hecho es algo bastante sofisticado, ya que tiene decenas de configuraciones para
+									realizar rutas de todo tipo.</span></p>
+							<p dir="ltr" style="text-align: justify;"><span>Pensando en aquellas personas que comienzan
+									con Angular su incursión en las "SPA" (Single Page Application), comenzaremos
+									aclarando qué es un sistema de routing y por qué lo necesitamos.</span></p>
+							<p style="text-align: justify;"><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id55-22">
+					<div class="iDevice emphasis0">
+						<div id="ta55_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id56-22">
+					<div class="iDevice emphasis0">
+						<div id="ta56_154" class="block iDevice_content">
+							<p style="text-align: justify;"><span
+									id="docs-internal-guid-de1ffa71-7fff-2e5a-d44a-f0d7dec72108"><span>En cualquier
+										sitio web generalmente tienes varias direcciones que son entregadas por un
+										servidor, para mostrar diferentes contenidos del sitio. Podemos tener una
+										portada, una página de productos, una de contacto, etc. Cada una de esas páginas
+										se presenta en una ruta diferente del sitio web, que podrían ser como
+										<em>example.com, example.com/productos/index.html,
+											example.com/contacto.html,</em> etc. Cada una de esas rutas podría tener un
+										archivo HTML, que se sirve con el contenido de esa sección. Hasta aquí estamos
+										seguros que los lectores no tendrán ningún problema, pues es así como funcionan,
+										en líneas generales, prácticamente todos los sitios web.</span></span></p>
+							<p style="text-align: justify;"><span><span></span></span></p>
+							<p style="text-align: justify;"><span><span>
+										<script data-pagespeed-no-defer="" type="text/javascript">//<![CDATA[
+												(function () { for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) { if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters."); b != Array.prototype && b != Object.prototype && (b[c] = a.value) }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) { var m = k[l]; m in h || (h[m] = {}); h = h[m] } var n = k[k.length - 1], p = h[n], q = p ? p : function (b) { var c; if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined"); c = this + ""; if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value"); b |= 0; for (var a = ""; b;)if (b & 1 && (a += c), b >>>= 1) c += c; return a }; q != p && null != q && g(h, n, { configurable: !0, writable: !0, value: q }); var t = this; function u(b, c) { var a = b.split("."), d = t; a[0] in d || !d.execScript || d.execScript("var " + a[0]); for (var e; a.length && (e = a.shift());)a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c }; function v(b) { var c = b.length; if (0 < c) { for (var a = Array(c), d = 0; d < c; d++)a[d] = b[d]; return a } return [] }; function w(b) { var c = window; if (c.addEventListener) c.addEventListener("load", b, !1); else if (c.attachEvent) c.attachEvent("onload", b); else { var a = c.onload; c.onload = function () { b.call(this); a && a.call(this) } } }; var x; function y(b, c, a, d, e) { this.h = b; this.j = c; this.l = a; this.f = e; this.g = { height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight, width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth }; this.i = d; this.b = {}; this.a = []; this.c = {} } function z(b, c) { var a, d, e = c.getAttribute("data-pagespeed-url-hash"); if (a = e && !(e in b.c)) if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1; else { d = c.getBoundingClientRect(); var f = document.body; a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop); d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft); f = a.toString() + "," + d; b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width) } a && (b.a.push(e), b.c[e] = !0) } y.prototype.checkImageForCriticality = function (b) { b.getBoundingClientRect && z(this, b) }; u("pagespeed.CriticalImages.checkImageForCriticality", function (b) { x.checkImageForCriticality(b) }); u("pagespeed.CriticalImages.checkCriticalImages", function () { A(x) }); function A(b) { b.b = {}; for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d)a = a.concat(v(document.getElementsByTagName(c[d]))); if (a.length && a[0].getBoundingClientRect) { for (d = 0; c = a[d]; ++d)z(b, c); a = "oh=" + b.l; b.f && (a += "&n=" + b.f); if (c = !!b.a.length) for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) { var e = "," + encodeURIComponent(b.a[d]); 131072 >= a.length + e.length && (a += e) } b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0); C = a; if (c) { d = b.h; b = b.j; var f; if (window.XMLHttpRequest) f = new XMLHttpRequest; else if (window.ActiveXObject) try { f = new ActiveXObject("Msxml2.XMLHTTP") } catch (r) { try { f = new ActiveXObject("Microsoft.XMLHTTP") } catch (D) { } } f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a)) } } } function B() { var b = {}, c; c = document.getElementsByTagName("IMG"); if (!c.length) return {}; var a = c[0]; if (!("naturalWidth" in a && "naturalHeight" in a)) return {}; for (var d = 0; a = c[d]; ++d) { var e = a.getAttribute("data-pagespeed-url-hash"); e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = { rw: a.width, rh: a.height, ow: a.naturalWidth, oh: a.naturalHeight }) } return b } var C = ""; u("pagespeed.CriticalImages.getBeaconData", function () { return C }); u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) { var r = new y(b, c, a, e, f); x = r; d && w(function () { window.setTimeout(function () { A(r) }, 0) }) }); })(); pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'http://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC06/es_DAW_DWEC06_Contenidos/singlepage_index.html', 'nXzXivl0t7', true, false, 'u5X_h9MeI3w');
+											//]]></script><img src="./DWEC06.- Angular y TypeScript II_files/2.PNG" width="347" height="25"
+											data-pagespeed-url-hash="3254116900"
+											onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+									</span></span></p>
+							<p style="text-align: justify;"><span><span><img
+											src="./DWEC06.- Angular y TypeScript II_files/1.PNG" width="329" height="33"
+											data-pagespeed-url-hash="2959616979"
+											onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span>
+							</p>
+							<p style="text-align: justify;"></p>
+							<p style="text-align: justify;"></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id57-22">
+					<div class="iDevice emphasis0">
+						<div id="ta57_154" class="block iDevice_content">
+							<p dir="ltr"><span>Para facilitar la navegación por un sitio donde realmente sólo hay un
+									index, existe lo que llamamos </span><strong>el sistema de routing</strong><span>,
+									que tiene el objetivo de permitir que en el sitio web haya rutas internas,
+									<strong>respondiendo a </strong></span><strong>rutas
+									"virtuales</strong><span><strong>"</strong> como las que existen en los sitios
+									tradicionales.</span></p>
+							<p dir="ltr"><span>Llamamos "virtuales" a esas rutas, porque realmente sólo existe un
+									"index.html", no habrá un archivo "contacto.html" o "productos.html" para cada ruta,
+									sino que será realmente siempre el "index.html" el que se entregue al
+									navegador.</span></p>
+							<p dir="ltr"><span>El sistema de routing es el encargado de reconocer cuál es la ruta que el
+									usuario quiere mostrar, presentando la pantalla correcta en cada momento. Esto es
+									útil por varios motivos, entre ellos:</span></p>
+							<ol>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>Permite que la aplicación responda a rutas
+											internas. Es decir, no hace falta entrar siempre en la pantalla principal de
+											la aplicación y navegar hasta la pantalla que queremos ver realmente.</span>
+									</p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>Permite que el usuario pueda usar el
+											historial de navegación, yendo hacia atrás y hacia adelante con el navegador
+											para volver a una de las pantallas de aplicación que estaba viendo
+											antes.</span></p>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-23">
+				<div class="nodeDecoration">
+					<h1 id="exenode_23_11ElsistemadeRoutingenAngular" class="nodeTitle">1.1.- El sistema de Routing en
+						Angular</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id58-23">
+					<div class="iDevice emphasis0">
+						<div id="ta58_154" class="block iDevice_content">
+							<p dir="ltr"><span>Angular, como un buen framework, dispone de un potente sistema de routing
+									para facilitar toda la operativa de las single page applications. Está compuesto por
+									varios actores que tienen que trabajar juntos para conseguir los objetivos
+									planteados.</span></p>
+							<p dir="ltr"><span>Comenzaremos explicando el sistema de routing resumiendo los elementos
+									básicos que forman parte de él y que son necesarios para comenzar a trabajar.</span>
+							</p>
+							<ul>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>El módulo del sistema de rutas: llamado
+											<strong>RouterModule</strong>.</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>Rutas de la aplicación: es un array con un
+											listado de rutas que nuestra aplicación soportará.</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>Enlaces de navegación: son enlaces HTML en
+											los que incluiremos una directiva para indicar que deben funcionar usando el
+											sistema de routing.</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>Contenedor: donde colocar las pantallas de
+											cada ruta. Cada pantalla será representada por un componente.</span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id59-23">
+					<div class="iDevice emphasis0">
+						<div id="ta59_154" class="block iDevice_content">
+							<h3 dir="ltr"><span>1.- Importar el código del sistema de routing</span></h3>
+							<pre><span><span><span>import</span><span> </span><span>{</span><span> Routes</span><span>,</span><span> RouterModule </span><span>}</span><span> </span><span>from</span><span> </span><span>'@angular/router'</span><span>;<br><br></span></span></span></pre>
+							<p dir="ltr"><strong>RouterModule</strong><span> es el módulo donde está el sistema de
+									rutas, por tanto contiene el código del propio sistema de rutas.</span></p>
+							<p dir="ltr"><strong>Routes </strong><span>es una declaración de un tipo, que corresponde
+									con un array de objetos Route. Los objetos Route están declarados por medio de una
+									interfaz en el sistema de routing. Esta interfaz sirve para que en la declaración de
+									tus rutas coloques solamente aquellos valores que realmente son posibles de colocar.
+									Si no lo haces así, el compilador de TypeScript te ayudará mostrando los
+									correspondientes errores en el tiempo de desarrollo.</span></p>
+							<p><span>&nbsp;</span></p>
+							<p><span><span
+										id="docs-internal-guid-16440d7a-7fff-cd8a-5694-3d5375490900"><span>&nbsp;</span></span></span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id60-23">
+					<div class="iDevice emphasis0">
+						<div id="ta60_154" class="block iDevice_content">
+							<h3 dir="ltr"><span>2.&nbsp; Crear la lista de las rutas disponibles en la aplicación</span>
+							</h3>
+							<p dir="ltr"><span>En este paso tenemos que crear un array de las rutas que queremos generar
+									en nuestra aplicación. Utilizaremos la declaración del tipo Routes, que hemos dicho
+									es un array de objetos Route.</span></p>
+							<p dir="ltr"><span>Cada objeto Route del array tiene un conjunto de campos para definir la
+									ruta, definido por la interfaz Route, siendo que lo general es que tenga al menos un
+									camino "path" y un componente para representar en esa ruta.</span></p>
+							<p dir="ltr"><span>El código que producirá será más o menos así.</span></p>
+							<pre
+								dir="ltr"><span>const</span><span> rutas</span><span>:</span><span> Routes = </span><span>[</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;</span><span>{</span><span> path</span><span>:</span><span> </span><span>''</span><span>,</span><span> component</span><span>:</span><span> HomeComponent </span><span>},</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;</span><span>{</span><span> path</span><span>:</span><span> </span><span>'contacto'</span><span>,</span><span> component</span><span>:</span><span> ContactoComponent </span><span>}</span></pre>
+							<pre dir="ltr"><span>];</span></pre>
+							<p><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id61-23">
+					<div class="iDevice emphasis0">
+						<div id="ta61_154" class="block iDevice_content">
+							<h3 dir="ltr"><span>3.- Declarar el sistema de routing en el "imports" del decorador
+									@NgModule</span></h3>
+							<p dir="ltr"><span>Ahora hay que editar el decorador del módulo principal @NgModule, donde
+									tendrás que colocar en el array "imports" la declaración de que vas a usar el
+									sistema de routing de Angular.</span></p>
+							<p dir="ltr"><span>Tenemos que indicar a RouterModule, pero en ese imports necesita la
+									configuración de rutas, creada en el array Routes[] del paso anterior. De momento,
+									esa configuración la cargamos mediante un método forRoot() en el que pasamos por
+									parámetro el array de rutas.</span></p>
+							<p dir="ltr"><span>Se ve mejor con el código. Este es el decorador completo, pero te tienes
+									que fijar especialmente en el array "imports".</span></p>
+							<p><span>&nbsp;</span></p>
+							<pre dir="ltr"><span>@</span><span>NgModule</span><span>({</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;declarations</span><span>:</span><span> </span><span>[</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;AppComponent</span><span>,</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;HomeComponent</span><span>,</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;ContactoComponent</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;</span><span>],</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;imports</span><span>:</span><span> </span><span>[</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;BrowserModule</span><span>,</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;RouterModule</span><span>.</span><span>forRoot</span><span>(</span><span>rutas</span><span>)</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;</span><span>],</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;providers</span><span>:</span><span> </span><span>[],</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;bootstrap</span><span>:</span><span> </span><span>[</span><span>AppComponent</span><span>]</span></pre>
+							<pre dir="ltr"><span>})</span></pre>
+							<p><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id62-23">
+					<div class="iDevice emphasis0">
+						<div id="ta62_154" class="block iDevice_content">
+							<h3 dir="ltr" style="text-align: justify;"><span>4.- Definir el template del componente
+									principal</span></h3>
+							<p style="text-align: justify;">Unavez hecho esto, comenzamos el trabajo en el componente
+								principal. En este componente tenemos que meter un poco de código en la vista, archivo
+								"app.component.html".</p>
+							<p style="text-align: justify;">En el template se crea el navegador de las rutas, indicando
+								en los enlaces la directiva "routerLink", con el valor de cada ruta.</p>
+							<pre dir="ltr"><span>&lt;</span><span>nav</span><span>&gt;</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;</span><span>&lt;</span><span>a </span><span>routerLink</span><span>="</span><span>/</span><span>"&gt;</span><span>Home</span><span>&lt;/</span><span>a</span><span>&gt;</span><span> |&nbsp;</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;</span><span>&lt;</span><span>a </span><span>routerLink</span><span>="</span><span>/contacto</span><span>"&gt;</span><span>Contacto</span><span>&lt;/</span><span>a</span><span>&gt;</span><span> |&nbsp;</span></pre>
+							<pre
+								style="text-align: justify;"><span id="docs-internal-guid-c9a5024e-7fff-a1b7-684c-a4eab473d2d3"><span>&lt;/</span><span>nav</span><span>&gt;</span></span></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-24">
+				<div class="nodeDecoration">
+					<h1 id="exenode_24_2Servicios" class="nodeTitle">2.-Servicios</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id63-24">
+					<div class="iDevice emphasis0">
+						<div id="ta63_154" class="block iDevice_content">
+							<p style="text-align: justify;">Básicamente hemos dicho anteriormente que el protagonista en
+								las aplicaciones de Angular es el componente, que las aplicaciones se desarrollan en
+								base a un árbol de componentes. Sin embargo, a medida que nuestros objetivos sean más y
+								más complejos, lo normal es que el código de los componentes también vaya aumentando,
+								implementando mucha lógica del modelo de negocio.</p>
+							<p style="text-align: justify;"><br>En principio esto no sería tan problemático, pero
+								sabemos que la organización del código, manteniendo piezas pequeñas de responsabilidad
+								reducida, es siempre muy positiva. Además, siempre llegará el momento en el que dos o
+								más componentes tengan que acceder a los mismos datos y hacer operaciones similares con
+								ellos, que podrían obligarnos a repetir código. Para solucionar estas situaciones
+								tenemos a los servicios.</p>
+							<p style="text-align: justify;"><br>Básicamente un servicio es un proveedor de datos, que
+								mantiene lógica de acceso a ellos y operativa relacionada con el negocio y las cosas que
+								se hacen con los datos dentro de una aplicación. Los servicios serán consumidos por los
+								componentes, que delegarán en ellos la responsabilidad de acceder a la información y la
+								realización de operaciones con los datos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-25">
+				<div class="nodeDecoration">
+					<h1 id="exenode_25_21Crearunservicio" class="nodeTitle">2.1.- Crear un servicio</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id64-25">
+					<div class="iDevice emphasis0">
+						<div id="ta64_154" class="block iDevice_content">
+							<p style="text-align: justify;">Tal como viene siendo costumbre en el desarrollo con
+								Angular, nos apoyaremos en Angular CLI para la creación del esqueleto, o scaffolding, de
+								un servicio.<br>Para crear un servicio usamos el comando "generate service", indicando a
+								continuación el nombre del servicio que queremos generar.</p>
+							<pre style="text-align: justify;">ng generate service clientes<br><br></pre>
+							<p style="text-align: justify;">Esto nos generaría el servicio llamado "ClientesService". La
+								coletilla "Service", al final del nombre, lo agrega Angular CLI, así como también nombra
+								al archivo generado con la finalización "-service", para dejar bien claro que es un
+								servicio.</p>
+							<p style="text-align: justify;">Es habitual que quieras colocar el servicio dentro de un
+								módulo en concreto, para lo que puedes indicar el nombre del módulo, una barra "/" y el
+								nombre del servicio. Pero atención: ahora lo detallaremos mejor, pero queremos advertir
+								ya que esto no agregará el servicio al código de un módulo concreto, sino que colocará
+								el archivo en el directorio de ese módulo. Enseguida veremos qué tienes que hacer para
+								que este servicio se asigne realmente al módulo que desees.</p>
+							<pre>ng generate service facturacion/clientes</pre>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id65-25">
+					<div class="iDevice emphasis0">
+						<div id="ta65_154" class="block iDevice_content">
+							<h3 style="text-align: justify;">1.&nbsp;&nbsp;Agregar la declaración del servicio a un
+								módulo</h3>
+							<p style="text-align: justify;">Para poder usar este servicio es necesario que lo agregues a
+								un módulo. Inmediatamente lo podrás usar en cualquiera de los componentes que pertenecen
+								a este módulo. Este paso es importante que lo hagas, puesto que, al contrario de lo que
+								ocurría al crear un componente con el CLI, la creación de un servicio no incluye la
+								modificación del módulo donde lo has creado.</p>
+							<p style="text-align: justify;">Así pues, vamos a tener que declarar el servicio manualmente
+								en el módulo. Lo haremos gracias al decorador del módulo (@NgModule), en el array de
+								"providers" e importarlo en su correspondiente módulo. El decorador de un módulo con el
+								array de providers podría quedar más o menos así.</p>
+							<pre
+								style="text-align: justify;"><br>@NgModule({<br> imports: [<br> CommonModule<br> ],<br> declarations: [ListadoClientesComponent],<br> providers: [ClientesService]<br>})</pre>
+							<pre
+								style="text-align: justify;"><br>import { ClientesService } from './clientes.service';</pre>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id66-25">
+					<div class="iDevice emphasis0">
+						<div id="ta66_154" class="block iDevice_content">
+							<h3>2.&nbsp;&nbsp;Código básico de un service en Angular</h3>
+							<p>Ahora podemos examinar el código generado para nuestro servicio y aprender nuevas cosas
+								de Angular. Este sería nuestro recién creado servicio "ClientesService"</p>
+							<pre>import { Injectable } from '@angular/core';</pre>
+							<pre>@Injectable()<br>export class ClientesService {</pre>
+							<pre>constructor() { }</pre>
+							<pre>}</pre>
+							<p>Como verás, el servicio no tiene nada todavía, solo su declaración, pero hay cosas
+								interesantes que tenemos que explicar, principalmente un nuevo decorador que no habíamos
+								conocido hasta el momento: "@injectable".</p>
+							<p>El decorador @injectable indica a Angular que la clase que se decora, en este caso la
+								clase ClientesService, puede necesitar dependencias que puedan ser entregadas por
+								inyección de dependencias. De momento puedes quedarte que los servicios necesitan de
+								este decorador, aunque realmente disponer de él no es condición indispensable.</p>
+							<p>El import, arriba del todo, { Injectable } from '@angular/core', lo que hace es que
+								nuestra clase conozca y sea capaz de usar el decorador @injectable.</p>
+							<p>Por lo demás, el servicio está vacío, pero le podemos poner ya algo de código para que
+								nos sirva de algo. De momento vamos a exponer mediante el servicio una simple propiedad
+								con un dato, que luego vamos a poder consumir desde algún componente. Para ello usamos
+								las propiedades de la clase, tal como nos permite TypeScript.</p>
+							<pre>export class ClientesService {<br> accesoFacturacion = 'https://login.example.com';<br> constructor() { }<br>}</pre>
+							<p>En nuestra clase ClientesService hemos creado una propiedad llamada "accesoFacturacion",
+								en la que hemos asignado un valor que sería común para todos los clientes. El dato es lo
+								de menos, lo interesante es ver que la declaración no dista de otras declaraciones en
+								clases que hayamos visto ya.</p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id67-25">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta67_151" class="block iDevice_content">
+								<p>Debes tener en cuanta una cosa muy importante. A la hora de crear el servicio,
+									mediante el decorador Injectable, estamos utilizando un patrón de programación <a
+										href="https://refactoring.guru/es/design-patterns/singleton">Singleton</a>, de
+									modo que solo se crea una instancia del objeto del modelo de datos, y así esta puede
+									ser llamada desde cualquier componente y utilizar la misma información</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-27">
+				<div class="nodeDecoration">
+					<h1 id="exenode_27_22UsodelServicio" class="nodeTitle">2.2.- Uso del Servicio</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id68-27">
+					<div class="iDevice emphasis0">
+						<div id="ta68_154" class="block iDevice_content">
+							<h3 style="text-align: justify;">1. Cómo inyectar dependencias de servicios</h3>
+							<p style="text-align: justify;"><br>Ahora nos toca ver la magia de Angular y su inyección de
+								dependencias, que vamos a usar para poder disponer del servicio en un componente.</p>
+							<p style="text-align: justify;">Como en otros frameworks, en Angular la inyección de
+								dependencias se realiza por medio del constructor. En el constructor de un componente,
+								que hasta ahora habíamos dejado siempre vacío, podemos declarar cualquiera de los
+								servicios que vamos a usar y el framework se encargará de proporcionarlo, sin que
+								tengamos que realizar nosotros ningún trabajo adicional.</p>
+							<p style="text-align: justify;">Esto es tan sencillo como declarar como parámetro la
+								dependencia en el constructor del componente.</p>
+							<pre
+								style="text-align: justify;">constructor(public clientesService: ClientesService) { }</pre>
+							<p style="text-align: justify;">De esta manera estamos indicando a TypeScript y Angular que
+								vamos a usar un objeto "clientesService" que es de la clase "ClientesService". A partir
+								de entonces, dentro del componente existirá ese objeto, proporcionando todos los datos y
+								funcionalidad definida en el servicio</p>
+							<h3 style="text-align: justify;">2. Usando el servicio en el componente</h3>
+							<p style="text-align: justify;">Ahora, para acabar esta introducción a los servicios en
+								Angular, tenemos que ver cómo usaríamos este servicio en el componente. No nos vamos a
+								detener demasido en hacer ejemplos elaborados, que podemos abordar más adelante, solo
+								veremos un par de muestras sobre cómo usar la propiedad declarada en el servicio.</p>
+							<p style="text-align: justify;"><strong>1.- Usando el servicio dentro de la clase del
+									componente</strong></p>
+							<p style="text-align: justify;">Dentro de la clase de nuestro componente, tendremos el
+								servicio a partir de la propiedad usada en su declaración. En el constructor dijimos que
+								el servicio se llamaba "clientesService", con la primera en minúscula por ser un objeto.
+							</p>
+							<p style="text-align: justify;">Pues como cualquier otra propiedad, accederemos a ella
+								mediante la variable "this".</p>
+							<pre
+								style="text-align: justify;">export class ListadoClientesComponent implements OnInit {</pre>
+							<pre
+								style="text-align: justify;">constructor(public clientesService: ClientesService) { }</pre>
+							<pre
+								style="text-align: justify;">ngOnInit() {<br> console.log(this.clientesService);<br> }</pre>
+							<pre style="text-align: justify;">}</pre>
+							<p style="text-align: justify;"><br>El ejemplo no vale para mucho, solo para mostrar que,
+								desde que esté creado el objeto podemos acceder al servicio con "this.clientesService".
+							</p>
+							<p style="text-align: justify;">También nos sirve para recordar que, el primer sitio donde
+								podríamos usar los servicios declarados es en el método ngOnInit(). Dicho de otro modo,
+								si necesitamos de estos servicios para inicializar propiedadades en el componente, el
+								lugar donde ponerlos en marcha sería el ngOnInit().</p>
+							<p style="text-align: justify;"><strong>2.- Usando el servicio en el template de un
+									componente</strong></p>
+							<p style="text-align: justify;">Por su parte, en el template de un componente, podrás
+								también acceder al servicio, para mostrar sus propiedades o incluso invocar sus métodos
+								como respuesta a un evento, por ejemplo.</p>
+							<p style="text-align: justify;">Como el servicio está en una propiedad del componente,
+								podremos acceder a él meditante ese nombre de propiedad. Pero ten en cuenta, que este
+								acceso desde el template sólo será posible si el servicio se declaró con visibilidad
+								"public".</p>
+							<pre
+								style="text-align: justify;">&lt;p&gt;<br> URL De acceso: {{clientesService.accesoFacturacion}}<br>&lt;/p&gt;</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-30">
+				<div class="nodeDecoration">
+					<h1 id="exenode_30_23ConsultasHTTP" class="nodeTitle">2.3.- Consultas HTTP</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id69-30">
+					<div class="iDevice emphasis0">
+						<div id="ta69_154" class="block iDevice_content">
+							<p style="text-align: justify;"><strong>Llamadas HTTP a una API REST - ¿Cómo usar
+									HTTPClient?</strong></p>
+							<p style="text-align: justify;"></p>
+							<p style="text-align: justify;">Hasta ahora con lo que sabemos podemos usar los servicios
+								para leer y escribir datos, pero simulados o guardados en la memoria del navegador, para
+								leer o escribir de una API REST tenemos que hacer llamadas HTTP.</p>
+							<p style="text-align: justify;">Antes de empezar con las llamadas hay que conocer que
+								Angular tiene un modulo que facilita esta tarea, el modulo es HttpClient. Con este
+								modulo no necesitas usar fetch ni ajax ni nada.</p>
+							<p style="text-align: justify;">Para usar HttpClient de Angular en cualquier parte, tenemos
+								que importar el módulo HttpClientModule, en la sección imports de el app.module.ts:</p>
+							<pre
+								style="text-align: justify;">import { HttpClientModule } from "@angular/common/http";</pre>
+							<p style="text-align: justify;">Aunque lo hayamos importado en la página de forma global,
+								también tenemos que importarlo y inyectarlo en los constructores de los servicios desde
+								los que vayamos a realizar llamadas HTTP. Por ejemplo para este nuevo servicio que he
+								creado para listar los usuarios de que vienen de la API:</p>
+							<pre style="text-align: justify;">import { HttpClient } from "@angular/common/http";</pre>
+							<pre
+								style="text-align: justify;">@Injectable({<br> providedIn: "root"<br>})<br>export class UsersService {<br> constructor(private http: HttpClient) {}<br>}</pre>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id70-30">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta70_151" class="block iDevice_content">
+								<p>HttpClient usa <a
+										href="https://refactoring.guru/es/design-patterns/observer">Observables </a>de
+									RxJS. Los observables son una colección de futuros eventos que llegan de forma
+									asíncrona. Si quieres aprender más de RxJS puedes visitar su <a
+										href="http://reactivex.io/rxjs/">web oficial</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id71-30">
+					<div class="iDevice emphasis0">
+						<div id="ta71_154" class="block iDevice_content">
+							<p dir="ltr" style="text-align: justify;"><span>Con eso listo ya puedes realizar llamadas
+									HTTP:</span></p>
+							<ul style="text-align: justify;">
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>GET: Simplemente devuelven
+											información.</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>POST: A estos endpoints se envía información
+											normalmente para crear o ejecutar acciones sobre recursos en bases de
+											datos.</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>PUT: Se envía información al endpoint y se
+											modifica en base de datos un recurso.</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>DELETE: Para borrar recursos del
+											servidor.</span></p>
+								</li>
+							</ul>
+							<p dir="ltr" role="presentation"><span></span></p>
+							<p dir="ltr" role="presentation"><span></span>Ahora para realizar llamadas http podemos
+								invocar cualquiera de los siguiente métodos definidos en el HttpClient:</p>
+							<ul style="text-align: justify;">
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>get()</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>post()</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>put()</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>delete()</span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-31">
+				<div class="nodeDecoration">
+					<h1 id="exenode_31_231LlamadaGET" class="nodeTitle">2.3.1.- Llamada GET</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id72-31">
+					<div class="iDevice emphasis0">
+						<div id="ta72_154" class="block iDevice_content">
+							<p dir="ltr" style="text-align: justify;"><span>Son las llamadas más básicas y como hemos
+									dicho sirven para devolver información desde el servidor. Esta información puede ser
+									un dato simple, un objeto o una lista de objetos todo ello en formato JSON
+									normalmente.</span></p>
+							<p dir="ltr" style="text-align: justify;"><span>Por ejemplo para hacer una llamada get a la
+									API de ejemplo que hemos comentado antes:</span></p>
+							<pre dir="ltr" style="text-align: justify;"><span>getUsers(){</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;this.http.get('https://reqres.in/api/users?page=2').subscribe(data =&gt; {</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;&nbsp;&nbsp;console.log(data);</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;});</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;console.log("Esto se ejecutará antes que el console log de arriba");</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>}</span></pre>
+							<p dir="ltr" style="text-align: justify;"><span>Fíjate que ahora después de la llamada al
+									método get() usamos subscribe. Esto funciona como las promesas de Javascript, con
+									ese método te esperas a que la petición termine. Dentro de ese método se ejecuta una
+									función (usando arrow functions/callback) en la que se devuelve el objeto data que
+									contiene la respuesta a la petición de la API.</span></p>
+							<p dir="ltr" style="text-align: justify;"><span>El console.log de abajo se ejecuta antes
+									incluso de que termine la petición. Esto pasa porque el código es asíncrono y por
+									tanto lo que pongas debajo no va a esperar a que la petición termine. Dentro del
+									subscribe si que tienes la certeza de que la petición ha terminado y por tanto
+									tienes la respuesta.</span></p>
+							<p dir="ltr" style="text-align: justify;"><span>El servicio completo quedaría así:</span>
+							</p>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>import { HttpClient } from "@angular/common/http";</span></pre>
+							<pre style="text-align: justify;"><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>@Injectable({</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;providedIn: "root"</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>})</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>export class UsersService {</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;constructor(private http: HttpClient) {}</span></pre>
+							<pre style="text-align: justify;"><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;getUsers() {</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;&nbsp;&nbsp;this.http.get("https://reqres.in/api/users?page=2").subscribe(data =&gt; {</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(data);</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;&nbsp;&nbsp;});</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>}</span></pre>
+							<p style="text-align: justify;"><span><span>&nbsp;</span></span></p>
+							<p dir="ltr" style="text-align: justify;"><span>Ahora podemos inyectar este servicio como ya
+									hemos hecho, en este caso en el componente de lista de usuarios:</span></p>
+							<p style="text-align: justify;"><span><span>&nbsp;</span></span></p>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>import { Component, OnInit } from "@angular/core";</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>import { UsersService } from "./users.service";</span></pre>
+							<pre style="text-align: justify;"><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>@Component({</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;selector: "app-users",</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;templateUrl: "./users.component.html",</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;styleUrls: ["./users.component.css"]</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>})</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>export class UsersComponent implements OnInit {</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;constructor(public usersService: UsersService) {}</span></pre>
+							<pre style="text-align: justify;"><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;ngOnInit() {</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;&nbsp;&nbsp;this.usersService.getUsers();</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>}</span></pre>
+							<p style="text-align: justify;"><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id73-31">
+					<div class="iDevice emphasis0">
+						<div id="ta73_154" class="block iDevice_content">
+							<p dir="ltr" style="text-align: justify;"><span>Con esto podemos realizar llamadas desde el
+									servicio pero los datos que se devuelven todavía no los tenemos en el componente
+									para poder mostrarlos.</span></p>
+							<p dir="ltr" style="text-align: justify;"><span>Para hacer poder mostrar los datos en el
+									HTML del componente, en lugar de hacer el subscribe en el servicio, tenemos que
+									devolver un Observable de la llamada http, es decir:</span></p>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>getUsers(): Observable&lt;any&gt;{</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;return this.http.get('https://reqres.in/api/users?page=2');</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>}</span></pre>
+							<p style="text-align: justify;"><span><span>&nbsp;</span></span></p>
+							<p dir="ltr" style="text-align: justify;"><span>No sin antes importar los observables en el
+									servicio:</span></p>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>import { Observable } from "rxjs/Observable";</span></pre>
+							<pre style="text-align: justify;"><span><span>&nbsp;</span></span></pre>
+							<p dir="ltr" style="text-align: justify;"><span>Para este ejemplo he puesto que el
+									Observable sea de tipo Any (cualquier tipo de objeto) pero lo suyo, en un futuro,
+									sería usar una interfaz para poder tener un modelo para los datos.</span></p>
+							<p dir="ltr" style="text-align: justify;"><span>Ahora, en el componente, cuando queramos
+									llamar al servicio (siempre y cuando lo hayamos inyectado en el controlador),
+									tenemos que subscribirnos para recibir la información, es decir:</span></p>
+							<p style="text-align: justify;"><span><span>&nbsp;</span></span></p>
+							<pre><span>import { Component, OnInit } from "@angular/core";</span></pre>
+							<pre><span>import { UsersService } from "../users.service";</span></pre>
+							<pre style="text-align: justify;"><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>@Component({</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;selector: "app-users",</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;templateUrl: "./users.component.html",</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;styleUrls: ["./users.component.css"]</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>})</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>export class UsersComponent implements OnInit {</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;users: any;</span></pre>
+							<pre style="text-align: justify;"><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;constructor(public usersService: UsersService) {}</span></pre>
+							<pre style="text-align: justify;"><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;ngOnInit() {</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;&nbsp;&nbsp;this.usersService.getUsers().subscribe(data =&gt; {</span></pre>
+							<pre dir="ltr"
+								style="text-align: justify;"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.users = data;</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;&nbsp;&nbsp;});</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr" style="text-align: justify;"><span>}</span></pre>
+							<p style="text-align: justify;"></p>
+							<pre dir="ltr" style="text-align: justify;"><span></span></pre>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DestacadofpdIdevice" id="id75-31">
+					<div class="iDevice emphasis0">
+						<div class="iDevice_destacadofpd">
+							<div id="ta75_151" class="block iDevice_content">
+								<p dir="ltr"><em><strong>IMPORTANTE</strong>&nbsp;Cuando carga un componente, si
+										mostramos una variable que viene de una petición HTTP, no se cargará y tirará
+										error porque en el instante en el que se abre la página, la petición aún no se
+										ha realizado. Para arreglar esto tenemos que poner un ngIf a la variable que
+										viene desde la petición antes de mostrarla en la vista.</em></p>
+								<p><em>&nbsp;</em></p>
+								<pre dir="ltr">&lt;div *ngIf="users"&gt;</pre>
+								<pre dir="ltr">&nbsp;&nbsp;{{ users }}</pre>
+								<pre dir="ltr">&lt;/div&gt;</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-33">
+				<div class="nodeDecoration">
+					<h1 id="exenode_33_232LlamadasPOSTyPUT" class="nodeTitle">2.3.2.- Llamadas POST y PUT</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id76-33">
+					<div class="iDevice emphasis0">
+						<div id="ta76_154" class="block iDevice_content">
+							<p style="text-align: justify;">Las llamadas POST y PUT sirven para enviar información al
+								servidor y que éste nos responda. POST se usa para crear recursos, por ejemplo, crear
+								usuarios, crear artículos o lo que sea. Normalmente se pasa un objeto o conjunto de
+								objetos a crear. Las peticiones PUT sirven para actualizar un objeto ya creado. Se pasa
+								lo mismo que en el post, un objeto o conjunto de ellos para editar por los que haya se
+								hayan creado.</p>
+							<p style="text-align: justify;">Para conseguir esto simplemente al realizar la llamada que
+								corresponda, desde el servicio pasamos el objeto correspondiente, por ejemplo:</p>
+							<pre
+								style="text-align: justify;">createUser(user: Any): Observable&lt;any&gt;{<br> return this.http.post('https://reqres.in/api/users', user);<br>}<br>editUser(user: Any): Observable&lt;any&gt;{<br> return this.http.post('https://reqres.in/api/users/2', user);<br>}</pre>
+							<p style="text-align: justify;">El segundo parámetro de la función del get y del post es el
+								objeto o objetos que quieres enviar al servidor.</p>
+							<p style="text-align: justify;">Con esto ya podemos usarlo dentro del componente de users:
+							</p>
+							<pre
+								style="text-align: justify;">import { Component, OnInit } from "@angular/core";<br>import { UsersService } from "../users.service";</pre>
+							<pre
+								style="text-align: justify;">@Component({<br> selector: "app-users",<br> templateUrl: "./users.component.html",<br> styleUrls: ["./users.component.css"]<br>})<br>export class UsersComponent implements OnInit {<br> users: any;</pre>
+							<pre style="text-align: justify;">constructor(public usersService: UsersService) {}</pre>
+							<pre
+								style="text-align: justify;">ngOnInit() {<br> this.usersService.createUser({<br> name: "morpheus",<br> job: "leader"<br> });<br> this.usersService.editUser({<br> name: "morpheus",<br> job: "zion resident"<br> });<br> }<br>}</pre>
+							<p style="text-align: justify;">Por cierto, en los post y los put también puedes hacer un
+								subscribe para esperar a que termine la petición por si quieres ejecutar algo después o
+								recibir la información del servidor, la sintaxis es la misma que con el GET.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-35">
+				<div class="nodeDecoration">
+					<h1 id="exenode_35_233LlamadaDELETE" class="nodeTitle">2.3.3.- Llamada DELETE</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id77-35">
+					<div class="iDevice emphasis0">
+						<div id="ta77_154" class="block iDevice_content">
+							<p style="text-align: justify;">La llamada DELETE se usa para borrar recursos del servidor y
+								si suntaxis es exactamente igual que las que hemos visto anteriormente:</p>
+							<pre
+								style="text-align: justify;">deleteUser(): Observable&lt;any&gt;{<br> return this.http.delete('https://reqres.in/api/users/2');<br>}</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-36">
+				<div class="nodeDecoration">
+					<h1 id="exenode_36_234EnvodeHeaders" class="nodeTitle">2.3.4.- Envío de Headers</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id78-36">
+					<div class="iDevice emphasis0">
+						<div id="ta78_154" class="block iDevice_content">
+							<p style="text-align: justify;">Con lo que hemos visto ahora te sirve para usar muchas APIS,
+								pero puede darse el caso en el que tu API esté protegida con un sistema de Basic auth.
+								En ese caso, para no tener que pasar esa información en cada petición lo que puedes
+								hacer es extender HttpClient para pasar estos headers en todas las peticiones sin que te
+								tengas que acordar de hacerlo cada vez.</p>
+							<p style="text-align: justify;">Para ello, una de las soluciones posibles es crear un
+								archivo .ts para pasar en todas las llamadas los headers:</p>
+							<pre
+								style="text-align: justify;">import { Injectable, OnInit } from "@angular/core";<br>import { Http, Headers, RequestOptions } from "@angular/http";</pre>
+							<pre
+								style="text-align: justify;">@Injectable()<br>export class HttpWithHeaders {<br> public sessionData: SessionData;</pre>
+							<pre
+								style="text-align: justify;">constructor(private http: Http) {<br> this.headers = "Basic " + btoa("username" + ":" + "password");<br> }<br> get(url) {<br> return this.http.get(url, {<br> headers: this.generateHeaders()<br> });<br> }<br> post(url, data) {<br> return this.http.post(url, data, {<br> headers: this.generateHeaders()<br> });<br> }<br> put(url, data) {<br> return this.http.put(url, data, {<br> headers: this.generateHeaders()<br> });<br> }<br> delete(url) {<br> return this.http.delete(url, {<br> headers: this.generateHeaders()<br> });<br> }<br>}</pre>
+							<p style="text-align: justify;">Para usar esta clase que acabamos de crear, simplemente
+								tenemos que cambiar en los servicios el httpClient por nuestro HttpWithHeaders.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<script type="text/javascript" src="./DWEC06.- Angular y TypeScript II_files/venobox.min.js.descarga"></script>
+	<script>$(document).ready(function () { $('.venobox').venobox({ titleattr: 'data-title' }); });</script>
+
+</body>
+
+</html>

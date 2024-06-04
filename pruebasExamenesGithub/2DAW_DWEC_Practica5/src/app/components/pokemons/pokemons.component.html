@@ -1,0 +1,36 @@
+<div class="container">
+    <h2>Los personajes que tenemos en el array:</h2>
+    <br>
+    <br>
+    <div class="columns">
+        <div class="column">
+            <p> {{cuenta}} Pokémons en el array</p>
+            <p *ngIf=pokemonSeleccionado>El Pokémon seleccionado es: {{ pokemonSeleccionado }}</p>
+        </div>
+    </div>
+    <form>
+        <div class="field has-addons">
+            <div class="control has-icons-left">
+                <input class="input is-small" name=" personajeBusca" type="test" 
+                    placeholder="Nombre del Pokémon"
+                    [(ngModel)]="formBuscarPersonaje.nombre" (keyup)="buscar(formBuscarPersonaje.nombre)">
+            </div>
+            <div class="control">
+                <a class="button is-primary is-small" 
+                (click)="buscar(formBuscarPersonaje.nombre)">Buscar</a>
+            </div>
+            <div class="control">
+                <a class="button is-light is-small" (click)="cancelarBuscar()">Cancelar</a>
+            </div>
+        </div>
+    </form>
+    
+    <div class="columns is-multiline">
+        <ul class="menu-list column is-one-third" *ngFor="let pokemon of pokemons">
+            <li>
+                <!--[pokemon]: objeto del hijo-->
+                <app-pokemon [pokemon]=pokemon (eventoClicImagen)="pokemonSeleccionado=$event"></app-pokemon>
+            </li>
+        </ul>
+    </div>
+</div>

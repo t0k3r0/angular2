@@ -1,0 +1,14 @@
+<form [formGroup]="form" class="form-group" (ngSubmit) ="login()">
+    <div>
+        <label for="usuario">Nombre del usuario:</label>
+        <input type="text" id="usuario" class="form-control" formControlName="usuario"> 
+        <div *ngIf="form.controls.usuario.touched && !form.controls.usuario.valid">
+             
+        </div>
+    </div>
+    <div>
+        <label for="contrasenia">Contraseña:</label>
+        <input type="text" id="contrasenia" class="form-control" formControlName="contrasenia">
+    </div>
+    <input class="btn btn-primary" type="submit" value="Enviar">
+</form>

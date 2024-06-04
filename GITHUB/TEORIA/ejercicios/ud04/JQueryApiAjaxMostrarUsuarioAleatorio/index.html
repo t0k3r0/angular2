@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #09f;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <img>
+    <b>nombre: </b>
+    <span id="nombre"></span>
+    <br>
+    <b>apellido: </b>
+    <span id="apellido"></span>
+    <br>
+    <div id="imagenContainer">
+        <img id="imagen" src="" alt="Imagen" />
+    </div>
+
+    <!-- Incluir jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        // Función para hacer una solicitud AJAX usando jQuery
+        function ajaxRequest(url, callback) {
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                success: function (data) {
+                    callback(data);
+                }
+            });
+        }
+
+        // Función para obtener un nombre aleatorio
+        function obtenerNombreAleatorio() {
+            ajaxRequest('https://randomuser.me/api/', function (data) {
+                var nombre = data.results[0].name.first;
+                var apellido = data.results[0].name.last;
+
+                $('#nombre').text(nombre);
+                $('#apellido').text(apellido);
+                $('#imagen').attr('src', data.results[0].picture.large);
+            });
+        }
+
+        // Llamar a la función obtenerNombreAleatorio inicialmente
+        obtenerNombreAleatorio();
+
+        // Actualizar el nombre cada 5 segundos
+        setInterval(obtenerNombreAleatorio, 5000);
+    </script>
+</body>
+
+</html>

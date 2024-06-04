@@ -1,0 +1,51 @@
+<div class="contenedor">
+    <!-- Encabezado con títulos -->
+    <div>
+        <h1>JUEGO DE ADIVINACIÓN</h1>
+    </div>
+    <hr/>
+    <h2>Parámetros de configuración del juego</h2>
+
+    <!-- divs de los input que se muestran en el primer apartado -->
+    <div class="input-container">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" [(ngModel)] = "this.confDatos.miNombre" />
+    </div>
+    <div class="input-container">
+        <label for="surname">Apellido:</label>
+        <input type="text" id="surname" name="surname" [(ngModel)] = "this.confDatos.miApellido" />
+    </div>
+    <div class="input-container">
+        <label for="rangoNum">Rango de números a generar:</label>
+        <input type="number" id="rangoNum" name="rangoNum" [(ngModel)] = "this.confDatos.miRango" />
+    </div>
+    <div class="input-container">
+        <label for="numIntentos">Número de intentos:</label>
+        <input type="number" id="numIntentos" name="numIntentos" [(ngModel)] = "this.confDatos.misIntentos" />
+    </div>
+    <button (click)="recogerDatos()">Recoger datos</button>
+    <hr/>
+
+    <!-- Segundo apartado del prog, donde se introduce el num de intento del usuario -->
+    <h2 >{{msjBienvenida}}</h2>
+    <div class="input-container">
+        <label for="numAdivinar">Introduce el número a adivinar:</label>
+        <input type="number" id="numAdivinar" name="numAdivinar" [(ngModel)] = "this.numUsuario"/>
+    </div>
+    <p>{{ msjIntentosRest }}</p>
+    <p>{{ msjAdivinar }}</p>
+
+    <!-- Usamos la propiedad "disabled", para controlar la habilitación o deshabilitación del botón -->
+    <button (click)="enviar()" id="enviarBtn" [disabled]='!this.botonEnviarHabilitado'>Enviar</button>
+    <hr/>
+
+    <!-- Tercer apartado del prog, que se muestra cuando los intentos han sido agotados
+        Controlamos con un if que cuando los intentos sean igual a cero, se active la clase, dónde le decimos sea display:block, por tanto se muestre
+        Recorremos el array de intentos para mostrar en una lista los números erroneos introducidos por el usuario -->
+    <div>
+        <p>{{ msjAgotado }}</p>
+        <ul *ngIf='this.confDatos.misIntentos === 0' [ngClass]="'mostrar'">
+        <li *ngFor="let intento of intentos">{{ intento }}</li>
+        </ul>
+    </div>
+</div>

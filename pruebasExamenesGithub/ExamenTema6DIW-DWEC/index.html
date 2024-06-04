@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen</title>
+    <link rel="stylesheet" href="build/css/style.css">
+    <link rel="stylesheet" href="build/css/normalize.css">
+    <link rel="icon" href="build/img/Satoru-gojo.png">
+    
+</head>
+<body id="inicio">
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <span>
+                <img src="build/img/Satoru-gojo.png" alt="Gojo Chiquito">
+            </span>
+            <nav class="navegacion-principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#galeria">Galeria</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenedor-video">
+                <h2>Jujutsu Kaisen</h2>
+                <p>El hechizero mas fuerte de la historia /VS\ El hechizero mas fuerte de hoy en dia</p>
+            </div>
+        </div>
+        <video autoplay loop muted>
+            <source src="video/Pelea.mp4" type="video/mp4">
+            <source src="video/Pelea.ogg" type="video/ogg">
+            <source src="video/Pelea.webm" type="video/webm">
+        </video>
+    </div>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <footer class="site-footer">
+        <p>@ Joaquín Sánchez Miravalles (Studient) <span id="year"></span></p>
+    </footer>
+
+    <script src="build/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+Está permitido usar internet, pero…
+
+Solo podréis usar una pestaña del navegador, para consultar o buscar recursos online (webs, foros, etc.).
+
+Podréis llevar un folio en blanco y un bolígrafo para hacer esquemas, tomar notas, etc.
+
+
+Está PROHIBIDO y seréis automáticamente suspendidos y expulsados del examen por:
+
+Utilizar aplicaciones de mensajería (WhatsApp, Telegram etc.)
+
+Utilizar aplicaciones basadas en Inteligencia Artificial (tanto asistentes de código; Copilot etc., como IAs generativas: ChatGPT etc. )
+
+Utilizar dispositivos de almacenamiento externo.
+
+******************RESPUESTA A MENSAJE DEL FORO
+
+Última versión, la 17. Os lo daré yo preinstalado en los ordenadores, pero al igual que hemos visto en clase os pediré realizarlo en no-standalone.
+
+******************RESTO DEL CORREO:
+	
+Kaixo!
+
+Os escribo con varias cosas referentes al examen. Pero antes de esto, dos cosas:
+Tenéis las notas publicadas desde este momento en el apartado; Lehen Azken Eb. - Ev. Final Primera / Media UDs del periodo de evaluación (45%)
+Todos los años realizo una encuesta anónima a final de curso para que podáis darme vuestro punto de vista sobre la asignatura y valorarme como docente. Esto es algo que hago por mi cuenta, para intentar mejorar. Os agradecería si pudierais sacar 2 minutos para hacerla cuando podáis. Os dejo el enlace por aquí. Deciros también que lo tendréis disponible el día del examen, por si alguno no ha podido hacerlo.
+Respecto al examen, os dejo a continuación toda la información de interés:
+
+
+
+Antes de empezar:
+
+Fecha del examen: martes 4 de junio de 18:00 a 20:00. Duración: 2h
+
+Lugar: sede asignada a cada alumno.
+
+ÁLAVA: Sede BIRTLH Gasteiz. Álava, 41. Vitoria-Gasteiz. 945 567 953
+BIZKAIA: CIFP Bidebieta LHII. Lehendakari Agirre 97. Basauri. 944 262 777
+GIPUZKOA: CIFP Easo Politeknikoa LHII. Parque Aitzol, 2. San Sebastián. 943 455 42
+Superar el examen es obligatorio para poder aprobar el módulo.
+
+Para poder realizarlo, deberéis tener la evaluación continua superada. Media ponderada de todas las Tareas Evaluativas >=5
+
+Si queréis comprobar la media, en la programación del módulo, en Moodle, podréis encontrar el peso de cada UD, multiplicando por la nota de cada tarea tendréis la calificación.
+
+
+
+
+Dicho esto, vamos con la MATERIA que entrará en el examen:
+
+El examen se basará en realizar un frontend basado en; una buena arquitectura, dominio de la estructura de directorios en una aplicación cliente, el uso del DOM, la visualización de información de manera dinámica en las vistas y la gestión de eventos. 
+
+Además de esto, deberéis realizar consultas HTTP a un backend, de manera que demostréis que sabéis gestionar y visualizar la información que os devolverá en formato JSON.
+
+Prestad especial atención en las UDs 4, 5 y 6
+
+
+Por otro lado, os RECOMIENDO encarecidamente que antes de empezar a programar:
+
+Os toméis unos minutos para leer el enunciado completo, ya que este será corto en cuanto a longitud, y así podéis cercioraos de que entendéis todo bien. Habrá un vídeo con una demo de funcionamiento.
+
+El examen lo realizaréis en un VDI (escritorio virtual) en el que tendréis instalado todo el software con el que hemos ido trabajando a lo largo del curso.
+
+En cualquier caso, si por preferencias personales, alguno necesitáis de software o extensiones de VSCode concretas, podéis notificármelo por aquí y si tengo tiempo las instalaré, si no, podréis instalarlo vosotros en el momento del examen sin problema.
+
+Para los que no hayáis tratado con VDIs antes, o para que veáis la plantilla de VDI del examen, os dejo aquí un enlace a un VDI de prueba para que podáis ir probando y viendo lo que hay instalado. 
+
+Si cuando entréis, veis que hay otra persona dentro, por favor salid y entrad en otro momento, ya que no podréis estar dos personas a la vez. Una vez terminéis, por favor, apagad la máquina.
+
+Antes de pedirme que instale algo, aseguraos de que no está instalado ya.

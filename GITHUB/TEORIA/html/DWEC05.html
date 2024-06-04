@@ -1,0 +1,1107 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0097)https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC05/es_DAW_DWEC05_Contenidos/singlepage_index.html -->
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>DWEC05.- Angular JS y POO en TypeScript</title>
+	<link rel="shortcut icon"
+		href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC05/es_DAW_DWEC05_Contenidos/favicon.ico"
+		type="image/x-icon">
+	<meta http-equiv="content-language" content="es">
+	<meta name="generator" content="eXeLearning 2.2 - exelearning.net">
+	<link rel="stylesheet" type="text/css" href="./DWEC05.- Angular JS y POO en TypeScript_files/base.css">
+	<link rel="stylesheet" type="text/css" href="./DWEC05.- Angular JS y POO en TypeScript_files/content.css">
+	<script type="text/javascript"
+		src="./DWEC05.- Angular JS y POO en TypeScript_files/exe_jquery.js.descarga"></script>
+	<script type="text/javascript"
+		src="./DWEC05.- Angular JS y POO en TypeScript_files/common_i18n.js.descarga"></script>
+	<script type="text/javascript" src="./DWEC05.- Angular JS y POO en TypeScript_files/common.js.descarga"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+		type="text/javascript">var path = "my_js.js"; if (document.domain == "ikastaroak.ulhi.net" || document.domain == "ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI22/my_js.js"; document.write(unescape("%3Cscript src=\'" + path + "\'type=\'text/javascript\'%3E%3C/script%3E"));</script>
+	<script src="./DWEC05.- Angular JS y POO en TypeScript_files/my_js.js.descarga" type="text/javascript"></script>
+	<script type="text/javascript" src="./DWEC05.- Angular JS y POO en TypeScript_files/webReader.js.descarga"></script>
+	<link id="rsmod_Styles" type="text/css" rel="stylesheet"
+		href="./DWEC05.- Angular JS y POO en TypeScript_files/ReadSpeaker.Styles-Button.css">
+	<script type="text/javascript">window.rsConf = { general: { usePost: true } };</script>
+
+	<script
+		type="text/javascript">window.onload = function () { var player = document.createElement("div"); player.id = "readspeaker_button1"; player.className = "rs_skip rsbtn rs_preserve"; player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' + 'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' + '<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' + '</a>'; var accordions = document.getElementsByClassName("fx-accordion-title"); for (i = 0; i < accordions.length; i++) { accordions[i].className += " rs_preserve"; } var paginations = document.getElementsByClassName("fx-pagination"); for (i = 0; i < paginations.length; i++) { paginations[i].className += " rs_preserve rs_skip"; } var main = document.getElementById("main"); main.insertBefore(player, main.firstChild); ReadSpeaker.init(); ReadSpeaker.q(function () { rspkr.ui.addClickEvents(); }); };</script>
+	<style>
+		#main .rsbtn ul li {
+			list-style-image: none
+		}
+	</style>
+</head>
+
+<body class="exe-single-page js" data-rsevent-id="rs_215796">
+	<script type="text/javascript">document.body.className += " js"</script>
+	<div id="content">
+		<div id="header" role="banner">
+			<!-- <div id="headerContent">
+				<h1>DWEC05.- Angular JS y POO en TypeScript</h1>
+			</div> -->
+		</div>
+		<div id="main" role="main">
+			<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve mega_toggle"><button type="button"
+					class="rsbtn_tooltoggle" data-rsshortcut="menu" data-rslang="title/arialabel:menu"
+					title="Menú de webReader" aria-label="Menú de webReader" aria-expanded="false" data-rs-tooltip="."
+					data-rs-direction="u" data-rs-container="readspeaker_button1" data-rsevent-id="rs_621640"
+					style="display: none;"><span class="rsicn rsicn-arrow-down" aria-hidden="true"></span></button><a
+					class="rsbtn_play" title="Escuchar esta página utilizando ReadSpeaker"
+					href="https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url="
+					role="button" aria-label="ReadSpeaker webReader: Escuchar con webReader" data-rs-tooltip="."
+					data-rs-direction="u" aria-haspopup="menu" aria-expanded="false" data-rsshortcut="play"
+					data-rs-lang="es_es"><span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"
+							aria-hidden="true"><span>Escuchar</span></span></span><span
+						class="rsbtn_right rsimg rsplay rspart"></span></a></div>
+			<div class="node level-1-node" id="exe-node-0">
+				<div class="nodeDecoration">
+					<h1 id="exenode_0_DWEC05AngularJSyPOOenTypeScript" class="nodeTitle">DWEC05.- Angular JS y POO en
+						TypeScript</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id82-0">
+					<div class="iDevice emphasis0">
+						<div id="ta82_154" class="block iDevice_content">
+							<p>En esta UD veremos <strong>los principios de programación orientada a objetos en
+									TypeScript</strong> y empezaremos a usar el <strong>framework Angular JS</strong>,
+								con la intención de desarrollar nuestra primera web SPA bajo los estándares de un
+								framework utilizado actualmente en el mercado laboral.</p>
+							<p>Iremos desarrollando todo esto a lo largo de la teoría y vídeos de la UD, pero además de
+								esto me parece interesante que consultéis los enlaces que os dejo para poder profundizar
+								más en el tema, ya que por las limitaciones temporales del módulo no es posible hacer
+								hincapié a un nivel más profundo en todo lo que se comenta. Por tanto me gustaría
+								facilitaros algunas referencias para que podáis trabajar algunos aspectos por vuestra
+								cuenta.</p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice" id="id80-0">
+					<div class="iDevice emphasis_debesconocerfpd">
+						<div class="iDevice_header">
+							<!-- <h2 class="iDeviceTitle">Debes conocer</h2> -->
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta80_129" class="block iDevice_content">
+									<p style="text-align: center;"><a
+											href="https://www.youtube.com/playlist?list=PLCTD_CpMeEKRbxrnw-tAq6tG-NIUNu9sG">Curso
+											Angular JS y POO con TypeScript</a></p>
+									<p style="text-align: center;"><a
+											href="https://github.com/programadornovato/typescript/commit/a0a187ad1a0e20ae9d651aa0330cb053a03029b7">Enlace
+											a GitHub&nbsp;con ejercicios del curso</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id81-0">
+					<div class="iDevice emphasis0">
+						<div id="ta81_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-1">
+				<div class="nodeDecoration">
+					<h1 id="exenode_1_1POOenTypeScript" class="nodeTitle">1.- POO en TypeScript</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id50-1">
+					<div class="iDevice emphasis0">
+						<div id="ta50_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id51-1">
+					<div class="iDevice emphasis0">
+						<div id="ta51_154" class="block iDevice_content">
+							<p dir="ltr"><span>¿Qué es? Es un superset de Microsoft con extensión “.ts”. Es un 85%
+									JavaScript al que se le han añadido todos los últimos estándares ECMASCRIPT. Lo que
+									hace TS es transpìlar el código TS a JS para que funcione en la mayoría de los
+									navegadores.</span></p>
+							<p dir="ltr"><span>Aparte de esto tiene un tipado de datos fuerte y tiene opciones avanzadas
+									para POO</span></p>
+							<p><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper RecomendacionfpdIdevice em_iDevice" id="id52-1">
+					<div class="iDevice emphasis_recomendacionfpd">
+						<div class="iDevice_header">
+							<h2 class="iDeviceTitle">Recomendación</h2>
+						</div>
+						<div class="iDevice_inner">
+							<div class="iDevice_content_wrapper">
+								<div id="ta52_131" class="block iDevice_content">
+									<p><a
+											href="https://platzi.com/clases/2272-nestjs/37073-repaso-a-typescript-tipos-y-poo/">POO
+											ejercicios introductorios</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-5">
+				<div class="nodeDecoration">
+					<h1 id="exenode_5_2PrimerospasosconTypeScript" class="nodeTitle">2.- Primeros pasos con TypeScript
+					</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id53-5">
+					<div class="iDevice emphasis0">
+						<div id="ta53_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id54-5">
+					<div class="iDevice emphasis0">
+						<div id="ta54_154" class="block iDevice_content">
+							<h3 class="normal-line-height f-text-48 h1 bold capitalize no-margin">Qué Es TypeScript</h3>
+							<p>JavaScript es uno de los lenguajes más populares, en parte porque ha evolucionado y
+								mejorado a pasos agigantados en los últimos años.</p>
+							<p>Sin embargo, Javascript en algún punto fue un lenguaje que presentaba muchos problemas
+								para bases de código grandes, aplicaciones de gran escala y proyectos con muchos años de
+								desarrollo.</p>
+							<p>En 2012 en Javascript no habían clases, ni módulos, el ecosistema carecía de herramientas
+								que optimizaran el flujo de desarrollo, derivado precisamente por las carencias del
+								lenguaje mismo.</p>
+							<p>2012 fue el año en que Typescript apareció (luego de 2 años de desarrollo), una solución
+								de Microsoft para el desarrollo de aplicaciones con Javascript a gran escala, para ellos
+								y para sus clientes. Steve Lucco y un equipo de más de 50 personas que incluía a Anders
+								Hejlsberg, Lead Architect de C# y creador de Delphi y Turbo Pascal desarrollaron
+								Typescript en Microsoft, un proyecto que originalmente se conoció como Strada.</p>
+							<p>Originalmente, productos como Bing y Office 365 despertaron en Microsoft la necesidad de
+								una mejora a JavaScript que permitiera construir productos escalables.</p>
+							<p>Typescript es la solución a muchos de los problemas de JavaScript, está pensado para el
+								desarrollo de aplicaciones robustas, implementando características en el lenguaje que
+								nos permitan desarrollar herramientas más avanzadas para el desarrollo de aplicaciones.
+							</p>
+							<h3>SUPERSET DE JAVASCRIPT</h3>
+							<p>Typescript es un&nbsp;<span>superset de JavaScript</span>. Decimos que una tecnología es
+								un superset de un lenguaje de programación, cuando puede ejecutar programas de la
+								tecnología, Typescript en este caso, y del lenguaje del que es el superset, JavaScript
+								en este mismo ejemplo. En resumen, esto significa que los programas de JavaScript son
+								programas válidos de TypeScript, a pesar de que TypeScript sea otro lenguaje de
+								programación.</p>
+							<p>Esta decisión fue tomada en Microsoft bajo la promesa de que las futuras versiones de
+								Ecmascript traerían adiciones y mejoras interesantes a Javascript, esto significa que
+								Typescript se mantiene a la vanguardia con las mejoras de JavaScript.</p>
+							<p>Además, esto permite que uno pueda integrar Typescript en proyectos existentes de
+								JavaScript sin tener que reimplementar todo el código del proyecto en Typescript, de
+								hecho, es común que existan proyectos que introduzcan tanto Typescript como JavaScript.
+							</p>
+							<p>Por si fuera poco, uno de los beneficios adicionales de esta característica del lenguaje,
+								es que pone a disposición el enorme ecosistema de librerías y frameworks que existen
+								para JavaScript. Con Typescript podemos desarrollas aplicaciones con React, Vue o
+								Angular que es el que estudiaremos en esta UD</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-6">
+				<div class="nodeDecoration">
+					<h1 id="exenode_6_21TStipodedatosBsicos" class="nodeTitle">2.1.- TS tipo de datos Básicos</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id55-6">
+					<div class="iDevice emphasis0">
+						<div id="ta55_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id84-6">
+					<div class="iDevice emphasis0">
+						<div id="ta84_154" class="block iDevice_content">
+							<p>En este apartado mencionaremos con ejemplos en código los tipos de datos primitivos que
+								os encontraréis en TypeScript</p>
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id56-6">
+					<div class="iDevice emphasis0">
+						<div id="ta56_154" class="block iDevice_content">
+							<pre dir="ltr"><span>/ Tipo de original</span></pre>
+							<pre dir="ltr"><span>let</span><span> bool: boolean = </span><span>true</span></pre>
+							<pre dir="ltr"><span>let</span><span> num: number = </span><span>123</span></pre>
+							<pre dir="ltr"><span>let</span><span> str: string = </span><span>'abc'</span></pre>
+							<pre><code><span><span>&nbsp;</span></span></code></pre>
+							<pre dir="ltr"><span>//Estructuras de datos</span></pre>
+							<pre
+								dir="ltr"><span>let</span><span> arr1: number[] = [</span><span>1</span><span>,</span><span>2</span><span>,</span><span>3</span><span>]</span></pre>
+							<pre
+								dir="ltr"><span>let</span><span> arr2: </span><span>Array</span><span>&lt;number | string&gt; = [</span><span>1</span><span>,</span><span>2</span><span>,</span><span>3</span><span>,</span><span>'4'</span><span>]</span></pre>
+							<pre><code><span><span><br><br><br></span></span></code></pre>
+							<pre
+								dir="ltr"><span>let</span><span> tuple: [number,string] = [</span><span>0</span><span>,</span><span>'1'</span><span>]</span></pre>
+							<pre><code><span><span>&nbsp;</span></span></code></pre>
+							<pre dir="ltr"><span>//Función</span></pre>
+							<pre dir="ltr"><span>let</span><span> add = (x:number,y:number)&nbsp; =&gt; x+y</span></pre>
+							<pre dir="ltr"><span>let</span><span> compute: (x:number,y:number) =&gt;number</span></pre>
+							<pre dir="ltr"><span>compute = (a,b) =&gt; a+b</span></pre>
+							<pre><code><span><span>&nbsp;</span></span></code></pre>
+							<pre dir="ltr"><span>//Objeto</span></pre>
+							<pre
+								dir="ltr"><span>let</span><span> obj: {</span><span>x</span><span>:number,</span><span>y</span><span>:number} = {</span><span>x</span><span>:</span><span>1</span><span>,</span><span>y</span><span>:</span><span>2</span><span>}ftype</span></pre>
+							<pre dir="ltr"><span>obj.x = </span><span>3</span></pre>
+							<pre><code><span><span>&nbsp;</span></span></code></pre>
+							<pre dir="ltr"><span>// el símbolo tiene un valor único</span></pre>
+							<pre
+								dir="ltr"><span>let</span><span> s1: symbol = </span><span>Symbol</span><span>()</span></pre>
+							<pre dir="ltr"><span>let</span><span> s2 = </span><span>Symbol</span><span>()</span></pre>
+							<pre dir="ltr"><span>console</span><span>.log(s1 === s2) </span><span>//false</span></pre>
+							<pre><code><span><span>&nbsp;</span></span></code></pre>
+							<pre dir="ltr"><span>// any es equivalente a la escritura de js</span></pre>
+							<pre dir="ltr"><span>let</span><span> x: any</span></pre>
+							<pre dir="ltr"><span>x=</span><span>123</span></pre>
+							<pre dir="ltr"><span>x=[]</span></pre>
+							<pre dir="ltr"><span>x=()=&gt;{}</span></pre>
+							<pre><code><span><span>&nbsp;</span></span></code></pre>
+							<pre dir="ltr"><span>// 1. Lanzar una excepción</span></pre>
+							<pre dir="ltr"><span>let</span><span> error = ()=&gt; {</span></pre>
+							<pre
+								dir="ltr"><span>throw</span><span> </span><span>new</span><span> </span><span>Error</span><span>(</span><span>"error"</span><span>)</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<p><span>&nbsp;</span></p>
+							<pre><code>&nbsp;</code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-7">
+				<div class="nodeDecoration">
+					<h1 id="exenode_7_22TStipoAvanzados" class="nodeTitle">2.2.- TS tipo Avanzados</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id15-7">
+					<div class="iDevice emphasis0">
+						<div id="ta15_73" class="block iDevice_content">
+							<div class="elemento_derecha">
+								<div class="elemento_centrado"><a
+										href="https://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC05/es_DAW_DWEC05_Contenidos/DWEC05_CONT_R11_checkbox.jpg"
+										title="Ampliar imagen.">
+										<script data-pagespeed-no-defer="" type="text/javascript">//<![CDATA[
+												(function () { for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) { if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters."); b != Array.prototype && b != Object.prototype && (b[c] = a.value) }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) { var m = k[l]; m in h || (h[m] = {}); h = h[m] } var n = k[k.length - 1], p = h[n], q = p ? p : function (b) { var c; if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined"); c = this + ""; if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value"); b |= 0; for (var a = ""; b;)if (b & 1 && (a += c), b >>>= 1) c += c; return a }; q != p && null != q && g(h, n, { configurable: !0, writable: !0, value: q }); var t = this; function u(b, c) { var a = b.split("."), d = t; a[0] in d || !d.execScript || d.execScript("var " + a[0]); for (var e; a.length && (e = a.shift());)a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c }; function v(b) { var c = b.length; if (0 < c) { for (var a = Array(c), d = 0; d < c; d++)a[d] = b[d]; return a } return [] }; function w(b) { var c = window; if (c.addEventListener) c.addEventListener("load", b, !1); else if (c.attachEvent) c.attachEvent("onload", b); else { var a = c.onload; c.onload = function () { b.call(this); a && a.call(this) } } }; var x; function y(b, c, a, d, e) { this.h = b; this.j = c; this.l = a; this.f = e; this.g = { height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight, width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth }; this.i = d; this.b = {}; this.a = []; this.c = {} } function z(b, c) { var a, d, e = c.getAttribute("data-pagespeed-url-hash"); if (a = e && !(e in b.c)) if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1; else { d = c.getBoundingClientRect(); var f = document.body; a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop); d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft); f = a.toString() + "," + d; b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width) } a && (b.a.push(e), b.c[e] = !0) } y.prototype.checkImageForCriticality = function (b) { b.getBoundingClientRect && z(this, b) }; u("pagespeed.CriticalImages.checkImageForCriticality", function (b) { x.checkImageForCriticality(b) }); u("pagespeed.CriticalImages.checkCriticalImages", function () { A(x) }); function A(b) { b.b = {}; for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d)a = a.concat(v(document.getElementsByTagName(c[d]))); if (a.length && a[0].getBoundingClientRect) { for (d = 0; c = a[d]; ++d)z(b, c); a = "oh=" + b.l; b.f && (a += "&n=" + b.f); if (c = !!b.a.length) for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) { var e = "," + encodeURIComponent(b.a[d]); 131072 >= a.length + e.length && (a += e) } b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0); C = a; if (c) { d = b.h; b = b.j; var f; if (window.XMLHttpRequest) f = new XMLHttpRequest; else if (window.ActiveXObject) try { f = new ActiveXObject("Msxml2.XMLHTTP") } catch (r) { try { f = new ActiveXObject("Microsoft.XMLHTTP") } catch (D) { } } f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a)) } } } function B() { var b = {}, c; c = document.getElementsByTagName("IMG"); if (!c.length) return {}; var a = c[0]; if (!("naturalWidth" in a && "naturalHeight" in a)) return {}; for (var d = 0; a = c[d]; ++d) { var e = a.getAttribute("data-pagespeed-url-hash"); e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = { rw: a.width, rh: a.height, ow: a.naturalWidth, oh: a.naturalHeight }) } return b } var C = ""; u("pagespeed.CriticalImages.getBeaconData", function () { return C }); u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) { var r = new y(b, c, a, e, f); x = r; d && w(function () { window.setTimeout(function () { A(r) }, 0) }) }); })(); pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'http://ikastaroak.birt.eus/edu/es/DAW/DWEC/DWEC05/es_DAW_DWEC05_Contenidos/singlepage_index.html', 'nXzXivl0t7', true, false, '7RVe2YaZ1x0');
+											//]]></script><img alt="Imagen de una lista de actividades genérica con checkbox para marcar." class="imagen_ampliable"
+											height="100"
+											src="./DWEC05.- Angular JS y POO en TypeScript_files/DWEC05_CONT_R11_checkbox_miniatura.jpg"
+											style="width: 100px; height: 100px;" title="Actividades diarias."
+											width="100" data-pagespeed-url-hash="3046621489"
+											onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+									</a></div>
+							</div>
+							<p>En este apartado exploraremos de una manera superficial los recursos de programación más
+								avanzados que podéis encontrar en TypeScript</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-27">
+				<div class="nodeDecoration">
+					<h1 id="exenode_27_221Enum" class="nodeTitle">2.2.1. - Enum</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id57-27">
+					<div class="iDevice emphasis0">
+						<div id="ta57_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id58-27">
+					<div class="iDevice emphasis0">
+						<div id="ta58_154" class="block iDevice_content">
+							<pre dir="ltr"><span>// La enumeración&nbsp;</span></pre>
+							<pre dir="ltr"><span>enum Role {</span></pre>
+							<pre dir="ltr"><span>&nbsp;Reporter = </span><span>1</span><span>,</span></pre>
+							<pre dir="ltr"><span>&nbsp;Developer,</span></pre>
+							<pre dir="ltr"><span>&nbsp;Maintainer,</span></pre>
+							<pre dir="ltr"><span>&nbsp;Owner,</span></pre>
+							<pre dir="ltr"><span>&nbsp;Guest</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre
+								dir="ltr"><span>// Si no hay un valor predeterminado, entonces el valor del índice comienza desde 0, de lo contrario aumenta desde el valor predeterminado hacia abajo</span></pre>
+							<pre dir="ltr"><span>// console.log(Role)</span></pre>
+							<pre dir="ltr"><span>// enumeración de cadenas</span></pre>
+							<pre dir="ltr"><span>enum Message {</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;Success = </span><span>'Felicitaciones, lo logró'</span><span>,</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;Fail = </span><span>'Lo siento, falló'</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre dir="ltr"><span>// Números de enumeración heterogéneos y cadenas mezcladas</span></pre>
+							<pre dir="ltr"><span>enum Answer {</span></pre>
+							<pre dir="ltr"><span>&nbsp;N,</span></pre>
+							<pre dir="ltr"><span>&nbsp;Y = </span><span>'yes'</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre><span>&nbsp;</span></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-29">
+				<div class="nodeDecoration">
+					<h1 id="exenode_29_222Interfaz" class="nodeTitle">2.2.2. - Interfaz</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id59-29">
+					<div class="iDevice emphasis0">
+						<div id="ta59_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id60-29">
+					<div class="iDevice emphasis0">
+						<div id="ta60_154" class="block iDevice_content">
+							<p dir="ltr"><span>SI estoy trabajando con una clase, puedo implementar interfaces, para que
+									todas las clases que implementan dicha interfaz tengan definidos los mismos métodos,
+									pero sin implementar</span></p>
+							<p><span>&nbsp;</span></p>
+							<pre dir="ltr"><span>interface Lib {</span></pre>
+							<pre dir="ltr"><span>&nbsp;(): </span><span>void</span><span>;</span></pre>
+							<pre dir="ltr"><span>&nbsp;version: string;</span></pre>
+							<pre dir="ltr"><span>&nbsp;doSomething(): </span><span>void</span><span>;</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre dir="ltr"><span>function</span><span> </span><span>getLib</span><span>(){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;</span><span>let</span><span> lib: Lib = (() =&gt; ()) como Lib; </span><span>// escribe aserción</span></pre>
+							<pre dir="ltr"><span>&nbsp;lib.version =</span><span>'1.0'</span><span>;</span></pre>
+							<pre dir="ltr"><span>&nbsp;lib.doSomething =()=&gt; {}</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre dir="ltr"><span>let</span><span> lib1 = getLib;</span></pre>
+							<pre dir="ltr"><span>lib1();</span></pre>
+							<pre dir="ltr"><span>interface StringArray {</span></pre>
+							<pre dir="ltr"><span>&nbsp;[index: number]: string</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre
+								dir="ltr"><span>let</span><span> chars: StringArray = [</span><span>'A'</span><span>,</span><span>'B'</span><span>]</span></pre>
+							<p><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-30">
+				<div class="nodeDecoration">
+					<h1 id="exenode_30_223Funcin" class="nodeTitle">2.2.3. - Función</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id61-30">
+					<div class="iDevice emphasis0">
+						<div id="ta61_154" class="block iDevice_content">
+							<p><span id="docs-internal-guid-c26af372-7fff-c1d6-e62a-9884d1afd2cc"><span>Tened en cuenta
+										que aquí os doy muchas opciones, pero lo más común es usar la primera
+										forma:</span></span></p>
+							<pre><br>// Los siguientes métodos de escritura son consistentes en expresión<br>function add1(x: number, y: number){<br> return x+y<br>}<br>let add2: (x: number, y: number) =&gt; number<br>type add3 = (x: number, y: number) =&gt; number<br>interface add4 {<br> (x: number, y: number): number<br>}<br><br>// Parámetros opcionales: agregue un signo de interrogación y debe colocarse después de los parámetros requeridos<br>function add5(x: number, y?: number){<br> return y? x=y: x<br>}<br>add5(1)<br>// Función con valor inicial<br>function add6(x: number, y=0,z:number,q=1){<br> return x+y+z+q<br>}<br>add6(1,undefined,3)<br>function add7(x:number,...rest:number[]){<br> return x+rest.reduce((pre,cur)=&gt;pre+cur)<br>}<br>console.log(add7(1,2,3,4,5))<br><br>// La sobrecarga de funciones se usa a menudo para lograr funciones similares pero se manejan diferentes tipos de datos<br>function add8(...rest: number[]): number;<br>function add8(...rest: string[]): string;<br>function add8(...rest: any[]): any{<br> let first = rest[0]<br> if(typeof first === 'string'){<br> return rest.join('')<br> }<br> if(typeof first === 'number'){<br> return rest.reduce((pre,cur)=&gt;pre+cur)<br> }<br>}<br>console.log(add8(1,2,3))<br>console.log(add8('a','b','c','d'))</pre>
+							<p dir="ltr"><span>&nbsp;</span></p>
+							<p><span></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-31">
+				<div class="nodeDecoration">
+					<h1 id="exenode_31_224Objetos" class="nodeTitle">2.2.4. - Objetos</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id62-31">
+					<div class="iDevice emphasis0">
+						<div id="ta62_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id63-31">
+					<div class="iDevice emphasis0">
+						<div id="ta63_154" class="block iDevice_content">
+							<pre dir="ltr"><span>// clase - debe llamarse igual que el fichero</span></pre>
+							<pre dir="ltr"><span>class Coche{</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;// propiedades - pueden ser public/private/protected, en función a desde donde yo quiera acceder</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private color: string;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private modelo: string;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private marca: string;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private precio: number;</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;// constructor</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;constructor(color,modelo,marca, precio){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.color = color;</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.modelo=modelo;</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.marca=marca;</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.precio = precio;</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre><span><span><br><br></span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;// propiedades&nbsp;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;public cambiarColor(color){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.color;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;public getColor(){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.color;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;//metodos</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;public acelerar(){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Coche acelerando a 100Km/h")</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre><span><span><br><br><br></span></span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>// crear coche</span></pre>
+							<pre dir="ltr"><span>var coche = new Coche("","","",0);</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>// usar propiedades</span></pre>
+							<pre dir="ltr"><span>coche.cambiarColor("rojo");</span></pre>
+							<pre dir="ltr"><span>let c : string = coche.getColor();</span></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-32">
+				<div class="nodeDecoration">
+					<h1 id="exenode_32_225MainImportyExport" class="nodeTitle">2.2.5. - Main, Import y Export</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id64-32">
+					<div class="iDevice emphasis0">
+						<div id="ta64_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id65-32">
+					<div class="iDevice emphasis0">
+						<div id="ta65_154" class="block iDevice_content">
+							<ul>
+								<li>Main</li>
+							</ul>
+							<pre
+								dir="ltr"><span>// podemos crear un archivo Main para cuando se inicialice nuestro programa</span></pre>
+							<pre dir="ltr"><span>// y desde aquí ir llamando a los diferentes modulos</span></pre>
+							<pre dir="ltr"><span>class Main{</span></pre>
+							<pre
+								dir="ltr"><span><span class="Apple-tab-span"> </span></span><span>constructor(){</span></pre>
+							<pre
+								dir="ltr"><span><span class="Apple-tab-span"> </span></span><span><span class="Apple-tab-span"> </span></span><span>console.log("Aplicación Cargada!")</span></pre>
+							<pre dir="ltr"><span><span class="Apple-tab-span"> </span></span><span>}</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>var main = new Main();</span></pre>
+							<p><span>&nbsp;</span></p>
+							<ul>
+								<li>Import/Export</li>
+							</ul>
+							<p><span id="docs-internal-guid-5168c55a-7fff-4dea-5946-cb682860dcbc"><span>Para poder usar
+										por ejemplo la clase Coche desde el main tendré que hacer dos cosas. Poner la
+										etiqueta export en la cabecera de la clase que quiero exportar, y la etiqueta
+										import </span><span>nombre de la clase</span><span> en fichero donde yo lo
+										quiera usar, el main en este caso </span></span></p>
+							<pre dir="ltr"><span>export class Coche{...</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>import {Coche} from ‘./je’...</span></pre>
+							<p><span>&nbsp;</span></p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-33">
+				<div class="nodeDecoration">
+					<h1 id="exenode_33_226Herencia" class="nodeTitle">2.2.6. - Herencia</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id66-33">
+					<div class="iDevice emphasis0">
+						<div id="ta66_154" class="block iDevice_content">
+							<p dir="ltr"><span>Cuando estoy trabajando en una clase, puedo heredar atributos y métodos
+									de otra, utilizando la palabra reservada extends. Y además implementar métodos
+									concretos para dicha clase. En este caso trabajaremos con la interfaz anterior y las
+									clases Camiseta y Sudadera</span></p>
+							<p><span><span>&nbsp;</span></span></p>
+							<pre dir="ltr"><span>class Camiseta implements CamisetaBase{</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;// Atributo</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private color: string;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private modelo: string;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private marca:string;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private precio:number;</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;// constructor</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;constructor(color:string, modelo:string, marca:string, precio:number){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.color = color;</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.modelo = modelo;</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.marca = marca;</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.precio = precio;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;setModelo(modelo: string) {</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.modelo=modelo;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;getModelo(): string {</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.modelo;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;setMarca(marca: string) {</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.marca=marca;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;getMarca(): string {</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.marca;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;setPrecio(precio: number) {</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.precio=precio;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;getPrecio(): number {</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.precio;;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre><span><span><br><br></span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;// Propiedades</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;public setColor(color:string){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.color=color;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;public getColor():string{</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.color;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;// Metodos</span></pre>
+							<pre><span><span><br><br><br></span></span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>class Sudadera extends Camiseta{</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;private capucha:boolean;</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;setCapucha(capucha:boolean){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.capucha = capucha;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<pre><span>&nbsp;</span></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-4-node" id="exe-node-34">
+				<div class="nodeDecoration">
+					<h1 id="exenode_34_227Decoradores" class="nodeTitle">2.2.7. - Decoradores</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id67-34">
+					<div class="iDevice emphasis0">
+						<div id="ta67_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id68-34">
+					<div class="iDevice emphasis0">
+						<div id="ta68_154" class="block iDevice_content">
+							<p dir="ltr"><span>Un decorador es un patrón de diseño que nos permite mediante a través de
+									metadatos, cambiar la funcionalidad de una clase en función de los parámetros que le
+									pasemos</span></p>
+							<p dir="ltr"><span>Primero lo tengo que definir. Siguiendo con nuestro ejemplo de la
+									camiseta y sudadera creare el decorador estampar.</span></p>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<pre dir="ltr"><span>function estampar(logo:string){</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;return function(target: Function){</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;target.prototype.estampacion = function():void{</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("camiseta estampada " + logo);</span></pre>
+							<pre
+								dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre><span><span>&nbsp;</span></span></pre>
+							<p dir="ltr"><span>Ahora, si yo añado este decorador a la clase con la siguiente sintaxis,
+									la clase implementará el nuevo método estampar que lo llamaría cómo si fuera un
+									método implementado de manera usual, y recibe por parámetro lo que yo haya
+									implementado en el decorador</span></p>
+							<p><span><span>&nbsp;</span></span></p>
+							<pre dir="ltr"><span>@estampar("Gucci")</span></pre>
+							<pre dir="ltr"><span>class Camiseta implements CamisetaBase{ ….</span></pre>
+							<pre><span>&nbsp;</span></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-2-node" id="exe-node-11">
+				<div class="nodeDecoration">
+					<h1 id="exenode_11_3IntroduccinalFrameworkAngular" class="nodeTitle">3.- Introducción al Framework
+						Angular</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id69-11">
+					<div class="iDevice emphasis0">
+						<div id="ta69_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id70-11">
+					<div class="iDevice emphasis0">
+						<div id="ta70_154" class="block iDevice_content">
+							<p dir="ltr">Angular es un framework opensource desarrollado por Google para facilitar la
+								creación y programación de aplicaciones web de una sola página, las webs <a
+									href="https://www.kikopalomares.com/blog/que-es-una-web-spa-single-page-application">SPA
+								</a>(Single Page Application).</p>
+							<p dir="ltr"><span>Angular separa completamente el frontend y el backend en la aplicación,
+									evita escribir código repetitivo y mantiene todo más ordenado gracias a su patrón
+									MVC (Modelo-Vista-Controlador) asegurando los desarrollos con rapidez, a la vez que
+									posibilita modificaciones y actualizaciones.</span></p>
+							<p dir="ltr"><span>En una web SPA aunque la velocidad de carga puede resultar un poco lenta
+									la primera vez que se abre, navegar después es totalmente instantáneo, ya que se ha
+									cargado toda la página de golpe.</span></p>
+							<p dir="ltr"><span>Solamente es una ruta la que se tiene que enviar al servidor, y Angular
+									lo que hace ‘por debajo’ es cambiar la vista al navegar para que dé la apariencia de
+									una web normal, pero de forma más dinámica.</span></p>
+							<p dir="ltr"><span>Entre otras ventajas, este framework es modular y escalable adaptándose a
+									nuestras necesidades y al estar basado en el estándar de componentes web, y con un
+									conjunto de interfaz de programación de aplicaciones (API) permite crear nuevas
+									etiquetas HTML personalizadas que pueden reutilizarse.</span></p>
+							<p dir="ltr"><span>El lenguaje principal de programación de Angular es Typescript, y así
+									toda la sintaxis y el modo de hacer las cosas en el código es el mismo, lo que añade
+									coherencia y consistencia a la información, permitiendo por ejemplo, la
+									incorporación de nuevos programadores, en caso de ser necesarios, ya que pueden
+									continuar su trabajo sin excesiva dificultad.&nbsp;</span></p>
+							<p dir="ltr"><span>Como ya se ha indicado, las plantillas de Angular almacenan por separado
+									el código de la interfaz del usuario (front-end) y el de la lógica de negocio
+									(back-end), que entre otros beneficios permite utilizar mejor otras herramientas
+									anteriormente existentes.&nbsp;</span></p>
+							<p dir="ltr"><span>Y por si fuera poco, los principales editores y entornos de desarrollo
+									integrado (IDEs) ofrecen ya extensiones para poder trabajar con este framework con
+									mayor comodidad.</span></p>
+							<p dir="ltr"><span>Por su programación reactiva, la vista se actualiza automáticamente tras
+									realizar los cambios. Además Angular dispone de asistente por línea de comandos para
+									poder crear proyectos base y también se integra bien con herramientas de testing y
+									con Ionic, lo que facilita la creación de web-responsive, es decir, adaptadas a
+									móviles.</span></p>
+							<p dir="ltr"><span>Este aspecto cada día adquiere mayor importancia tanto por el creciente
+									uso de estos dispositivos para acceder a internet como por la penalización que
+									Google realiza de aquellas páginas que no facilitan su visita en cualquier
+									dispositivo.</span></p>
+							<p><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-35">
+				<div class="nodeDecoration">
+					<h1 id="exenode_35_31InstalarAngular" class="nodeTitle">3.1. - Instalar Angular</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id71-35">
+					<div class="iDevice emphasis0">
+						<div id="ta71_154" class="block iDevice_content">
+							<p dir="ltr"><span>Antes de comenzar, tienes que tener VSCode y Node.JS instalados.</span>
+							</p>
+							<p dir="ltr"><span>En la página oficial de Angular tenemos una pequeña </span><a
+									href="https://angular.io/cli"><span>guia </span></a><span>de cómo instalarlo y
+									cuales son los primeros pasos. Además podemos consultar </span><a
+									href="https://github.com/angular"><span>su directorio de GitHub</span></a><span>, en
+									el que hay información muy interesante sobre el tipo de cosas que podemos hacer
+									etc.</span></p>
+							<p dir="ltr"><span>Para instalarlo desde VSCode abre la terminal. Como ya tenemos NodeJS
+									instalado podemos ejecutar comandos npm para instalar Angular. Para la instalación
+									de angular debemos ejecutar el siguiente comando:</span></p>
+							<pre dir="ltr"><span>npm install -g @angular/cli</span></pre>
+							<p dir="ltr"><span>Este comando instala angular, el -g sirve para agregarlo de manera global
+									a Windows.&nbsp;</span></p>
+							<p><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-36">
+				<div class="nodeDecoration">
+					<h1 id="exenode_36_32CrearunProyecto" class="nodeTitle">3.2. - Crear un Proyecto</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id72-36">
+					<div class="iDevice emphasis0">
+						<div id="ta72_154" class="block iDevice_content">
+							<p dir="ltr"><span>Ya con Angular instalado podemos ir a la ruta donde queremos tener
+									nuestro primer proyecto y allí debemos ejecutar el siguiente comando.</span></p>
+							<pre dir="ltr"><span>ng new </span><span>nombre-proyecto</span></pre>
+							<p dir="ltr"><span>Este comando tarda algunos minutos y debe crear automáticamente el
+									directorio que se ve en la siguiente imagen.</span></p>
+							<p dir="ltr"><span>Después nos colocaremos sobre el directorio del proyecto, y ejecutaremos
+									el siguiente comando para compilar la aplicación y poder empezar a
+									desarrollar:</span></p>
+							<pre dir="ltr"><span>ng serve</span></pre>
+							<p dir="ltr"><span>Una vez compilado, veremos lo siguiente:</span></p>
+							<p dir="ltr"><span><img src="./DWEC05.- Angular JS y POO en TypeScript_files/1.PNG"
+										width="912" height="340" data-pagespeed-url-hash="2328535013"
+										onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></p>
+							<p><span>&nbsp;</span></p>
+							<p><span><span id="docs-internal-guid-b695bb71-7fff-3747-4c26-cff9af872eb4"><span>Por un
+											lado nos dice que el servicio Live de Angular se estará ejecutando en el
+											puerto Localhost 4200, es decir si abrimos un navegador en esa dirección
+											veremos la página principal que Angular genera por defecto. Cabe destacar,
+											que angular es de tipo SPA y esta pagina no se recargará ni se refrescara
+											constantemente, simplemente ira cambiando dinámicamente los contenidos a
+											medida que interactuamos con ella. </span></span></span></p>
+							<p></p>
+							<p></p>
+							<p><span><img src="./DWEC05.- Angular JS y POO en TypeScript_files/2.PNG" width="935"
+										height="427" data-pagespeed-url-hash="2623034934"
+										onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></p>
+							<p></p>
+							<p dir="ltr"><span>Y por otro lado, si abrimos nuestro proyecto Angular en VSCode, veremos
+									el siguiente </span><a
+									href="https://medium.com/@skurt23/scaffolding-con-angular-cli-b4ce35bae037"><span>scaffolding
+									</span></a><span>de Angular por defecto</span></p>
+							<p><span>&nbsp;</span><img src="./DWEC05.- Angular JS y POO en TypeScript_files/3.PNG"
+									width="497" height="797" data-pagespeed-url-hash="2917534855"
+									onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-37">
+				<div class="nodeDecoration">
+					<h1 id="exenode_37_33Componentes" class="nodeTitle">3.3. - Componentes</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id73-37">
+					<div class="iDevice emphasis0">
+						<div id="ta73_154" class="block iDevice_content">
+							<p dir="ltr"><span>Un componente simplemente es una de las partes de la interfaz de nuestra
+									aplicación, y la lógica que lo controla internamente. Por ejemplo; el header de la
+									página, un calendario, un sidebar, un formulario de contacto…</span></p>
+							<p dir="ltr"><span>Un componente en Angular es un elemento que está compuesto por:</span>
+							</p>
+							<ul>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>Un archivo que será nuestro Template
+											(app.component.html), el cual es nuestro HTML, que es el que se va a
+											visualizar en la interfaz de usuario, la vista o en términos más simples lo
+											que vas a ver en la página.</span></p>
+								</li>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>Un archivo de lógica, la cual es la que
+											pondremos en un archivo .ts (como por ejemplo app.component.ts), ese archivo
+											debe incluir una clase y esta es la que va a contener las propiedades que se
+											van a usar en la vista (HTML) y los métodos que será las acciones que se
+											ejecutarán en la vista. En este archivo de lógica también se incluye una
+											metadata, que es definida con un decorador, que identifica a Angular como un
+											componente.</span></p>
+								</li>
+							</ul>
+							<p><span></span></p>
+							<p><span><img src="./DWEC05.- Angular JS y POO en TypeScript_files/4.PNG" width="625"
+										height="354" data-pagespeed-url-hash="3212034776"
+										onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></p>
+							<p></p>
+							<p dir="ltr"><span></span></p>
+							<p dir="ltr"><span>Crear un </span><a
+									href="https://angular.io/cli/generate#component-command"><span>componente</span></a><span>:</span>
+							</p>
+							<pre><span id="docs-internal-guid-900b5c74-7fff-035b-f35e-c812b9c1a7fc"><span>ng generate </span><span>component</span><span> </span><span>&lt;name&gt;</span></span></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-39">
+				<div class="nodeDecoration">
+					<h1 id="exenode_39_34ModelosdeDatos" class="nodeTitle">3.4. - Modelos de Datos</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id74-39">
+					<div class="iDevice emphasis0">
+						<div id="ta74_154" class="block iDevice_content">
+							<p dir="ltr"><span>Un modelo en angular es una clase que representa un objeto con
+									propiedades que permite la utilización de la misma desde clases externas, evitando
+									la reiteración de código. A lo largo de esta entrada veremos cómo construir un
+									modelo y cómo implementarla en componentes.</span></p>
+							<p dir="ltr"><span>Estas clases se colocan dentro de src/app en una carpeta llamada
+									models.</span></p>
+							<p dir="ltr"><span>El nombre de estos ficheros se escribe en minúscula:</span></p>
+							<p dir="ltr"><span>nombrefichero.ts</span><span>. Como mencionamos previamente, un modelo es
+									una clase que define un objeto con sus respectivas características, por ende, su
+									sintáxsis es la siguiente:</span></p>
+							<pre dir="ltr"><span>export class NombreClase{</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;constructor(</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;public propiedad : tipo;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;public propiedad: tipo;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;){}</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<p dir="ltr"><span>La sintaxis previa declara las propiedades dentro del constructor, lo
+									cual resulta una gran ventaja para el programador. También existe otra forma un poco
+									más larga que declara las propiedades fuera del constructor y las inicializa dentro
+									del mismo en base a los parámetros recibidos:</span></p>
+							<pre dir="ltr"><span>export class NombreClase{</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;public propiedad : tipo;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;public propiedad : tipo;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;constructor(valor1, valor2){</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.propiedad : valor1;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.propiedad: valor2;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<p dir="ltr"><span>Para implementar un modelo debemos importarlo en el componente que
+									deseemos utilizarlo. Su sintaxis es la siguiente:</span></p>
+							<pre dir="ltr"><span>Import { NombreModelo } from 'ruta/models/modelo.ts' </span></pre>
+							<p><span>&nbsp;</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-40">
+				<div class="nodeDecoration">
+					<h1 id="exenode_40_35Directivas" class="nodeTitle">3.5. - Directivas</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id75-40">
+					<div class="iDevice emphasis0">
+						<div id="ta75_154" class="block iDevice_content">
+
+						</div>
+					</div>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id76-40">
+					<div class="iDevice emphasis0">
+						<div id="ta76_154" class="block iDevice_content">
+							<p dir="ltr"><span>Las Directivas extienden la funcionalidad del HTML usando para ello una
+									nueva sintaxis. Con ella podemos usar lógica que será ejecutada en el DOM (Document
+									Object Model).</span></p>
+							<p dir="ltr"><span>Cada Directiva que usamos tiene un nombre, y determina donde puede ser
+									usada, sea en un elemento, atributo, componente o clase.</span></p>
+							<p><span><span>&nbsp;</span></span></p>
+							<ul>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>ngIf</span></p>
+								</li>
+							</ul>
+							<p dir="ltr"><span>Nos permite incluir condicionales de lógica en nuestro código, como por
+									ejemplo evaluar sentencias, hacer comparaciones, mostrar u ocultar secciones de
+									código, y entre las muchas condiciones que deseemos crear, para que se renderice
+									nuestro HTML, cumpliendo la sentencia a evaluar. Con el *ngIf, podemos evaluar
+									sentencias con un simple If, podemos evaluar el else, para que no cumpliéndose la
+									primera condición que se evalúa nuestro código ejecute otra acción en el caso
+									contrario y podemos además incluir el then, para que cumpliendose la condición
+									afirmativa (if), podamos añadir más flexibilidad a nuestro código incluyéndole un
+									camino afirmativo adicional.</span></p>
+							<p><span>&nbsp;</span><span
+									id="docs-internal-guid-7e771a00-7fff-4118-3248-8e13c4cc8e53"><span><span><img
+												src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0.png"
+												width="598" height="176" data-pagespeed-url-hash="4114072049"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span>
+							</p>
+							<ul>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>ngFor</span></p>
+								</li>
+							</ul>
+							<p dir="ltr"><span>Permite ejecutar bucles, los bucles son los que conocemos en lógica de
+									programación como: for, while, foreach, etc. Con esta directiva estructural podemos
+									evaluar de acuerdo a nuestra condición n veces.</span></p>
+							<p dir="ltr"><span><span
+										id="docs-internal-guid-7251112d-7fff-7eaa-f208-738aaebccde2"><span><span><img
+													src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0(1).png"
+													width="602" height="191" data-pagespeed-url-hash="1395815917"
+													onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span></span>
+							</p>
+							<ul>
+								<li dir="ltr" aria-level="1">
+									<p dir="ltr" role="presentation"><span>ngSwitch</span></p>
+								</li>
+							</ul>
+							<p dir="ltr"><span>Esta directiva es similar al *ngIf, y es como el switch en lógica de
+									programación. En esta directiva se pueden crear los diferentes casos que deseamos
+									evaluar y cuando se cumple la condición esperada, oculta/muestra el HTML. Nos
+									permite mantener nuestro código más limpio, si necesitamos evaluar varias
+									sentencias.</span></p>
+							<p><span>&nbsp;</span><span
+									id="docs-internal-guid-c845a3c5-7fff-ba71-bcab-a4c7a8e1cf46"><span><span><img
+												src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0(2).png"
+												width="602" height="279" data-pagespeed-url-hash="958416962"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="node level-3-node" id="exe-node-41">
+				<div class="nodeDecoration">
+					<h1 id="exenode_41_36EnlacededatosDataBinding" class="nodeTitle">3.6. - Enlace de datos - Data
+						Binding</h1>
+				</div>
+				<div class="iDevice_wrapper FreeTextfpdIdevice" id="id77-41">
+					<div class="iDevice emphasis0">
+						<div id="ta77_154" class="block iDevice_content">
+							<p dir="ltr"><span>Hasta ahora, hemos estado trabajando con comunicaciones/sincronizaciones
+									(bindings) unidireccionales, es decir, de una sola dirección, los conocidos como One
+									Way Data Binding.</span></p>
+							<p dir="ltr"><span>En los que nos traspasábamos/comunicábamos/sincronizábamos un objeto o
+									una variable de nuestra Modelo, es decir, la lógica de negocio del componente
+									situado en nuestro código de TypeScript hacía el template (el HTML) o
+									viceversa.</span></p>
+							<p dir="ltr"><span>En esta gráfica podemos ver más detalladamente hacía que dirección
+									trabaja cada uno de los bindings. Y podemos ver que hay bindings trabajan del
+									componente hacía la vista todos los que hemos explicado a excepción del Event
+									Binding que trabaja de la vista hacía el componente.</span></p>
+							<p><span>&nbsp;<span
+										id="docs-internal-guid-b0f7a793-7fff-21e6-cfd1-d9b68f6d8a91"><span><span><img
+													src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0(3).png"
+													width="602" height="596" data-pagespeed-url-hash="3520139721"
+													onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span></span>
+							</p>
+							<p><span></span></p>
+							<p dir="ltr"><span>En muchas ocasiones nos encontramos que este tipo de bindings los que se
+									denominan bidireccionales son los que más necesitamos en la programación del día a
+									día. Para ello Angular nos provee una sintaxis más compacta que indica que este
+									binding es BiDireccional&nbsp; combinando corchetes y paréntesis [()]. Para ello el
+									primer paso que tenemos que realizar es instalar a nivel de la aplicación el
+									FormsModule que es el módulo que nos ayuda a gestionar formularios.</span></p>
+							<p><span><span><span>&nbsp;</span></span></span></p>
+							<pre dir="ltr"><span>import { BrowserModule } from '@angular/platform-browser';</span></pre>
+							<pre dir="ltr"><span>import { NgModule } from '@angular/core';</span></pre>
+							<pre dir="ltr"><span>import {FormsModule} from "@angular/forms"</span></pre>
+							<pre dir="ltr"><span>import { AppRoutingModule } from './app-routing.module';</span></pre>
+							<pre dir="ltr"><span>import { AppComponent } from './app.component';</span></pre>
+							<pre dir="ltr"><span>import { C1Component } from './c1/c1.component';</span></pre>
+							<pre dir="ltr"><span>@NgModule({</span></pre>
+							<pre dir="ltr"><span>&nbsp;declarations: [</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;AppComponent,</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;C1Component</span></pre>
+							<pre dir="ltr"><span>&nbsp;],</span></pre>
+							<pre dir="ltr"><span>&nbsp;imports: [</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;BrowserModule,</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;AppRoutingModule,</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;FormsModule</span></pre>
+							<pre dir="ltr"><span>&nbsp;],</span></pre>
+							<pre dir="ltr"><span>&nbsp;providers: [],</span></pre>
+							<pre dir="ltr"><span>&nbsp;bootstrap: [AppComponent]</span></pre>
+							<pre dir="ltr"><span>})</span></pre>
+							<pre dir="ltr"><span>export class AppModule { }</span></pre>
+							<p><span><span><span>&nbsp;</span></span></span></p>
+							<p dir="ltr"><span>Una vez configurado el Forms módulo podemos actualizar nuestra plantilla
+									y usar la directiva de Angular ngModel para realizar un binding bidireccional como
+									teníamos en el ejemplo anterior pero mucho más compacto con corchetes y
+									paréntesis.</span></p>
+							<p><span><span><span><br><br></span></span></span></p>
+							<pre
+								dir="ltr"><span>&lt;input type="text" name="nombre" [(ngModel)]="nombre" /&gt;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;{{nombre}}</span></pre>
+							<p><span><span><span>&nbsp;</span></span></span></p>
+							<p dir="ltr"><span>De esta manera tendremos una caja de texto que contiene el nombre que
+									nosotros necesitamos . Si cambiamos el valor de la caja automáticamente nos cambiará
+									el valor del texto que tenemos a nivel de la interpolación, el binding será
+									bidireccional</span></p>
+							<p><span>&nbsp;</span></p>
+							<p><span><span id="docs-internal-guid-9c6c57c5-7fff-9b4a-af99-c9ac08813190"><span><span><img
+													src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0(4).png"
+													width="602" height="96" data-pagespeed-url-hash="3331650594"
+													onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span></span>
+							</p>
+							<p dir="ltr"><span>Acabamos de usar Angular la directiva ngModel para construir nuestro
+									binding .</span></p>
+							<p><span>&nbsp;</span></p>
+							<p><span><span id="docs-internal-guid-c133173e-7fff-d9ca-75ae-61ccae3b7672"><span><span><img
+													src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0(5).png"
+													width="602" height="213" data-pagespeed-url-hash="2449796844"
+													onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span></span>
+							</p>
+							<p></p>
+							<p dir="ltr"><span>Muchas veces la gente cuando comienza con Angular se suele equivocar
+									mucho a la hora de realizar los binding bidireccionales y que no sabe cómo poner los
+									corchetes o los paréntesis. Para ello la gente de Angular decidió definir una regla
+									de nemotecnia y llamo a este tipo de binding “banana in box”&nbsp; porque se trata
+									de una banana dentro de una caja. Así es imposible confundirse.</span></p>
+							<p><span>&nbsp;</span><span
+									id="docs-internal-guid-cf15897a-7fff-075d-eaea-15fafa8c6a51"><span><span><img
+												src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0(6).png"
+												width="341" height="222" data-pagespeed-url-hash="955266883"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span>
+							</p>
+							<p dir="ltr"><strong>Angular ngModel y objetos</strong></p>
+							<p dir="ltr"><span>Recordemos que los bindings no solo se pueden aplicar a tipos básicos
+									sino que pueden ser aplicados a objetos complejos que provengan de clases y asignar
+									las propiedad que nosotros deseemos. Por ejemplo si disponemos de la clase
+									Persona:</span></p>
+							<pre><span><span><span>&nbsp;</span></span></span></pre>
+							<pre dir="ltr"><span>export class Persona {</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;nombre:string;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;edad:number;</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<p><span><span><span>&nbsp;</span></span></span></p>
+							<p dir="ltr"><span>Podemos usar Angular ngModel y realizar un two way data binding sobre sus
+									propiedades:</span></p>
+							<p><span><span><span>&nbsp;</span></span></span></p>
+							<pre dir="ltr"><span>import { Component, OnInit } from '@angular/core';</span></pre>
+							<pre dir="ltr"><span>import { Persona } from '../persona';</span></pre>
+							<pre dir="ltr"><span>@Component({</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;selector: 'app-c1',</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;templateUrl: './c1.component.html',</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;styleUrls: ['./c1.component.css']</span></pre>
+							<pre dir="ltr"><span>})</span></pre>
+							<pre dir="ltr"><span>export class C1Component implements OnInit {</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;persona:Persona;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;constructor() {&nbsp;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;this.persona= new Persona();</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;this.persona.nombre="gema";</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;&nbsp;this.persona.edad=20;</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;ngOnInit() {</span></pre>
+							<pre dir="ltr"><span>&nbsp;&nbsp;}</span></pre>
+							<pre dir="ltr"><span>}</span></pre>
+							<p><span><span><span>&nbsp;</span></span></span></p>
+							<p dir="ltr"><span>Acabamos de usar la clase Persona a nivel de componente nos falta ver su
+									información a nivel de la propia plantilla:</span></p>
+							<p><span><span><span>&nbsp;</span></span></span></p>
+							<pre
+								dir="ltr"><span>&lt;input type="text" name="nombre" [(ngModel)]="persona.nombre" /&gt;</span></pre>
+							<pre
+								dir="ltr"><span>&lt;input type="text" name="edad" [(ngModel)]="persona.edad" /&gt;</span></pre>
+							<pre dir="ltr"><span>{{persona.nombre}}</span></pre>
+							<pre dir="ltr"><span>{{persona.edad}}</span></pre>
+							<p><span>&nbsp;</span></p>
+							<p dir="ltr"><span>Si vemos el resultado en el navegador nos cargará la información sobre el
+									objeto:</span></p>
+							<p><span>&nbsp;</span><span
+									id="docs-internal-guid-dd5468f2-7fff-b75d-4512-38de2979f0e0"><span><span><img
+												src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0(7).png"
+												width="382" height="85" data-pagespeed-url-hash="498608265"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span>
+							</p>
+							<p dir="ltr"><span>Si cambiamos la&nbsp; información automaticamente los datos se actualizan
+									en las interpolaciones.</span></p>
+							<p><span>&nbsp;</span><span
+									id="docs-internal-guid-651b7976-7fff-d97a-b60c-329826848030"><span><span><img
+												src="./DWEC05.- Angular JS y POO en TypeScript_files/pasted image 0(8).png"
+												width="397" height="81" data-pagespeed-url-hash="1484697163"
+												onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></span></span>
+							</p>
+							<p><span></span></p>
+							<p><span><span id="docs-internal-guid-a7a0b03b-7fff-3e52-74e9-778ce51b2a7a"><span>Aprender a
+											usar binding bidireccionales o two way databindings con Angular apoyándonos
+											en la sintaxis de banana in box&nbsp; [()] . Esto nos facilitará sobre
+											manera el trabajo con componentes en el día a día. Sobre todo cuando
+											trabajamos con estructuras de objetos complejas que demandan un mapeo de
+											propiedades no trivial como acabamos de ver en este último caso de las
+											personas.</span></span></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<script type="text/javascript"
+		src="./DWEC05.- Angular JS y POO en TypeScript_files/venobox.min.js.descarga"></script>
+	<script>$(document).ready(function () { $('.venobox').venobox({ titleattr: 'data-title' }); });</script>
+
+</body>
+
+</html>

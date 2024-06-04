@@ -1,0 +1,48 @@
+<h2>Formulario de registro</h2>
+<form id="formulario">
+  <div id="alerta" class="alertOculta">
+    <img src="assets/alerta.png" alt="Alerta">
+    <p id="alertaNombre"></p>
+    <p id="alertaApel"></p>
+    <p id="alertaEmail"></p>
+    <p id="alertaContr"></p>
+  </div>
+
+  <div class="checkbox-wrapper-2">
+    <input type="checkbox" class="oscuro" id="oscuro" [(ngModel)]="modoOscuroActivado"
+      (ngModelChange)="toggleModoOscuro()">
+    <label for="oscuro">Modo oscuro</label>
+  </div><br />
+
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombre" id="nombre" [(ngModel)]="nombre"><br /><br />
+  <!--<div *ngIf="!validarCampoVacio(nombre)">Debes completar el campo nombre.</div><br /><br />-->
+
+  <label for="apellido1">Primer apellido</label>
+  <input type="text" name="apellido1" id="apellido1" [(ngModel)]="apellido1"><br /><br />
+
+  <label for="apellido1">Segundo apellido</label>
+  <input type="text" name="apellido2" id="apellido2" [(ngModel)]="apellido2"><br /><br />
+
+  <label for="telefono">Teléfono</label>
+  <input type="tel" name="telefono" id="telefono" [(ngModel)]="telefono"><br /><br />
+
+  <label for="fecha_nac">Fecha nacimiento</label>
+  <input type="date" name="fecha_nac" id="fecha_nac" [(ngModel)]="fecha_nac"><br /><br />
+
+  <label for="email">Email</label>
+  <input type="text" name="email" id="email" autocomplete="email" [(ngModel)]="email"><br /><br />
+
+  <div class="campoContr">
+    <label for="contrasena">Contraseña</label>
+    <input type="password" name="contrasena" id="contrasena" [(ngModel)]="contrasena"><br /><br />
+    <button type="button" (click)="mostrarContrasena()" id="special-button">👁️‍🗨️</button>
+  </div>
+
+  <label for="contrasena_rep">Repite contraseña</label>
+  <input type="password" name="contrasena_rep" id="contrasena_rep" [(ngModel)]="contrasena_rep"><br /><br />
+
+  <button type="button" id="generar" (click)="generarContrasena()">Generar contraseña</button>
+  <button type="button" id="registrar" (click)="registraFormulario()">Registrar</button>
+  <button type="reset" id="limpiar">Limpiar</button>
+</form>
